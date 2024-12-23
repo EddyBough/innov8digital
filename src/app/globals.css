@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
+  background-color: #fcfeff;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+-section::before {
 }
 
 @layer base {
