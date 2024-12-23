@@ -1,5 +1,6 @@
 import FirstSection from "./sections/FirstSection";
 import SecondSection from "./sections/SecondSection";
+import ThirdSection from "./sections/ThirdSection";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <main className=" flex flex-col min-h-screen">
         <FirstSection />
         <SecondSection />
+        <ThirdSection />
       </main>
     </div>
   );

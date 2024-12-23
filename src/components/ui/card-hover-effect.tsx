@@ -5,10 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-export const HoverEffect = ({
-  items,
-  className,
-}: {
+interface HoverEffectProps {
   items: {
     title: string;
     description: string;
@@ -16,13 +13,15 @@ export const HoverEffect = ({
     image: string;
   }[];
   className?: string;
-}) => {
+}
+
+export const HoverEffect = ({ items, className }: HoverEffectProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10 w-full justify-items-center",
         className
       )}
     >
@@ -30,7 +29,7 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group block p-6 w-[375px] h-[440px] mx-auto"
+          className="relative group block p-6 w-full max-w-[375px] min-h-[440px] md:h-[440px]"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -69,13 +68,12 @@ export const HoverEffect = ({
   );
 };
 
-export const Card = ({
-  className,
-  children,
-}: {
+interface CardProps {
   className?: string;
   children: React.ReactNode;
-}) => {
+}
+
+export const Card = ({ className, children }: CardProps) => {
   return (
     <div
       className={cn(
@@ -90,13 +88,7 @@ export const Card = ({
   );
 };
 
-export const CardTitle = ({
-  className,
-  children,
-}: {
-  className?: string;
-  children: React.ReactNode;
-}) => {
+export const CardTitle = ({ className, children }: CardProps) => {
   return (
     <h4 className={cn("text-black font-bold tracking-wide mt-4", className)}>
       {children}
@@ -104,13 +96,7 @@ export const CardTitle = ({
   );
 };
 
-export const CardDescription = ({
-  className,
-  children,
-}: {
-  className?: string;
-  children: React.ReactNode;
-}) => {
+export const CardDescription = ({ className, children }: CardProps) => {
   return (
     <p
       className={cn(

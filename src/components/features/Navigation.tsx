@@ -124,7 +124,7 @@ function DesktopNavbar({ className }: { className?: string }) {
             <Image
               src={Logo}
               alt="Logo"
-              width={50}
+              width={80}
               height={50}
               className="object-contain"
             />
@@ -201,13 +201,13 @@ function MobileNavbar({
   );
 
   return (
-    <div className="relative bg-white">
+    <div className="relative shadow-md saturate-100 backdrop-blur-[10px]">
       {/* Header Mobile */}
       <div className="flex items-center justify-between px-4 py-2">
         <Image
           src={Logo}
           alt="Logo"
-          width={40}
+          width={80}
           height={40}
           className="object-contain"
         />
