@@ -59,7 +59,7 @@ export default function SecondSection() {
         width={400}
         height={1200}
         priority
-        className="absolute left-0 top-0 -z-10 h-full object-cover"
+        className="absolute md:h-auto mt-96 md:mt-0 h-[55rem] w-[35rem] left-0 top-0 -z-10 object-cover"
         quality={100}
       />
 
@@ -69,7 +69,9 @@ export default function SecondSection() {
             Nos services
           </h2>
         </div>
-        <HoverEffect items={services} />
+        <div className="flex justify-center w-full">
+          <HoverEffect items={services} />
+        </div>
       </div>
     </section>
   );
