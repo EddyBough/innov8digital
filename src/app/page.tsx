@@ -1,12 +1,12 @@
 import FirstSection from "./sections/FirstSection";
+import SecondSection from "./sections/SecondSection";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className=" flex flex-col min-h-screen">
-          <FirstSection />
-        </div>
+    <div className="m-auto flex flex-col justify-center items-center">
+      <main className=" flex flex-col min-h-screen">
+        <FirstSection />
+        <SecondSection />
       </main>
     </div>
   );
