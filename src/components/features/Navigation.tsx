@@ -105,12 +105,17 @@ function DesktopNavbar({ className }: { className?: string }) {
 
           <MenuItem setActive={setActive} active={active} item="Services">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/web-dev">Web Development</HoveredLink>
-              <HoveredLink href="/interface-design">
-                Interface Design
+              <HoveredLink href="/web-dev">Site Web sur mesure</HoveredLink>
+              <HoveredLink href="/website-cms">
+                Site E-commerce CMS & CRM
               </HoveredLink>
-              <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-              <HoveredLink href="/branding">Branding</HoveredLink>
+              <HoveredLink href="/application-mobile">
+                Application mobile
+              </HoveredLink>
+              <HoveredLink href="/support">Maintenance et support</HoveredLink>
+              <HoveredLink href="/seo">
+                Stratégie digitale SEO & Marketing
+              </HoveredLink>
             </div>
           </MenuItem>
         </div>
@@ -150,11 +155,9 @@ function DesktopNavbar({ className }: { className?: string }) {
             </div>
           </MenuItem>
 
-          <MenuItem setActive={setActive} active={active} item="Tarifs">
+          <MenuItem setActive={setActive} active={active} item="À propos">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/hobby">Starter</HoveredLink>
-              <HoveredLink href="/individual">Business</HoveredLink>
-              <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+              <HoveredLink href="/notre-histoire">Notre histoire</HoveredLink>
             </div>
           </MenuItem>
 
@@ -348,16 +351,19 @@ function MobileNavbar({
                     className="pl-4 py-2 space-y-2 overflow-hidden"
                   >
                     <SubMenuItem href="/web-dev" delay={0.1}>
-                      Web Development
+                      Site Web sur mesure
                     </SubMenuItem>
-                    <SubMenuItem href="/interface-design" delay={0.2}>
-                      Interface Design
+                    <SubMenuItem href="/website-cms" delay={0.2}>
+                      Site E-commerce CMS & CRM
                     </SubMenuItem>
-                    <SubMenuItem href="/seo" delay={0.3}>
-                      Search Engine Optimization
+                    <SubMenuItem href="/application-mobile" delay={0.3}>
+                      Application mobile
                     </SubMenuItem>
-                    <SubMenuItem href="/branding" delay={0.4}>
-                      Branding
+                    <SubMenuItem href="/support" delay={0.4}>
+                      Maintenance et support
+                    </SubMenuItem>
+                    <SubMenuItem href="/seo" delay={0.4}>
+                      Stratégie digitale SEO & Marketing
                     </SubMenuItem>
                   </motion.div>
                 )}
@@ -419,18 +425,20 @@ function MobileNavbar({
               </AnimatePresence>
             </div>
 
-            {/* Tarifs Section */}
+            {/* A propos Section */}
             <div>
               <motion.button
                 className="flex items-center justify-between w-full py-2"
-                onClick={() =>
-                  setActiveSubmenu(activeSubmenu === "tarifs" ? null : "tarifs")
-                }
+                onClick={() => {
+                  setActiveSubmenu((prev) =>
+                    prev === "À propos" ? null : "À propos"
+                  );
+                }}
                 whileTap={{ scale: 0.98 }}
               >
-                <span className="font-medium">Tarifs</span>
+                <span className="font-medium">À propos</span>
                 <motion.span
-                  animate={{ rotate: activeSubmenu === "tarifs" ? 180 : 0 }}
+                  animate={{ rotate: activeSubmenu === "À propos" ? 180 : 0 }}
                   transition={{ duration: 0.2 }}
                 >
                   <svg
@@ -451,7 +459,7 @@ function MobileNavbar({
                 </motion.span>
               </motion.button>
               <AnimatePresence>
-                {activeSubmenu === "tarifs" && (
+                {activeSubmenu === "À propos" && (
                   <motion.div
                     variants={submenuVariants}
                     initial="closed"
@@ -459,14 +467,8 @@ function MobileNavbar({
                     exit="closed"
                     className="pl-4 py-2 space-y-2 overflow-hidden"
                   >
-                    <SubMenuItem href="/hobby" delay={0.1}>
-                      Starter
-                    </SubMenuItem>
-                    <SubMenuItem href="/individual" delay={0.2}>
-                      Business
-                    </SubMenuItem>
-                    <SubMenuItem href="/enterprise" delay={0.3}>
-                      Enterprise
+                    <SubMenuItem href="/notre-histoire" delay={0.1}>
+                      Notre histoire
                     </SubMenuItem>
                   </motion.div>
                 )}
