@@ -28,13 +28,6 @@ export const services = [
     link: "#",
   },
   {
-    title: "Référencement SEO et visibilité",
-    description:
-      "Optimisez votre site pour apparaitre en tête des moteurs de recherche et augmentez votre trafic grâce à une stratégie SEO performante.",
-    image: "/img/seo.png",
-    link: "#",
-  },
-  {
     title: "Maintenance & support technique",
     description:
       "Gardez vos plateformes performantes et sécurisées avec des mises à jour régulières et un support technique réactif.",
@@ -42,7 +35,7 @@ export const services = [
     link: "#",
   },
   {
-    title: "Stratégie digitale & marketing",
+    title: "Stratégie digitale SEO & marketing",
     description:
       "Boostez votre activité avec des campagnes publicitaires, la gestion des réseaux sociaux et des stratégies marketing ciblées.",
     image: "/img/marketing.png",
