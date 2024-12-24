@@ -1,4 +1,3 @@
-// card-hover-effect.tsx
 import { cn } from "@/src/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -19,51 +18,92 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div
-      className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10 w-full justify-items-center",
-        className
-      )}
-    >
-      {items.map((item, idx) => (
-        <Link
-          href={item?.link}
-          key={item?.link}
-          className="relative group block p-6 w-full max-w-[375px] min-h-[440px] md:h-[440px]"
-          onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}
-        >
-          <AnimatePresence>
-            {hoveredIndex === idx && (
-              <motion.span
-                className="absolute inset-0 bg-neutral-200/50 block rounded-3xl z-10"
-                layoutId="hoverBackground"
-                initial={{ opacity: 0 }}
-                animate={{
-                  opacity: 1,
-                  transition: { duration: 0.2, ease: "easeOut" },
-                }}
-                exit={{
-                  opacity: 0,
-                  transition: { duration: 0.2, ease: "easeIn" },
-                }}
-              />
-            )}
-          </AnimatePresence>
-          <Card>
-            <div className="w-16 h-16 relative mb-4">
-              <Image
-                src={item.image}
-                alt={item.title}
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-          </Card>
-        </Link>
-      ))}
+    <div className={cn("flex flex-col gap-8 py-10 w-full", className)}>
+      {/* Première ligne : 3 cartes */}
+      <div className="flex flex-col md:flex-col lg:flex-row lg:flex-wrap lg:justify-center gap-8 w-full">
+        {items.slice(0, 3).map((item, idx) => (
+          <Link
+            href={item.link}
+            key={item.link}
+            className="relative group block p-6 w-full max-w-[375px] min-h-[440px] lg:h-[440px]"
+            onMouseEnter={() => setHoveredIndex(idx)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <AnimatePresence>
+              {hoveredIndex === idx && (
+                <motion.span
+                  className="absolute inset-0 bg-neutral-200/50 block rounded-3xl z-10"
+                  layoutId="hoverBackground"
+                  initial={{ opacity: 0 }}
+                  animate={{
+                    opacity: 1,
+                    transition: { duration: 0.2, ease: "easeOut" },
+                  }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.2, ease: "easeIn" },
+                  }}
+                />
+              )}
+            </AnimatePresence>
+            <Card>
+              <div className="w-16 h-16 relative mb-4">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+              <CardTitle>{item.title}</CardTitle>
+              <CardDescription>{item.description}</CardDescription>
+            </Card>
+          </Link>
+        ))}
+      </div>
+
+      {/* Deuxième ligne : 2 cartes centrées */}
+      <div className="flex flex-col md:flex-col lg:flex-row lg:justify-center gap-8 w-full">
+        {items.slice(3).map((item, idx) => (
+          <Link
+            href={item.link}
+            key={item.link}
+            className="relative group block p-6 w-full max-w-[375px] min-h-[440px] lg:h-[440px]"
+            onMouseEnter={() => setHoveredIndex(idx + 3)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <AnimatePresence>
+              {hoveredIndex === idx + 3 && (
+                <motion.span
+                  className="absolute inset-0 bg-neutral-200/50 block rounded-3xl z-10"
+                  layoutId="hoverBackground"
+                  initial={{ opacity: 0 }}
+                  animate={{
+                    opacity: 1,
+                    transition: { duration: 0.2, ease: "easeOut" },
+                  }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.2, ease: "easeIn" },
+                  }}
+                />
+              )}
+            </AnimatePresence>
+            <Card>
+              <div className="w-16 h-16 relative mb-4">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+              <CardTitle>{item.title}</CardTitle>
+              <CardDescription>{item.description}</CardDescription>
+            </Card>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
