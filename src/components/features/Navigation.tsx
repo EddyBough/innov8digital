@@ -1,10 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "/public/img/Logo.svg";
 import { Button } from "../ui/button";
 import { Menu as MenuIcon, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -127,7 +126,7 @@ function DesktopNavbar({ className }: { className?: string }) {
         >
           <div>
             <Image
-              src={Logo}
+              src={"/img/Logo.svg"}
               alt="Logo"
               width={80}
               height={50}
@@ -208,7 +207,7 @@ function MobileNavbar({
       {/* Header Mobile */}
       <div className="flex items-center justify-between px-4 py-2">
         <Image
-          src={Logo}
+          src={"/img/Logo.svg"}
           alt="Logo"
           width={80}
           height={40}

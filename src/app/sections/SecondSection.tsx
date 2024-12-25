@@ -2,6 +2,7 @@
 "use client";
 import { HoverEffect } from "../../components/ui/card-hover-effect";
 import Image from "next/image";
+import React from "react";
 
 export const services = [
   {

@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import Link, { LinkProps } from "next/link";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
+import React from "react";
 
 const transition = {
   type: "spring",

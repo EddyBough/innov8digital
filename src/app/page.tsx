@@ -4,6 +4,7 @@ import SecondSection from "./sections/SecondSection";
 import ThirdSection from "./sections/ThirdSection";
 import AccordionExample from "../components/ui/accordion-example";
 import { faqHome } from "../data/faq-home";
+import React from "react";
 
 export default function Home() {
   return (

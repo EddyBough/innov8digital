@@ -1,32 +1,7 @@
 import Image from "next/image";
-import AppleCardsCarousel, { Card } from "@/components/ui/apple-cards-carousel";
+import React from "react";
 
 export default function FourSection() {
-  const projects: Card[] = [
-    {
-      category: "Application",
-      title: "Glycowatch",
-      description:
-        "Glycowatch est une application PWA créée pour les diabétiques, ils peuvent créer leur compte, et suivre le taux de glycémie chaque jour et l'extraire en pdf afin de le montrer à leur médecin.",
-      src: "/img/GlycoWatch.png",
-      projectLink: "/projects/glycowatch",
-    },
-    {
-      category: "Application Web",
-      title: "Projet 2",
-      description: "Description détaillée du deuxième projet...",
-      src: "/img/free-driving.png",
-      projectLink: "/projects/projet2",
-    },
-    {
-      category: "Site Web",
-      title: "Projet 3",
-      description: "Description détaillée du troisième projet...",
-      src: "/img/Hair-time.png",
-      projectLink: "/projects/projet3",
-    },
-  ];
-
   return (
     <section className="w-screen relative overflow-hidden">
       <Image
@@ -47,9 +22,7 @@ export default function FourSection() {
           <h1 className="font-extrabold text-5xl">
             A la pointe de l’innovation digitale
           </h1>
-          <div>
-            <AppleCardsCarousel items={projects} />
-          </div>
+          <div></div>
         </div>
         <div className="flex justify-center w-full"></div>
       </div>
