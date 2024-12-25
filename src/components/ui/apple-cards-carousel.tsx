@@ -1,16 +1,12 @@
 "use client";
-import React, { useEffect, useRef, useState, createContext } from "react";
-import { cn } from "@/src/lib/utils";
+
+import React from "react";
 import { motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
-import { MoveLeft, MoveRight } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/src/components/ui/button";
-
-interface CarouselProps {
-  items: React.ReactNode[];
-  initialScroll?: number;
-}
+import { MoveLeft, MoveRight } from "lucide-react";
+import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 export type Card = {
   src: string;
@@ -20,29 +16,20 @@ export type Card = {
   projectLink: string;
 };
 
-interface CardProps {
-  card: Card;
-  index: number;
-  layout?: boolean;
+interface CarouselProps {
+  items: Card[];
 }
 
-export const CarouselContext = createContext<{
-  currentIndex: number;
-}>({
-  currentIndex: 0,
-});
+interface CardProps {
+  card: Card; // Le type Card défini ci-dessus
+  layout?: boolean; // Optionnel : Layout animation
+  index?: number; // Optionnel : Index de la carte
+}
 
-export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
-  const carouselRef = useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  useEffect(() => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollLeft = initialScroll;
-      checkScrollability();
-    }
-  }, [initialScroll]);
+export const Carousel = ({ items }: CarouselProps) => {
+  const carouselRef = React.useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = React.useState(false);
+  const [canScrollRight, setCanScrollRight] = React.useState(true);
 
   const getCardWidth = () => {
     if (!carouselRef.current) return 0;
@@ -103,11 +90,15 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     }
   };
 
+  React.useEffect(() => {
+    checkScrollability();
+  }, []);
+
   return (
     <div className="relative w-full max-w-7xl mx-auto">
       <div
         ref={carouselRef}
-        className="flex w-full overflow-x-scroll scroll-smooth [scrollbar-width:none] py-6  md:py-20"
+        className="flex w-full overflow-x-scroll scroll-smooth [scrollbar-width:none] py-6 md:py-20"
         onScroll={checkScrollability}
       >
         <div className="flex flex-row justify-start gap-4 md:gap-10 px-4">
@@ -129,7 +120,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
               key={`card-${i}`}
               className="carousel-item min-w-full first:pl-0 last:pr-4"
             >
-              {item}
+              <Card card={item} index={i} />
             </motion.div>
           ))}
         </div>
@@ -157,13 +148,12 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   );
 };
 
-export const Card = ({ card, layout = false }: CardProps) => {
+export const Card = ({ card, layout = false, index }: CardProps) => {
   return (
     <div className="flex flex-col md:flex-row gap-3 md:gap-8 items-center max-w-full px-2 md:px-0">
-      {/* Left side - Card */}
       <div className="w-full md:w-1/2">
         <motion.div
-          layoutId={layout ? `card-${card.title}` : undefined}
+          layoutId={layout ? `card-${index}-${card.title}` : undefined}
           className="rounded-3xl shadow-lg bg-gray-100 dark:bg-neutral-900 h-48 md:h-[30rem] w-72 md:w-full overflow-hidden flex flex-col items-start justify-start relative z-10"
         >
           <div className="absolute h-full top-0 inset-x-0 z-30" />
@@ -175,17 +165,15 @@ export const Card = ({ card, layout = false }: CardProps) => {
           />
         </motion.div>
       </div>
-
-      {/* Right side - Project description */}
       <div className="w-full md:w-1/2 space-y-2 md:space-y-4 text-left">
         <motion.p
-          layoutId={layout ? `category-${card.category}` : undefined}
+          layoutId={layout ? `category-${index}-${card.category}` : undefined}
           className="text-sm md:text-base font-medium text-neutral-600 dark:text-neutral-400"
         >
           {card.category}
         </motion.p>
         <motion.h3
-          layoutId={layout ? `title-${card.title}` : undefined}
+          layoutId={layout ? `title-${index}-${card.title}` : undefined}
           className="text-xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-200"
         >
           {card.title}
@@ -204,7 +192,7 @@ export const Card = ({ card, layout = false }: CardProps) => {
 };
 
 export const BlurImage = ({ src, className, alt, ...rest }: ImageProps) => {
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = React.useState(true);
 
   return (
     <Image
@@ -223,4 +211,5 @@ export const BlurImage = ({ src, className, alt, ...rest }: ImageProps) => {
   );
 };
 
+// Export par défaut
 export default Carousel;

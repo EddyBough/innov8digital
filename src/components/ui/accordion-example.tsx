@@ -1,11 +1,11 @@
 "use client";
-
+import React from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "./accordion";
 
 interface AccordionData {
   value: string;
@@ -21,7 +21,7 @@ interface AccordionProps {
 export default function AccordionExample({ data, className }: AccordionProps) {
   return (
     <div className={`w-full max-w-3xl mx-auto ${className || ""}`}>
-      <div className="w-full text-center">
+      <div className="w-full text-center pt-20">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
           FAQ
         </h2>

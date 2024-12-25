@@ -1,7 +1,6 @@
 // SecondSection.tsx
 "use client";
-import React from "react";
-import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { HoverEffect } from "../../components/ui/card-hover-effect";
 import Image from "next/image";
 
 export const services = [
