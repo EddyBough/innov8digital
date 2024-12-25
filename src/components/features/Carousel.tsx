@@ -1,10 +1,10 @@
 "use client";
-import React from "react";
-import { Card } from "@/src/components/ui/apple-cards-carousel";
-import { Carousel } from "@/src/components/ui/apple-cards-carousel";
 
-export function AppleCardsCarousel() {
-  const projects = [
+import React from "react";
+import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+
+export default function AppleCardsCarousel() {
+  const projects: Card[] = [
     {
       category: "Application",
       title: "Glycowatch",
@@ -29,15 +29,9 @@ export function AppleCardsCarousel() {
     },
   ];
 
-  const cards = projects.map((card, index) => (
-    <Card key={card.title} card={card} index={index} />
-  ));
-
   return (
-    <div className="w-full  h-full">
-      <Carousel items={cards} />
+    <div className="w-full h-full">
+      <Carousel items={projects} />
     </div>
   );
 }
-
-export default AppleCardsCarousel;
