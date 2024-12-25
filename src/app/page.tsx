@@ -1,4 +1,5 @@
 import FirstSection from "./sections/FirstSection";
+import FourSection from "./sections/FourSection";
 import SecondSection from "./sections/SecondSection";
 import ThirdSection from "./sections/ThirdSection";
 import AccordionExample from "@/components/ui/accordion-example";
@@ -11,7 +12,7 @@ export default function Home() {
         <FirstSection />
         <SecondSection />
         <ThirdSection />
-        <AccordionExample data={faqHome} />
+        <FourSection />
       </main>
     </div>
   );
