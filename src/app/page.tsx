@@ -1,4 +1,5 @@
 import FirstSection from "./sections/FirstSection";
+import FourSection from "./sections/FourSection";
 import SecondSection from "./sections/SecondSection";
 import ThirdSection from "./sections/ThirdSection";
 
@@ -9,6 +10,7 @@ export default function Home() {
         <FirstSection />
         <SecondSection />
         <ThirdSection />
+        <FourSection />
       </main>
     </div>
   );
