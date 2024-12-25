@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import BlurEffect from "@/public/img/MainBlurBlue.svg";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 export default function FirstSection() {
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center p-4 overflow-hidden">
       <Image
-        src={BlurEffect}
+        src={"/img/MainBlurBlue.svg"}
         alt=""
         width={1100}
         height={150}
