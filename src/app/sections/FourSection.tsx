@@ -1,9 +1,10 @@
+import Carousel from "@/components/features/Carousel";
 import Image from "next/image";
 import React from "react";
 
 export default function FourSection() {
   return (
-    <section className="w-screen relative overflow-hidden">
+    <section className="w-screen h-full relative overflow-hidden ">
       <Image
         src={"/img/blur-purple.png"}
         alt=""
@@ -22,7 +23,9 @@ export default function FourSection() {
           <h1 className="font-extrabold text-5xl">
             A la pointe de l’innovation digitale
           </h1>
-          <div></div>
+          <div className=" mb-0 mb md:mb-36">
+            <Carousel />
+          </div>
         </div>
         <div className="flex justify-center w-full"></div>
       </div>
