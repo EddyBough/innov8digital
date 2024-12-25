@@ -1,9 +1,8 @@
 // SecondSection.tsx
 "use client";
 import React from "react";
-import { HoverEffect } from "@/src/components/ui/card-hover-effect";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 import Image from "next/image";
-import BlurOrangeEffect from "@/public/img/blur-orange.png";
 
 export const services = [
   {
@@ -47,7 +46,7 @@ export default function SecondSection() {
   return (
     <section className="w-screen relative overflow-hidden">
       <Image
-        src={BlurOrangeEffect}
+        src={"/img/blur-orange.png"}
         alt=""
         width={400}
         height={1200}

@@ -1,6 +1,8 @@
 import FirstSection from "./sections/FirstSection";
 import SecondSection from "./sections/SecondSection";
 import ThirdSection from "./sections/ThirdSection";
+import AccordionExample from "@/components/ui/accordion-example";
+import { faqHome } from "@/data/faq-home";
 
 export default function Home() {
   return (
@@ -9,6 +11,7 @@ export default function Home() {
         <FirstSection />
         <SecondSection />
         <ThirdSection />
+        <AccordionExample data={faqHome} />
       </main>
     </div>
   );
