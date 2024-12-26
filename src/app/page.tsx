@@ -5,6 +5,7 @@ import ThirdSection from "./sections/ThirdSection";
 
 import React from "react";
 import DiscussProject from "./sections/DiscussProject";
+import ContactSection from "./sections/ContactSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <ThirdSection />
         <FourSection />
         <DiscussProject />
+        <ContactSection />
       </main>
     </div>
   );

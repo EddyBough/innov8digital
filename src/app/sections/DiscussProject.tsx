@@ -7,8 +7,6 @@ import AccordionExample from "@/components/ui/accordion-example";
 export default function DiscussProject() {
   return (
     <section className="w-screen relative overflow-hidden">
-      {" "}
-      {/* Retiré h-screen */}
       <Image
         src={"/img/GreenBlur.png"}
         alt="blur"
