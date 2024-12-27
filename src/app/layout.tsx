@@ -53,9 +53,9 @@ export const metadata: Metadata = {
     "agence digitale Marseille",
   ],
   openGraph: {
-    title: "Innov8Digital | Agence Web Créative Digitale et Performante",
+    title: "Innov8Digital | Agence Web Créative Digitale",
     description:
-      "Boostez votre présence en ligne avec Innov8Digital. Création de sites web, applications mobiles et stratégies digitales adaptées à vos besoins.",
+      "Création de sites web, applications mobiles et stratégies digitales adaptées à vos besoins. Boostez votre présence en ligne avec Innov8Digital.",
     url: "https://www.innov8digital.fr",
     type: "website",
     images: [
@@ -63,13 +63,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Innov8Digital - Agence Web Créative",
+        alt: "Innov8Digital - Agence Web Digitale",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Innov8Digital | Agence Web Digitale Créative",
+    title: "Innov8Digital | Agence Web Digitale",
     description:
       "Agence web à Marseille spécialisée dans la création de sites web et la stratégie digitale. Solutions sur mesure pour votre entreprise.",
     site: "@innov8digital",
