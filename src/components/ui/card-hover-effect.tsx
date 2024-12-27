@@ -56,8 +56,12 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
                   className="object-cover rounded-lg"
                 />
               </div>
-              <CardTitle>{item.title}</CardTitle>
-              <CardDescription>{item.description}</CardDescription>
+              <CardTitle className="font-aeonik font-semibold">
+                {item.title}
+              </CardTitle>
+              <CardDescription className="font-aeonik font-regular">
+                {item.description}
+              </CardDescription>
             </Card>
           </Link>
         ))}

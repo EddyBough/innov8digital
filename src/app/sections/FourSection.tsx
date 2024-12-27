@@ -4,7 +4,7 @@ import React from "react";
 
 export default function FourSection() {
   return (
-    <section className="w-screen h-full relative overflow-hidden ">
+    <section className="w-screen h-full font-aeonik relative overflow-hidden ">
       <Image
         src={"/img/blur-purple.png"}
         alt=""

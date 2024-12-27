@@ -51,7 +51,7 @@ export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="fixed top-0 w-full z-50">
+    <div className="fixed font-aeonik top-0 w-full z-50">
       <div className="container mx-auto mt-6">
         {/* Version Desktop */}
         <div className="hidden lg:block">
@@ -59,7 +59,7 @@ export function Navigation() {
         </div>
 
         {/* Version Mobile */}
-        <div className="lg:hidden">
+        <div className="lg:hidden font-aeonik">
           <MobileNavbar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
         </div>
       </div>
