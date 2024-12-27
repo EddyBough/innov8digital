@@ -38,8 +38,42 @@ const aeonik = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Innov8digital",
-  description: "Agence Web",
+  title: "Innov8Digital | Agence Web Créative à Marseille",
+  description:
+    "Innov8Digital est une agence web spécialisée dans la création de sites vitrines, e-commerce, et d'applications mobiles sur mesure. Basée à Marseille, nous offrons des solutions digitales performantes, adaptées à vos besoins.",
+  keywords: [
+    "agence web Marseille",
+    "création site web Marseille",
+    "développement applications mobiles",
+    "stratégie digitale",
+    "SEO",
+    "site e-commerce",
+    "maintenance web",
+    "développement sur mesure",
+    "agence digitale Marseille",
+  ],
+  openGraph: {
+    title: "Innov8Digital | Agence Web Créative et Performante",
+    description:
+      "Boostez votre présence en ligne avec Innov8Digital. Création de sites web, applications mobiles et stratégies digitales adaptées à vos besoins.",
+    url: "https://www.innov8digital.fr",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Innov8Digital - Agence Web Créative",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Innov8Digital | Agence Web Créative",
+    description:
+      "Agence web à Marseille spécialisée dans la création de sites web et la stratégie digitale. Solutions sur mesure pour votre entreprise.",
+    site: "@innov8digital",
+  },
 };
 
 export default function RootLayout({
@@ -48,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${aeonik.variable} antialiased`}
       >
