@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        aeonik: ["var(--font-aeoniktrial)"],
+      },
       backgroundImage: {
         "title-gradient":
           "linear-gradient(90deg, #022778 0%, #022778 34%, #022778 41%, #397AD0 81%)",

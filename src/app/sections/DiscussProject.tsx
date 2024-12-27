@@ -6,7 +6,7 @@ import AccordionExample from "@/components/ui/accordion-example";
 
 export default function DiscussProject() {
   return (
-    <section className="w-screen relative overflow-hidden">
+    <section className="w-screen relative font-aeonik overflow-hidden">
       <Image
         src={"/img/GreenBlur.png"}
         alt="blur"

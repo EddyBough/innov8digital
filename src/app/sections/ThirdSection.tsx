@@ -17,7 +17,7 @@ const ServiceCard = ({
   const isEven = index % 2 === 1;
 
   return (
-    <div className="mb-24">
+    <div className="mb-24 font-aeonik">
       {/* Desktop layout */}
       <div className="hidden md:flex items-center justify-between gap-8">
         <div className="flex-1">

@@ -5,7 +5,7 @@ import React from "react";
 
 export default function FirstSection() {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center p-4 overflow-hidden">
+    <section className="relative font-aeonik min-h-screen w-full flex items-center justify-center p-4 overflow-hidden">
       <Image
         src={"/img/MainBlurBlue.svg"}
         alt=""
