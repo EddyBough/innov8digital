@@ -46,12 +46,12 @@ export default function FirstSectionExpertise() {
   return (
     <section className="w-screen relative overflow-hidden mt-24">
       <Image
-        src={"/img/blur-orange.png"}
+        src={"/img/blur-purple.png"}
         alt=""
         width={400}
         height={1200}
         priority
-        className="absolute md:h-auto mt-96 md:mt-0 h-[55rem] w-[35rem] left-0 top-0 -z-10 object-cover"
+        className="absolute md:h-auto mt-96 md:mt-0 h-[55rem] w-[35rem] right-0 top-0 -z-10 object-cover"
         quality={100}
       />
 

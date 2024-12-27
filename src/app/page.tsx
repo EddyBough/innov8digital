@@ -1,11 +1,11 @@
-import FirstSection from "./sections/FirstSection";
-import FourSection from "./sections/FourSection";
-import SecondSection from "./sections/SecondSection";
-import ThirdSection from "./sections/ThirdSection";
+import FirstSection from "./sections-home/FirstSection";
+import FourSection from "./sections-home/FourSection";
+import SecondSection from "./sections-home/SecondSection";
+import ThirdSection from "./sections-home/ThirdSection";
 
 import React from "react";
-import DiscussProject from "./sections/DiscussProject";
-import ContactSection from "./sections/ContactSection";
+import DiscussProject from "./sections-home/DiscussProject";
+import ContactSection from "./sections-home/ContactSection";
 
 export default function Home() {
   return (
