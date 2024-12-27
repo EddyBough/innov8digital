@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="w-36 h-20 bg-white rounded-b-full"></div>
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <Image
-              src={"img/logo.svg"}
+              src={"/img/Logo.svg"}
               alt="Logo"
               width={80}
               height={40}

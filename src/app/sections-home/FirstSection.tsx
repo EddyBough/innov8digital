@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Button } from "../../components/ui/button";
 import React from "react";
+import Link from "next/link";
 
 export default function FirstSection() {
   return (
@@ -32,10 +33,11 @@ export default function FirstSection() {
             Tout ce dont vous avez besoin, au même endroit, pour tout les
             budgets
           </p>
-
-          <Button className="bg-black text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors">
-            Découvrir nos services
-          </Button>
+          <Link href="/expertises" passHref>
+            <Button className="bg-black text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors m-4">
+              Découvrir nos services
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
