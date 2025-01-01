@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { cn } from "../../lib/utils";
 import Image from "next/image";
@@ -47,12 +47,42 @@ const submenuVariants = {
   },
 };
 
+const useScrollDirection = () => {
+  const [scrollDirection, setScrollDirection] = useState("up");
+  const [prevOffset, setPrevOffset] = useState(0);
+
+  useEffect(() => {
+    const toggleScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      if (scrollY > prevOffset) {
+        setScrollDirection("down");
+      } else if (scrollY < prevOffset) {
+        setScrollDirection("up");
+      }
+      setPrevOffset(scrollY);
+    };
+
+    window.addEventListener("scroll", toggleScrollDirection);
+
+    return () => {
+      window.removeEventListener("scroll", toggleScrollDirection);
+    };
+  }, [prevOffset]);
+
+  return scrollDirection;
+};
+
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const scrollDirection = useScrollDirection();
 
   return (
-    <div className="fixed font-aeonik top-0 w-full z-50">
-      <div className="container mx-auto mt-6">
+    <div
+      className={`fixed font-aeonik w-full z-50 transition-transform duration-300 ${
+        scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
+      <div className="container mx-auto lg:mt-6">
         {/* Version Desktop */}
         <div className="hidden lg:block">
           <DesktopNavbar />
