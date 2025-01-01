@@ -41,19 +41,39 @@ const Footer = () => {
             </h3>
             <p className="text-sm leading-relaxed mb-4">
               Solutions digitales sur mesure. Tout ce dont vous avez besoin, au
-              même endroit, pour tout les budgets
+              même endroit, pour tout les budgets.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
-              <a href="#" className="hover:text-white transition-colors">
+              <a
+                href="https://www.facebook.com/innov8digitalfr"
+                className="hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a
+                href="https://x.com/innov8digitalfr"
+                className="hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Twitter size={20} />
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a
+                href="https://www.instagram.com/innov8digitalfr/"
+                className="hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a
+                href="https://www.linkedin.com/company/innov8digital-fr/"
+                className="hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin size={20} />
               </a>
             </div>
