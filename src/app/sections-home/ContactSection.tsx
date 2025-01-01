@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 export default function ContactSection() {
-  const email = "contact@innov8digital.com";
-  const phone = "01 02 03 04 05";
+  const email = "contact@innov8digital.fr";
+  const phone = "06 26 29 16 76";
 
   return (
     <section className="w-screen font-aeonik px-4 py-8">
@@ -20,7 +20,7 @@ export default function ContactSection() {
           />
           <div className="flex flex-col items-center">
             <p className="bg-title-gradient inline-block text-transparent bg-clip-text font-bold text-2xl md:text-3xl mb-2">
-              Telephone
+              Contact
             </p>
             <a
               href={`tel:${phone.replace(/\s/g, "")}`}
