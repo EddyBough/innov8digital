@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import TechnologyCard from "@/components/ui/TechnologyCard";
 import { Button } from "@/components/ui/button";

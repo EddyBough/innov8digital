@@ -38,6 +38,7 @@ const aeonik = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.innov8digital.fr"),
   title: "Innov8Digital | Agence Web Créative à Marseille",
   description:
     "Innov8Digital est une agence web spécialisée dans la création de sites vitrines, e-commerce, et d'applications mobiles sur mesure. Basée à Marseille, nous offrons des solutions digitales performantes, adaptées à vos besoins.",
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/img/og-image.png",
         width: 1200,
         height: 630,
         alt: "Innov8Digital - Agence Web Digitale",
@@ -72,7 +73,7 @@ export const metadata: Metadata = {
     title: "Innov8Digital | Agence Web Digitale",
     description:
       "Agence web à Marseille spécialisée dans la création de sites web et la stratégie digitale. Solutions sur mesure pour votre entreprise.",
-    site: "@innov8digital",
+    site: "@innov8digitalfr",
   },
 };
 
