@@ -34,7 +34,7 @@ const TechnologySection = () => {
     <section className="w-full lg:h-[1000px]  relative overflow-hidden mt-24 lg:pb-0 md:pb-[17rem] pb-[9rem]">
       <Image
         src={"/img/blur-blue.png"}
-        alt=""
+        alt="blur-blue"
         width={400}
         height={1200}
         priority
@@ -50,7 +50,7 @@ const TechnologySection = () => {
                 Nos services
               </h2>
             </div>
-            <p className="text-lg text-black mb-8 lg:text-start text-center">
+            <p className="text-lg text-black mb-8 lg:text-start text-center font-aeonik">
               Notre agence Innov8 Digital s&apos;appuie sur des technologies
               modernes pour créer des sites et applications performants et à la
               pointe de l&apos;innovation. Chaque projet fait l&apos;objet
@@ -73,7 +73,7 @@ const TechnologySection = () => {
               ))}
             </div>
 
-            <Button className="bg-black text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors">
+            <Button className="bg-black text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors font-aeonik">
               Découvrir nos services
             </Button>
           </div>

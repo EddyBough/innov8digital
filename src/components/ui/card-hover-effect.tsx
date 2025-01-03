@@ -19,7 +19,7 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("container mx-auto px-4", className)}>
+    <div className={cn("container mx-auto px-4 font-aeonik", className)}>
       <div
         className="flex flex-wrap -mx-4 place-content-center"
         style={{
