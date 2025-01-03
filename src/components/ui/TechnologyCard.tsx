@@ -13,11 +13,11 @@ const TechnologyCard = ({ name, image }: TechnologyCardProps) => {
           alt={name}
           width={80}
           height={80}
-          className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] object-contain"
+          className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] object-contain"
         />
-        <h3 className="absolute bottom-1 left-4 text-lg text-black font-semibold">
+        <h4 className="absolute bottom-1 left-4 text-lg text-black font-aeonik">
           {name}
-        </h3>
+        </h4>
       </div>
     </div>
   );
