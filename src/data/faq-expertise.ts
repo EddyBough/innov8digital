@@ -57,6 +57,6 @@ export const faqExpertise = [
     value: "question-10",
     question: "Comment vous démarquez-vous dans la performance technique ?",
     answer:
-      "En sortie d'étude, nous aurons pensé votre projet afin qu'il soit le plus performant possible. Nous n'y mettrons pas de technologies inutile qui viendraient surcharger le projet, uniquement l'essentiel, basé sur la performance et la rapidité. Nous savons qu'un utilisateur n'attendra pas le chargement d'une page trop longue par exemple.",
+      "En sortie d'étude, nous aurons pensé votre projet afin qu'il soit le plus performant possible. Nous n'y mettrons pas de technologies inutile qui viendraient surcharger le projet, uniquement l'essentiel, basé sur la performance et la rapidité. Nous savons qu'un utilisateur n'attendra pas le chargement d'une page trop longue par exemple. Les pages doivent répondre immédiatement",
   },
 ];
