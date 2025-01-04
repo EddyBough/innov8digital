@@ -50,7 +50,7 @@ const projects = [
         icon: "/img/postgresql-logo.svg",
       },
     ],
-    projectUrl: "",
+    projectUrl: "https://glyco-watch.vercel.app/home",
     screenshotUrl: "/img/freedrivingscreen.svg",
   },
 ];
