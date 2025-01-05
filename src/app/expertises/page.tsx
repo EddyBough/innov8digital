@@ -1,7 +1,8 @@
-import DiscussProjectExpertise from "../section-expertise/DiscussProjectExpertise";
-import FirstSectionExpertise from "../section-expertise/FirstSectionExpertise";
-import SecondSectionExpertise from "../section-expertise/SecondSectionExpertise";
-import TechnologySection from "../section-expertise/TechnologyExpertise";
+import DiscussProjectExpertise from "./components/DiscussProjectExpertise";
+import FirstSectionExpertise from "./components/FirstSectionExpertise";
+import SecondSectionExpertise from "./components/SecondSectionExpertise";
+import SolutionExpertise from "./components/SolutionExpertise";
+import TechnologySection from "./components/TechnologyExpertise";
 
 export default function Expertises() {
   return (
@@ -10,6 +11,7 @@ export default function Expertises() {
         <FirstSectionExpertise />
         <SecondSectionExpertise />
         <TechnologySection />
+        <SolutionExpertise />
         <DiscussProjectExpertise />
       </main>
     </div>

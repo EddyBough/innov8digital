@@ -1,8 +1,6 @@
-// SecondSection.tsx
 "use client";
-import { HoverEffect } from "../../components/ui/card-hover-effect";
+import { HoverEffect } from "../../../components/ui/card-hover-effect";
 import Image from "next/image";
-import React from "react";
 
 export const services = [
   {
@@ -57,12 +55,12 @@ export default function FirstSectionExpertise() {
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center">
-          <h2 className="text-xl sm:text-4xl  font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h1 className="text-xl sm:text-4xl  font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Nos domaines d&apos;expertise
-          </h2>
-          <h3 className="lg:text-6xl text-2xl font-bold text-center lg:mb-20 mb-10">
+          </h1>
+          <h2 className="lg:text-6xl text-2xl font-bold text-center lg:mb-20 mb-10">
             Toutes les meilleures solutions au même endroit
-          </h3>
+          </h2>
         </div>
         <div className="flex justify-center w-full ">
           <HoverEffect items={services} />

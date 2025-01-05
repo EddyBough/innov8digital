@@ -28,9 +28,15 @@ export default function DiscussProject() {
             engageons à vous offrir un accompagnement complet et sur mesure,
             adapté à vos besoins spécifiques.
           </p>
-          <Button className="my-20 md:mb-36">
-            Prendre rendez-vous pour un appel gratuit
-          </Button>
+          <a
+            href="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="my-20 md:mb-36">
+              Prendre rendez-vous pour un appel gratuit
+            </Button>
+          </a>
         </div>
         <AccordionExample data={faqHome} />
       </div>
