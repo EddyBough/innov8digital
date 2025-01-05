@@ -32,6 +32,14 @@ export default function DiscussProjectExpertise() {
             Prendre rendez-vous pour un appel gratuit
           </Button>
         </div>
+        <div className="w-full text-center pt-20">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+            FAQ
+          </h2>
+        </div>
+        <h2 className="lg:text-5xl text-2xl font-bold text-center lg:mb-20 mb-10">
+          Vous vous posez encore des questions ? Nous y répondons
+        </h2>
         <AccordionExample data={faqExpertise} />
       </div>
     </section>
