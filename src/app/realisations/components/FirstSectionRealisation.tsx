@@ -73,7 +73,7 @@ export default function FirstSectionRealisation() {
           <h1 className="text-xl sm:text-4xl  font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Nos projets
           </h1>
-          <h2 className="lg:text-6xl text-2xl font-bold text-center lg:mb-20 mb-10 text-black">
+          <h2 className="lg:text-6xl text-4xl font-bold text-center lg:mb-20 mb-10 text-black">
             Nos derniers projets livrés
           </h2>
         </div>
