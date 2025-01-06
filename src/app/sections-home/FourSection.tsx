@@ -15,9 +15,9 @@ export default function FourSection() {
         quality={100}
       />
 
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-28 mb-16">
         <div className="w-full text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-16 bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Nos réalisations
           </h2>
           <h1 className="font-extrabold text-5xl">

@@ -5,7 +5,7 @@ import { Cloud, Rocket, TrendingUp } from "lucide-react";
 
 const SolutionExpertise = () => {
   return (
-    <section className="w-screen relative overflow-hidden lg:pb-60 pt-9">
+    <section className="w-screen relative overflow-hidden pt-9">
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center">
           <h2 className="text-xl sm:text-4xl font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">

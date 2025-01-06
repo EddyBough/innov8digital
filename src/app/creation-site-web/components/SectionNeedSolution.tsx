@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function SectionNeedSolution() {
   return (
-    <section className="relative min-h-screen">
+    <section className="relative py-72 md:py-[500px] lg:py-[450px]">
       <div className="absolute inset-0 flex justify-center items-center">
         <Image
           src={"/img/blur-SkyBlue.png"}
@@ -20,13 +20,10 @@ export default function SectionNeedSolution() {
 
       <div className="relative z-10 flex flex-col items-center">
         {/* Premier bloc de contenu */}
-        <div className="max-w-4xl mx-auto px-4 text-center text-white mt-40 md:mt-96">
+        <div className="max-w-4xl mx-auto px-4 text-center text-white">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold py-3 mb-4 md:mb-6 drop-shadow">
             Besoin d&apos;une solution web ou mobile ?
           </h2>
-          <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-10">
-            Venez-en discuter
-          </h3>
 
           <div className="space-y-6 md:space-y-8 mb-8 md:mb-12">
             <p className="text-base md:text-lg lg:text-xl w-full md:w-[30rem] mx-auto text-center px-4">
@@ -41,21 +38,15 @@ export default function SectionNeedSolution() {
             </p>
           </div>
 
-          <Link href="#">
+          <Link
+            href="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button className="bg-black text-white px-4 md:px-8 py-4 md:py-6 text-sm md:text-xl rounded-lg hover:bg-black/90 transition-colors shadow-lg">
               Réservez un appel de découverte gratuitement
             </Button>
           </Link>
-        </div>
-
-        {/* Deuxième bloc de contenu */}
-        <div className="w-full text-center mt-32 md:mt-60 px-4">
-          <h2 className="text-xl sm:text-4xl font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
-            FAQ
-          </h2>
-          <h3 className="text-2xl lg:text-6xl font-bold text-center mb-10 lg:mb-20 mt-4">
-            VOS QUESTIONS, NOS REPONSES
-          </h3>
         </div>
       </div>
     </section>
