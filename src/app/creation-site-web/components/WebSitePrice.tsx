@@ -8,38 +8,36 @@ export default function WebSitePrice() {
   const pricingPlans = [
     {
       title: "Essentielle",
-      subtitle:
-        "Parfait pour les petites entreprises ou artisans souhaitant une présence en ligne rapide et efficace.",
+      subtitle: "Idéal pour les sites vitrines & petites entreprises/Portfolio",
       price: 1990,
       features: [
-        { text: "Audit approfondi", enabled: true },
-        { text: "Installation CMS (Wordpress, Shopify)", enabled: true },
-        { text: "Design basé sur un thème existant", enabled: true },
-        { text: "Système d'authentification ", enabled: true },
-        { text: "Intégration de système de paiement", enabled: true },
+        { text: "Audit initial: Analyse des besoins", enabled: true },
+        { text: "Maquettage sur mesure", enabled: true },
+        { text: "Design responsive", enabled: true },
+        { text: "Contenu statique", enabled: true },
+        { text: "Optimisation SEO de base", enabled: true },
       ] as Feature[],
     },
     {
       title: "Standard",
-      subtitle:
-        "Une offre complète pour les entreprises en quête d'un site professionnel et fonctionnel.",
+      subtitle: "Conçu pour les entreprise à croissance rapide",
       price: 2490,
       features: [
-        { text: "Fonctionnalité de l'offre Essentielle.", enabled: true },
+        { text: "Audit approfondi", enabled: true },
         {
-          text: "Design amélioré avec personnalisation avancée du thème",
+          text: "Fonctionnalité de l’offre essentielle",
           enabled: true,
         },
         {
-          text: "Intégration de plugins/extensions (SEO, sécurité, e-commerce basique)",
+          text: "Contenu dynamique",
           enabled: true,
         },
         {
-          text: "Mise en place d'un blog ou catalogue produit (jusqu'à 20 articles/produits)",
+          text: "Système d’authentification",
           enabled: true,
         },
         {
-          text: "Mise en place d'un blog ou catalogue produit (jusqu'à 20 articles/produits)",
+          text: "Intégration de système de paiement",
           enabled: true,
         },
       ] as Feature[],
@@ -49,19 +47,19 @@ export default function WebSitePrice() {
       subtitle: "Parfait pour les grandes entreprise ou boutique e-commerce",
       price: 4990,
       features: [
-        { text: "Fonctionnalité de l'offre Standard", enabled: true },
+        { text: "Audit stratégique complet", enabled: true },
         {
-          text: "Configuration complète Shopify ou WooCommerce",
+          text: "Fonctionnalité de l’offre standard",
           enabled: true,
         },
-        { text: "Gestion de 100 produits et plus", enabled: true },
-        { text: "Intégration blog & Newsletter", enabled: true },
+        { text: "Boutique e-commerce", enabled: true },
+        { text: "Intégration CRM & Newsletter", enabled: true },
         {
-          text: "Optimisation SEO E-commerce(fiche produit, structure)",
+          text: "Maintenance quotidienne ",
           enabled: true,
         },
         {
-          text: "Formation détailée",
+          text: "Maquettage sur mesure",
           enabled: true,
         },
       ] as Feature[],
@@ -111,7 +109,7 @@ export default function WebSitePrice() {
             <PricingCard
               {...plan}
               onButtonClick={() => console.log(`Clicked on ${plan.title} plan`)}
-              className=" h-[46rem] mb-8  max-w-sm mx-auto"
+              className=" h-[36rem] mb-8  max-w-sm mx-auto"
             />
           </div>
         ))}

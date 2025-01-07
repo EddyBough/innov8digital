@@ -8,7 +8,7 @@ import { faqExpertise } from "@/data/faq-expertise";
 
 export default function page() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <SectionCreateWebSite />
       <SectionMethodology />
       <SectionNeedSolution />
