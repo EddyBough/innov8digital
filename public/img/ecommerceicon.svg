@@ -1,0 +1,13 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3 6h18l-1.5 9H4.5L3 6z" fill="url(#cart-gradient)" />
+  <path d="M3 6h18l-1.5 9H4.5L3 6z" stroke="#FBBC05" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="7" cy="20" r="2" fill="#4285F4" />
+  <circle cx="17" cy="20" r="2" fill="#4285F4" />
+  <path d="M3 6h2l2 9" stroke="#FBBC05" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <defs>
+    <linearGradient id="cart-gradient" x1="3" y1="6" x2="21" y2="15" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EA4335" />
+      <stop offset="1" stop-color="#FBBC05" />
+    </linearGradient>
+  </defs>
+</svg>

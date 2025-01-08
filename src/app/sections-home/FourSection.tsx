@@ -17,12 +17,12 @@ export default function FourSection() {
 
       <div className="max-w-7xl mx-auto px-4 py-28 mb-16">
         <div className="w-full text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
-            Nos réalisations
+          <h2 className="text-2xl sm:text-4xl md:text-2xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+            NOS REALISATIONS
           </h2>
-          <h1 className="font-extrabold text-5xl">
+          <h3 className="font-extrabold text-5xl mb-8">
             A la pointe de l’innovation digitale
-          </h1>
+          </h3>
           <div className=" mb-0 mb md:mb-36">
             <Carousel />
           </div>

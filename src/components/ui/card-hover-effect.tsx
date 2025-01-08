@@ -2,15 +2,15 @@ import { cn } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight, Plus } from "lucide-react";
 import { useState } from "react";
-import React from "react";
 
 interface HoverEffectProps {
   items: {
     title: string;
-    description: string;
     link: string;
     image: string;
+    cta: string;
   }[];
   className?: string;
 }
@@ -19,20 +19,16 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("container mx-auto px-4 font-aeonik", className)}>
-      <div
-        className="flex flex-wrap -mx-4 place-content-center"
-        style={{
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-        }}
-      >
+    <div className={cn("container mx-auto px-4", className)}>
+      <div className="flex flex-wrap -mx-4 place-content-center">
         {items.map((item, idx) => (
           <Link
             href={item.link}
             key={item.link}
-            className="relative group block p-6 w-full max-w-[375px] min-h-[440px] lg:h-[440px]"
+            className="relative group block p-6 w-full max-w-[400px] min-h-[500px]"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
+            aria-label={`En savoir plus sur ${item.title}`}
           >
             <AnimatePresence>
               {hoveredIndex === idx && (
@@ -52,20 +48,32 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
               )}
             </AnimatePresence>
             <Card>
-              <div className="w-16 h-16 relative mb-4">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover rounded-lg"
-                />
+              <div className="flex flex-col h-full">
+                <div className="w-16 h-16 relative mb-6 bg-gray-100 rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 relative">
+                    <Image
+                      src={item.image}
+                      alt={`Icône pour ${item.title}`}
+                      width={48}
+                      height={48}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <CardTitle>{item.title}</CardTitle>
+                <div className="mt-auto pt-8 flex justify-between items-end">
+                  <p className=" text-s font-aeonik font-bold text-blue-800 max-w-[70%] flex items-center gap-2">
+                    {item.cta}
+                    <ArrowRight className="w-4 h-4" />
+                  </p>
+                  <button
+                    className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors"
+                    aria-label={`En savoir plus sur ${item.title}`}
+                  >
+                    <Plus className="w-5 h-5 text-black-600" />
+                  </button>
+                </div>
               </div>
-              <CardTitle className="font-aeonik font-semibold">
-                {item.title}
-              </CardTitle>
-              <CardDescription className="font-aeonik font-regular">
-                {item.description}
-              </CardDescription>
             </Card>
           </Link>
         ))}
@@ -87,8 +95,8 @@ export const Card = ({ className, children }: CardProps) => {
         className
       )}
     >
-      <div className="relative z-50">
-        <div className="p-4">{children}</div>
+      <div className="relative z-50 h-full">
+        <div className="p-4 h-full">{children}</div>
       </div>
     </div>
   );
@@ -96,21 +104,13 @@ export const Card = ({ className, children }: CardProps) => {
 
 export const CardTitle = ({ className, children }: CardProps) => {
   return (
-    <h4 className={cn("text-black font-bold tracking-wide mt-4", className)}>
-      {children}
-    </h4>
-  );
-};
-
-export const CardDescription = ({ className, children }: CardProps) => {
-  return (
-    <p
+    <h3
       className={cn(
-        "mt-8 text-black tracking-wide leading-relaxed text-sm",
+        "text-2xl text-black font-extrabold tracking-wide mt-4",
         className
       )}
     >
       {children}
-    </p>
+    </h3>
   );
 };
