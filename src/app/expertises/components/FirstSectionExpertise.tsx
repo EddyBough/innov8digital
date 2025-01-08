@@ -1,41 +1,36 @@
 "use client";
-import { HoverEffect } from "../../../components/ui/card-hover-effect";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 import Image from "next/image";
 
 export const services = [
   {
-    title: "Création de site web & Applications sur mesures",
-    description:
-      "Concevez des plateformes web et mobiles entièrement personnalisées, adaptées aux besoins spécifiques de votre entreprise.",
-    image: "/img/website.png",
+    title: "Création de site web sur mesure",
+    cta: "Découvrir",
+    image: "/img/webappicon.svg",
+    link: "/creation-site-web",
+  },
+  {
+    title: "Création de site E-Commerce CMS",
+    cta: "Découvrir",
+    image: "/img/ecommerceicon.svg",
     link: "#",
   },
   {
-    title: "Création de site E-Commerce CMS et CRM",
-    description:
-      "Développement de sites vitrines et e-commerce basés sur des solutions populaires comme WordPress, Shopify ou des CRM adaptés à vos besoins.",
-    image: "/img/e-commerce.png",
-    link: "#",
-  },
-  {
-    title: "Création d'applications mobiles sur mesures Apple/Android",
-    description:
-      "Créez des interfaces intuitives et modernes, offrant une expérience utilisateur optimale pour fidéliser vos clients.",
-    image: "/img/mobile.png",
+    title: "Création d'applications mobiles sur mesure",
+    cta: "Découvrir",
+    image: "/img/mobileicon.svg",
     link: "#",
   },
   {
     title: "Maintenance & support technique",
-    description:
-      "Gardez vos plateformes performantes et sécurisées avec des mises à jour régulières et un support technique réactif.",
-    image: "/img/maintenance.png",
+    cta: "Découvrir",
+    image: "/img/maintenanceicon.svg",
     link: "#",
   },
   {
     title: "Stratégie digitale SEO & marketing",
-    description:
-      "Boostez votre activité avec des campagnes publicitaires, la gestion des réseaux sociaux et des stratégies marketing ciblées.",
-    image: "/img/marketing.png",
+    cta: "Découvrir",
+    image: "/img/seoicon.svg",
     link: "#",
   },
 ];
