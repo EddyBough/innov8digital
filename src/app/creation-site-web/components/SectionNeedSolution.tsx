@@ -26,12 +26,12 @@ export default function SectionNeedSolution() {
           </h2>
 
           <div className="space-y-6 md:space-y-8 mb-8 md:mb-12">
-            <p className="text-base md:text-lg lg:text-xl w-full md:w-[30rem] mx-auto text-center px-4">
+            <p className="text-base md:text-lg lg:text-xl w-full md:w-[30rem] mx-auto text-center px-4 text-white">
               Bénéficiez d&apos;une analyse gratuite pour la création ou la
               refonte de votre site e-commerce lors d&apos;un rendez-vous avec
               nous.
             </p>
-            <p className="text-base md:text-lg lg:text-xl px-4">
+            <p className="text-base md:text-lg lg:text-xl px-4 text-white">
               Bien plus qu&apos;un simple service technique, nous nous engageons
               à vous offrir un accompagnement complet et sur mesure, adapté à
               vos besoins spécifiques.

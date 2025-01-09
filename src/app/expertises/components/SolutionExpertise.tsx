@@ -8,10 +8,10 @@ const SolutionExpertise = () => {
     <section className="w-screen relative overflow-hidden pt-9">
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center">
-          <h2 className="text-xl sm:text-4xl font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
             Avantages de nos solutions
           </h2>
-          <h3 className="lg:text-6xl text-2xl font-bold text-center lg:mb-20 mb-10">
+          <h3 className="lg:text-6xl text-4xl font-bold text-center lg:mb-20 mb-10">
             Flexibilité. Performance. Maîtrise.
           </h3>
         </div>

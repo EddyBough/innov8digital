@@ -56,7 +56,7 @@ export default function SectionMethodology() {
           <h2 className="text-xl sm:text-4xl font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Votre projet sur mesure
           </h2>
-          <h3 className="text-2xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-8 lg:mb-20">
+          <h3 className="text-3xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-8 lg:mb-20">
             Notre méthodologie
           </h3>
         </div>
@@ -80,10 +80,10 @@ export default function SectionMethodology() {
         </div>
 
         <div className="w-full text-center mt-32 md:mt-60">
-          <h2 className="text-xl sm:text-4xl font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Assurez la perrenité de votre site
           </h2>
-          <h3 className="text-2xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-8 lg:mb-20">
+          <h3 className="text-3xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-8 lg:mb-20">
             Maîtrisez votre avenir
           </h3>
         </div>
@@ -101,9 +101,13 @@ export default function SectionMethodology() {
               pour une tranquillité d&apos;esprit total.
             </p>
 
-            <Link href="#">
-              <Button className="bg-black rounded-lg text-white px-6 md:px-12 py-4 md:py-8 text-base md:text-xl hover:bg-black/90 transition-colors shadow-lg whitespace-normal md:whitespace-nowrap text-center">
-                Découvrir notre service mainrenance
+            <Link
+              href="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-black rounded-lg text-white px-4 md:px-8 py-3 md:py-6 text-sm md:text-lg hover:bg-black/90 transition-colors shadow-lg max-w-full w-auto overflow-hidden break-words md:whitespace-nowrap text-center">
+                Découvrir notre service maintenance
               </Button>
             </Link>
           </div>

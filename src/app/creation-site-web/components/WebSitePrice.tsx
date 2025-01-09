@@ -94,7 +94,7 @@ export default function WebSitePrice() {
 
       {/* Pricing section header */}
       <div className="text-center mt-12 md:mt-20">
-        <h2 className="text-xl sm:text-4xl font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
           Développement de site web
         </h2>
       </div>
@@ -117,7 +117,7 @@ export default function WebSitePrice() {
 
       {/* Portfolio section */}
       <div className="text-center mt-32 md:mt-60">
-        <h2 className="text-xl sm:text-4xl font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
           Nos réalisations
         </h2>
         <h3 className="text-2xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-6 md:mb-10 lg:mb-20">

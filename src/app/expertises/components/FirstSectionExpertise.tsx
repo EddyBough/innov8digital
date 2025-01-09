@@ -50,10 +50,10 @@ export default function FirstSectionExpertise() {
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center">
-          <h1 className="text-xl sm:text-4xl  font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h1 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Nos domaines d&apos;expertise
           </h1>
-          <h2 className="lg:text-6xl text-2xl font-bold text-center lg:mb-20 mb-10">
+          <h2 className="lg:text-6xl text-4xl font-bold text-center lg:mb-20 mb-10">
             Toutes les meilleures solutions au même endroit
           </h2>
         </div>
