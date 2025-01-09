@@ -47,6 +47,24 @@ export default function FirstSectionExpertise() {
         className="absolute md:h-auto mt-96 md:mt-0 h-[55rem] w-[35rem] right-0 top-0 -z-10 object-cover"
         quality={100}
       />
+      <Image
+        src={"/img/blur-orange.png"}
+        alt="Icône-blur"
+        width={400}
+        height={1200}
+        priority
+        className="absolute md:h-auto mt-[65rem] md:mt-[45rem] lg:mt-0 h-[65rem] w-[35rem] lg:w-[40rem] left-0 top-0 -z-10 object-cover"
+        quality={100}
+      />
+      <Image
+        src={"/img/blur-blue.png"}
+        alt="blur-right"
+        width={400}
+        height={1200}
+        priority
+        className="absolute mt-[115rem] md:mt-[85rem] lg:mt-[15rem] h-[55rem] w-[25rem] md:w-[30rem] right-0 top-0 -z-10 object-cover"
+        quality={100}
+      />
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center">

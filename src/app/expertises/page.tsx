@@ -8,8 +8,8 @@ import { faqExpertise } from "@/data/faq-expertise";
 
 export default function Expertises() {
   return (
-    <div className="m-auto flex flex-col justify-center items-center overflow-x-hidden">
-      <main className=" flex flex-col min-h-screen">
+    <div className="overflow-x-hidden">
+      <main>
         <FirstSectionExpertise />
         <SecondSectionExpertise />
         <TechnologySection />
