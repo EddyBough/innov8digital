@@ -44,7 +44,25 @@ export default function SecondSection() {
         width={400}
         height={1200}
         priority
-        className="absolute md:h-auto mt-96 md:mt-0 h-[55rem] w-[35rem] left-0 top-0 -z-10 object-cover"
+        className="absolute md:h-auto mt-96 md:mt-0 h-[65rem] w-[35rem] lg:w-[40rem] left-0 top-0 -z-10 object-cover"
+        quality={100}
+      />
+      <Image
+        src={"/img/blur-blue.png"}
+        alt="blur-right"
+        width={400}
+        height={1200}
+        priority
+        className="absolute mt-[65rem] md:mt-[55rem] lg:mt-[15rem] h-[55rem] w-[25rem] md:w-[30rem] right-0 top-0 -z-10 object-cover"
+        quality={100}
+      />
+      <Image
+        src={"/img/GreenBlur.png"}
+        alt="Icône-blur"
+        width={400}
+        height={1200}
+        priority
+        className="absolute mt-[95rem] md:mt-[95rem] h-[55rem] w-[25rem] left-0 top-0 -z-10 object-cover  lg:hidden"
         quality={100}
       />
 
