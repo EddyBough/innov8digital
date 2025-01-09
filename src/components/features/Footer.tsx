@@ -39,7 +39,7 @@ const Footer = () => {
             <h3 className="text-white font-bold text-xl mb-4 lg:mt-1">
               INNOV8 DIGITAL
             </h3>
-            <p className="text-sm leading-relaxed mb-4">
+            <p className="text-sm leading-relaxed mb-4 text-white">
               Solutions digitales sur mesure. Tout ce dont vous avez besoin, au
               même endroit, pour tout les budgets.
             </p>
@@ -168,7 +168,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-[#439BE6] mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-center md:text-left">
+            <p className="text-sm text-center md:text-left text-white">
               © {currentYear} INNOV8 DIGITAL. Tous droits réservés.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
