@@ -4,7 +4,41 @@
 
 body {
   background-color: #fcfeff;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../app/fonts/gilroy-semi-bold.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../app/fonts/gilroy-bold.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Gilroy-regular";
+  src: url("../app/fonts/Aeoniktrial-regular.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-ultralight";
+  src: url("../app//fonts/gilroy-ultralight.ttf") format("woff2");
+}
+
+h2 {
+  font-family: "Gilroy-SemiBold";
+}
+
+h3 {
+  font-family: "Gilroy-SemiBold";
+}
+
+h1 {
+  font-family: "Gilroy-regular";
+}
+
+p {
+  color: black;
 }
 
 @layer base {

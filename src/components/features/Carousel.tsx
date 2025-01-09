@@ -93,13 +93,13 @@ const Carousel = () => {
 
               {/* Content */}
               <div className="flex flex-col space-y-4">
-                <span className="text-gray-600 text-lg">
+                <span className="text-black text-lg">
                   {projects[currentIndex].category}
                 </span>
                 <h3 className="text-4xl font-bold">
                   {projects[currentIndex].title}
                 </h3>
-                <p className="text-gray-600 text-lg">
+                <p className="text-black text-lg">
                   {projects[currentIndex].description}
                 </p>
                 <Link
