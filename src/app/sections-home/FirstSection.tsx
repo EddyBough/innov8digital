@@ -6,14 +6,14 @@ import Link from "next/link";
 
 export default function FirstSection() {
   return (
-    <section className="relative font-aeonik min-h-screen w-full flex items-center justify-center p-4 overflow-hidden">
+    <section className="relative  min-h-screen w-full flex items-center justify-center p-4 overflow-hidden">
       <Image
         src={"/img/MainBlurBlue.svg"}
         alt=""
         width={1100}
         height={150}
         priority
-        className="absolute md:h-auto h-[35rem] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl object-cover "
+        className="absolute h-[45rem] sm:h-[50rem] md:h-[60rem] lg:h-[65rem] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-none lg:max-w-screen-2xl object-cover"
         quality={100}
       />
 
