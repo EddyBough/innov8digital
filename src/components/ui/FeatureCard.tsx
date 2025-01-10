@@ -20,23 +20,23 @@ const FeatureCard = ({
   onButtonClick,
 }: FeatureCardProps) => {
   return (
-    <div className={`w-full max-w-7xl mx-auto ${className}`}>
-      <div className="rounded-[36px] shadow-lg bg-white/50 p-8 md:p-12">
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+    <div className={`w-full max-w-2xl  lg:max-w-7xl mx-auto ${className}`}>
+      <div className="rounded-[36px] shadow-lg bg-white/50 p-8 lg:p-12">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Content Section wrapper */}
-          <div className="flex-[2] mx-10 flex flex-col items-start gap-6">
+          <div className="flex-[2] mx-6 md:mx-8 lg:mx-10 flex flex-col items-start gap-6">
             {/* Text content */}
             <div className="flex flex-col gap-6">
-              <h2 className="text-2xl md:text-3xl text-left font-bold text-black">
+              <h2 className="text-2xl lg:text-3xl text-left font-bold text-black">
                 {title}
               </h2>
-              <p className="text-gray-800 text-left text-base md:text-lg">
+              <p className="text-gray-800 text-left text-base lg:text-lg">
                 {description}
               </p>
             </div>
 
-            {/* Image - Only shown in mobile */}
-            <div className="block md:hidden w-full">
+            {/* Image - Shown in mobile and tablet */}
+            <div className="block lg:hidden w-full">
               <div className="relative w-full aspect-[16/10] rounded-[24px] overflow-hidden">
                 <Image
                   src={imageSrc}
@@ -58,14 +58,14 @@ const FeatureCard = ({
           </div>
 
           {/* Image - Only shown in desktop */}
-          <div className="hidden md:block flex-1 w-full">
-            <div className="relative w-full md:w-96 aspect-[16/10] rounded-[24px] overflow-hidden">
+          <div className="hidden lg:block flex-1 w-full">
+            <div className="relative w-full lg:w-96 aspect-[16/10] rounded-[24px] overflow-hidden">
               <Image
                 src={imageSrc}
                 alt={imageAlt}
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
             </div>
           </div>

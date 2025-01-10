@@ -82,16 +82,14 @@ export function Navigation() {
         scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="container mx-auto lg:mt-6">
-        {/* Version Desktop */}
-        <div className="hidden lg:block">
-          <DesktopNavbar />
-        </div>
+      {/* Version Desktop */}
+      <div className="hidden lg:block container mx-auto mt-6">
+        <DesktopNavbar />
+      </div>
 
-        {/* Version Mobile */}
-        <div className="lg:hidden font-aeonik">
-          <MobileNavbar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
-        </div>
+      {/* Version Mobile */}
+      <div className="lg:hidden w-full font-aeonik">
+        <MobileNavbar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
       </div>
     </div>
   );

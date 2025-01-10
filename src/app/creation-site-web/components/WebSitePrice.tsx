@@ -67,6 +67,7 @@ export default function WebSitePrice() {
     {
       title: "Personalisée",
       subtitle: "Parfait pour les grandes entreprise ou boutique e-commerce",
+      showStartingFrom: false,
       price: "Sur devis",
       features: [
         { text: "Analyse personnalisée", enabled: true },
@@ -98,18 +99,17 @@ export default function WebSitePrice() {
           Développement de site web
         </h2>
       </div>
-
       {/* Pricing cards container */}
-      <div className="mt-16 md:mt-28 mb-24 md:mb-36 flex flex-col md:flex-row justify-center items-stretch gap-6 md:gap-8 ">
+      <div className="mt-16 lg:mt-28 mb-24 lg:mb-36 flex flex-col lg:flex-row justify-center items-stretch gap-6 lg:gap-8">
         {pricingPlans.map((plan, index) => (
           <div
             key={index}
-            className="w-full md:w-auto flex-shrink-0 md:flex-shrink"
+            className="w-full lg:w-auto flex-shrink-0 lg:flex-shrink"
           >
             <PricingCard
               {...plan}
               onButtonClick={() => console.log(`Clicked on ${plan.title} plan`)}
-              className=" h-[36rem] mb-8  max-w-sm mx-auto"
+              className="h-full mb-8 max-w-sm mx-auto"
             />
           </div>
         ))}
