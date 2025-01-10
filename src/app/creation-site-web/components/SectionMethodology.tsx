@@ -61,7 +61,7 @@ export default function SectionMethodology() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:gap-12 md:grid-cols-12">
+        <div className="grid grid-cols-1 gap-6 lg:gap-12 lg:grid-cols-12 md:max-w-3xl md:m-auto">
           {methodologyCards.map((card, index) => (
             <MaintenanceFeatureCard
               key={index}
@@ -70,10 +70,10 @@ export default function SectionMethodology() {
               description={card.description}
               className={`${
                 index < 3
-                  ? "md:col-span-4"
+                  ? "lg:col-span-4"
                   : index === 3
-                  ? "md:col-start-3 md:col-span-4"
-                  : "md:col-span-4"
+                  ? "lg:col-start-3 lg:col-span-4"
+                  : "lg:col-span-4"
               } `}
             />
           ))}

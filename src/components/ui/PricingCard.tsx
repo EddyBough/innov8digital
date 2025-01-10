@@ -33,7 +33,7 @@ const PricingCard = ({
   className = "",
   featuresContainerClassName = "",
   isMonthly = false,
-  showStartingFrom = true, // true par défaut
+  showStartingFrom = true,
   onButtonClick,
 }: PricingCardProps) => {
   return (
