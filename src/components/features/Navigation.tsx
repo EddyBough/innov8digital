@@ -445,11 +445,11 @@ function MobileNavbar({
                     exit="closed"
                     className="pl-4 py-2 space-y-2 overflow-hidden"
                   >
-                    <SubMenuItem href="/projet-1" delay={0.1}>
-                      Projet 1
+                    <SubMenuItem href="/realisations" delay={0.1}>
+                      GlycoWatch
                     </SubMenuItem>
-                    <SubMenuItem href="/projet-2" delay={0.2}>
-                      Projet 2
+                    <SubMenuItem href="/realisations" delay={0.2}>
+                      Free Driving
                     </SubMenuItem>
                   </motion.div>
                 )}
