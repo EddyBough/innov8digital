@@ -15,7 +15,7 @@ const MaintenanceFeatureCard = ({
 }: MaintenanceFeatureCardProps) => {
   return (
     <div
-      className={`backdrop-blur-md bg-white/10 p-6 rounded-xl border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center gap-4 ${className}`}
+      className={`backdrop-blur-md bg-white/10 p-6 rounded-xl border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center gap-4  ${className}`}
     >
       <div className="text-[#439BE6] w-12 h-12">{icon}</div>
 
