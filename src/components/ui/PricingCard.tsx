@@ -88,7 +88,7 @@ const PricingCard = ({
                   feature.enabled === false ? "text-gray-400" : "text-black"
                 }`}
               >
-                <div className="flex-shrink-0 mt-1">
+                <div className="flex-shrink-0 mt-0 my-3">
                   <Image
                     src={
                       feature.enabled === false

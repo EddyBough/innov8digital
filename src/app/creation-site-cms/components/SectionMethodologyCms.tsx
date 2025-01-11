@@ -1,42 +1,49 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import MaintenanceFeatureCard from "@/components/ui/MaintenanceFeatureCard";
 import { Layout, Paintbrush, Code, TestTube, Settings } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import WebSitePrice from "./WebSitePrice";
+import CmsPrice from "./CmsPrice";
 
-export default function SectionMethodology() {
-  const methodologyCards = [
+export default function SectionMethodologyCms() {
+  const methodologyCardsCms = [
     {
       icon: <Layout size={48} />,
-      title: "Analyse des besoins",
+      title: "Découverte et stratégie",
       description:
-        "Ensemble, nous définirons vos objectifs et besoins spécifiques pour créer un projet sur mesure.",
+        "Analyse de vos besoins et élaboration d'un cahier des charges précis.Exemple : Quels sont vos objectifs principaux ? Conversion, engagement, branding ? Nous créons la solution qui y répond.",
     },
     {
       icon: <Paintbrush size={48} />,
-      title: "Design UX/UI",
+      title: "Installation et configuration du CMS",
       description:
-        "Création d'une maquette détaillée sur Figma, avec une attention particulière à l'esthétique et à l'ergonomie, que nous validerons ensemble.",
+        "Nous installons et configurons des solutions comme WordPress, Shopify, ou d’autres plateformes adaptées à votre projet.",
     },
     {
       icon: <Code size={48} />,
-      title: "Développement et intégration",
+      title: "Personnalisation du design",
       description:
-        "Développement de votre site avec les technologies les plus adaptées à votre projet.",
+        "Grâce à des thèmes modernes et professionnels, nous créons un site qui reflète votre image de marque.",
     },
     {
       icon: <TestTube size={48} />,
-      title: "Tests et déploiement",
+      title: "Intégration de fonctionnalités",
       description:
-        "Validation des performances, compatibilité sur tous les appareils, et mise en ligne sécurisée.",
+        "Installation des boutiques en ligne avec Shopify ou WooCommerce. Gestion de contenu (blogs, actualités). Formulaires interactifs et galeries.",
     },
     {
       icon: <Settings size={48} />,
-      title: "Maintenance et optimisation",
+      title: "Optimisation SEO",
       description:
-        "Nous restons disponibles pour des mises à jour, des améliorations ou toute demande post-lancement.",
+        "Nos sites sont conçus pour être visibles sur les moteurs de recherche grâce à des pratiques SEO adaptées.",
+    },
+    {
+      icon: <Settings size={48} />,
+      title: "Formation et support",
+      description:
+        "Une fois votre site livré, nous vous formons à son utilisation et restons disponibles pour toute question.",
     },
   ];
 
@@ -61,28 +68,15 @@ export default function SectionMethodology() {
           </h3>
         </div>
 
-        <div className="flex flex-col items-center">
-          <div className="w-full grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mb-6 lg:mb-12">
-            {methodologyCards.slice(0, 3).map((card, index) => (
-              <MaintenanceFeatureCard
-                key={index}
-                icon={card.icon}
-                title={card.title}
-                description={card.description}
-              />
-            ))}
-          </div>
-
-          <div className="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
-            {methodologyCards.slice(3).map((card, index) => (
-              <MaintenanceFeatureCard
-                key={index + 3}
-                icon={card.icon}
-                title={card.title}
-                description={card.description}
-              />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12">
+          {methodologyCardsCms.map((card, index) => (
+            <MaintenanceFeatureCard
+              key={index}
+              icon={card.icon}
+              title={card.title}
+              description={card.description}
+            />
+          ))}
         </div>
 
         <div className="w-full text-center mt-32 md:mt-60">
@@ -97,14 +91,14 @@ export default function SectionMethodology() {
         <div className="flex justify-center m-auto my-20 md:my-40">
           <div className="w-full md:w-[820px] h-auto md:h-[350px] shadow-xl rounded-[20px] md:rounded-[36px] bg-white/50 p-6 md:p-12 flex flex-col items-center justify-between">
             <h2 className="text-2xl md:text-4xl font-bold text-center">
-              Maintenance de votre site
+              Maintenance de votre site E-commerce
             </h2>
 
             <p className="text-center text-base md:text-lg max-w-2xl my-6 md:my-0">
-              La création de votre site web n&apos;est que le début. Notre
-              service de maintenance garantit que votre site reste sécurisé,
-              performant et à jour. Confiez-nous la maintenance de votre site
-              pour une tranquillité d&apos;esprit total.
+              Concentrez vous sur votre business, on s&apos;occupe du reste.
+              Confiez vous la maintenance de votre site web e-commerce. Cliquez
+              sur le bouton ci-dessous pour découvrir notre offre maintenance
+              dédiée.
             </p>
 
             <Link
@@ -112,15 +106,15 @@ export default function SectionMethodology() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="bg-black rounded-lg text-white px-4 md:px-8 py-3 md:py-6 text-sm md:text-lg hover:bg-black/90 transition-colors shadow-lg max-w-full w-auto overflow-hidden break-words md:whitespace-nowrap text-center">
-                Découvrir notre service maintenance
+              <Button className="bg-black rounded-lg text-white px-4 md:px-8 py-6 md:py-6 lg:py-7 text-sm md:text-lg hover:bg-black/90 transition-colors shadow-lg max-w-full w-auto overflow-hidden break-words md:whitespace-nowrap text-center">
+                Découvrir notre service maintenance <br /> e-commerce
               </Button>
             </Link>
           </div>
         </div>
 
         <div>
-          <WebSitePrice />
+          <CmsPrice />
         </div>
       </div>
     </section>
