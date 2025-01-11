@@ -132,8 +132,10 @@ function DesktopNavbar({ className }: { className?: string }) {
 
           <MenuItem setActive={setActive} active={active} item="Services">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/web-dev">Site Web sur mesure</HoveredLink>
-              <HoveredLink href="/website-cms">
+              <HoveredLink href="/creation-site-web">
+                Site Web sur mesure
+              </HoveredLink>
+              <HoveredLink href="/creation-site-cms">
                 Site E-commerce CMS & CRM
               </HoveredLink>
               <HoveredLink href="/application-mobile">
@@ -168,25 +170,26 @@ function DesktopNavbar({ className }: { className?: string }) {
           <MenuItem setActive={setActive} active={active} item="Réalisation">
             <div className="text-sm grid grid-cols-2 gap-8 p-2">
               <ProductItem
-                title="Projet 1"
-                href="/projet-1"
-                src="/img/Test1.png"
-                description="Description projet 1"
+                title="GlycoWatch"
+                href="/realisations"
+                src="/img/newcapturedashboard.png"
+                description="Web-app qui vous permet de suivre votre diabète quotidiennement et gratuitement"
               />
               <ProductItem
-                title="Projet 2"
-                href="/projet-2"
-                src="/img/Test1.png"
-                description="Description projet 2"
+                title="Free Driving"
+                href="/realisations"
+                src="/img/freedrivingscreen.svg"
+                description="Web-app pour une auto-école qui vous permet de prendre des rendez-vous et suivre vos progrès"
               />
             </div>
           </MenuItem>
 
-          <MenuItem setActive={setActive} active={active} item="À propos">
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/notre-histoire">Notre histoire</HoveredLink>
-            </div>
-          </MenuItem>
+          <Link
+            href="/notre-histoire"
+            className="text-black hover:opacity-[0.9] dark:text-white cursor-pointer"
+          >
+            Notre histoire
+          </Link>
 
           <Button className="bg-black hover:bg-gray-600 text-white px-6 py-2 rounded-full transition-all">
             Parlons de votre projet
@@ -376,11 +379,12 @@ function MobileNavbar({
                     animate="open"
                     exit="closed"
                     className="pl-4 py-2 space-y-2 overflow-hidden"
+                    onClick={() => setIsOpen(false)}
                   >
-                    <SubMenuItem href="/web-dev" delay={0.1}>
+                    <SubMenuItem href="/creation-site-web" delay={0.1}>
                       Site Web sur mesure
                     </SubMenuItem>
-                    <SubMenuItem href="/website-cms" delay={0.2}>
+                    <SubMenuItem href="/creation-site-cms" delay={0.2}>
                       Site E-commerce CMS & CRM
                     </SubMenuItem>
                     <SubMenuItem href="/application-mobile" delay={0.3}>
@@ -453,54 +457,26 @@ function MobileNavbar({
             </div>
 
             {/* A propos Section */}
-            <div>
-              <motion.button
-                className="flex items-center justify-between w-full py-2"
-                onClick={() => {
-                  setActiveSubmenu((prev) =>
-                    prev === "À propos" ? null : "À propos"
-                  );
-                }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <span className="font-medium">À propos</span>
-                <motion.span
-                  animate={{ rotate: activeSubmenu === "À propos" ? 180 : 0 }}
-                  transition={{ duration: 0.2 }}
+            <Link
+              href="/notre-histoire"
+              className="block py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              <div>
+                <motion.button
+                  className="flex items-center justify-between w-full py-2"
+                  onClick={() => {
+                    setActiveSubmenu((prev) =>
+                      prev === "À propos" ? null : "À propos"
+                    );
+                  }}
+                  whileTap={{ scale: 0.98 }}
                 >
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2 4L6 8L10 4"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </motion.span>
-              </motion.button>
-              <AnimatePresence>
-                {activeSubmenu === "À propos" && (
-                  <motion.div
-                    variants={submenuVariants}
-                    initial="closed"
-                    animate="open"
-                    exit="closed"
-                    className="pl-4 py-2 space-y-2 overflow-hidden"
-                  >
-                    <SubMenuItem href="/notre-histoire" delay={0.1}>
-                      Notre histoire
-                    </SubMenuItem>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+                  <span className="font-medium">Notre histoire</span>
+                </motion.button>
+                <AnimatePresence />
+              </div>
+            </Link>
 
             {/* Call to action */}
             <motion.div
