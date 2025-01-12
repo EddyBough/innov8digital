@@ -68,15 +68,13 @@ const PricingCard = ({
                 </div>
               )}
             </div>
-            <p className="mt-2 text-sm text-gray-600">
-              prix indicatif, devis gratuit
-            </p>
+            <p className="mt-2 text-sm text-gray-600">prix indicatif</p>
           </div>
         </div>
 
         <div className="flex flex-col min-h-0 flex-grow">
           <div className="mb-2">
-            <p>Cette offre comprends :</p>
+            <p>Cette offre comprend :</p>
           </div>
           <ul
             className={`grid gap-2 overflow-y-auto ${featuresContainerClassName}`}

@@ -37,6 +37,10 @@ export default function WebSitePrice() {
           enabled: true,
         },
         {
+          text: "SEO étude des mots-clés",
+          enabled: true,
+        },
+        {
           text: "Intégration de système de paiement",
           enabled: true,
         },
@@ -52,14 +56,24 @@ export default function WebSitePrice() {
           text: "Fonctionnalité de l’offre standard",
           enabled: true,
         },
-        { text: "Boutique e-commerce", enabled: true },
-        { text: "Intégration CRM & Newsletter", enabled: true },
         {
-          text: "Maintenance quotidienne ",
+          text: "Boutique e-commerce",
           enabled: true,
         },
         {
-          text: "Maquettage sur mesure",
+          text: "Gestion multi-langues",
+          enabled: true,
+        },
+        {
+          text: "Intégration IA ou Chatbot",
+          enabled: true,
+        },
+        {
+          text: "Analyse concurrentielle approfondie",
+          enabled: true,
+        },
+        {
+          text: "Inclus l'offre transformation de projet et création MVP",
           enabled: true,
         },
       ] as Feature[],
@@ -70,13 +84,20 @@ export default function WebSitePrice() {
       showStartingFrom: false,
       price: "Sur devis",
       features: [
+        { text: "Devis à la demande", enabled: true },
         { text: "Analyse personnalisée", enabled: true },
+        { text: "Intégration IA", enabled: true },
         {
           text: "Fonctionnalités spécifiques",
           enabled: true,
         },
         { text: "Intégration complexe", enabled: true },
         { text: "Suivi et support dédiés", enabled: true },
+        { text: "Conseil sur le modèle économique", enabled: true },
+        {
+          text: "Coaching stratégique",
+          enabled: true,
+        },
       ] as Feature[],
     },
   ];
@@ -96,7 +117,7 @@ export default function WebSitePrice() {
       {/* Pricing section header */}
       <div className="text-center mt-12 md:mt-20">
         <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
-          Développement de site web
+          Développement de site web sur mesure
         </h2>
       </div>
       {/* Pricing cards container */}
