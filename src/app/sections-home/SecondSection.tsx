@@ -13,7 +13,7 @@ export const services = [
     title: "Création de site E-Commerce CMS",
     cta: "Découvrir",
     image: "/img/ecommerceicon.svg",
-    link: "#",
+    link: "/creation-site-cms",
   },
   {
     title: "Création d'applications mobiles sur mesure",
