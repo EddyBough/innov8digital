@@ -136,7 +136,7 @@ function DesktopNavbar({ className }: { className?: string }) {
                 Site Web sur mesure
               </HoveredLink>
               <HoveredLink href="/creation-site-cms">
-                Site E-commerce CMS & CRM
+                Site E-commerce CMS
               </HoveredLink>
               <HoveredLink href="/application-mobile">
                 Application mobile
@@ -385,7 +385,7 @@ function MobileNavbar({
                       Site Web sur mesure
                     </SubMenuItem>
                     <SubMenuItem href="/creation-site-cms" delay={0.2}>
-                      Site E-commerce CMS & CRM
+                      Site E-commerce CMS
                     </SubMenuItem>
                     <SubMenuItem href="/application-mobile" delay={0.3}>
                       Application mobile

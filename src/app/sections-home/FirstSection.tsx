@@ -1,44 +1,41 @@
-"use client";
 import Image from "next/image";
-import { Button } from "../../components/ui/button";
-import React from "react";
 import Link from "next/link";
+import { Button } from "../../components/ui/button";
 
 export default function FirstSection() {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center p-4 overflow-hidden">
+    <section className="relative min-h-[90vh] w-full flex items-center justify-center overflow-hidden bg-white mt-9 md:mt-0 lg:mt-0">
       <Image
-        src={"/img/MainBlurBlue.svg"}
+        src="/img/MainBlurBlue.svg"
         alt=""
         width={1100}
         height={150}
         priority
-        className="absolute md:h-auto h-[35rem] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl object-cover "
+        className="absolute h-[45rem] sm:h-[50rem] md:h-[60rem] lg:h-[68rem] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-screen max-w-none lg:max-w-screen-2xl object-cover"
         quality={100}
       />
 
-      <div className="relative z-20 rounded-3xl p-8 max-w-2xl w-full text-center backdrop-blur-sm">
-        <div className="space-y-6">
-          <p className="text-xs sm:text-sm md:text-base text-white font-medium uppercase tracking-wider">
-            Agence Web Innov8 Digital
-          </p>
+      {/* Conteneur principal avec padding ajusté */}
+      <div className="relative z-20 max-w-6xl mx-auto text-center px-4 pb-24 pt-12">
+        {/* Titre principal */}
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-8">
+          L&apos;agence digitale
+        </h1>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-            Solutions digitales
-            <br />
-            sur mesure
-          </h1>
+        {/* Services */}
+        <p className="text-base sm:text-lg md:text-xl text-white max-w-3xl mx-auto mb-12 leading-relaxed">
+          Site internet sur mesure - Applications mobiles - Intégration IA -
+          Maintenance -
+          <br className="hidden sm:block" />
+          &ensp;Refonte - Audit projet - SEO & Stratégie digitale
+        </p>
 
-          <p className="text-xs sm:text-sm md:text-base text-white font-medium max-w-xl mx-auto">
-            Tout ce dont vous avez besoin, au même endroit, pour tout les
-            budgets
-          </p>
-          <Link href="/expertises" passHref>
-            <Button className="bg-black text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors m-4">
-              Découvrir nos services
-            </Button>
-          </Link>
-        </div>
+        {/* CTA */}
+        <Link href="/expertises">
+          <Button className="bg-black hover:bg-black/90 text-white px-6 sm:px-8 py-4 sm:py-6 rounded-full text-base sm:text-lg font-medium transition-all duration-300 hover:scale-105">
+            Découvrir nos services
+          </Button>
+        </Link>
       </div>
     </section>
   );

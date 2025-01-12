@@ -9,7 +9,7 @@ export default function CmsPrice() {
     {
       title: "Essentielle",
       subtitle: "Idéal pour les sites vitrines & petites entreprises/Portfolio",
-      price: 1000,
+      price: 1200,
       features: [
         { text: "Audit approfondi", enabled: true },
         { text: "Installation CMS (Wordpress, Shopify)", enabled: true },
