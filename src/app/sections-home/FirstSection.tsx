@@ -11,14 +11,14 @@ export default function FirstSection() {
         width={1100}
         height={150}
         priority
-        className="absolute h-[38rem] sm:h-[45rem] md:h-[56rem] lg:h-[68rem] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-screen max-w-none lg:max-w-screen-2xl object-cover"
+        className="absolute h-[36rem] sm:h-[45rem] md:h-[56rem] lg:h-[68rem] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-none lg:max-w-screen-xl object-cover md:py-10 lg:py-20 pt-8"
         quality={100}
       />
 
       {/* Conteneur principal avec padding ajusté */}
-      <div className="relative z-20 max-w-6xl mx-auto text-center px-4 pb-24 pt-12">
+      <div className="relative z-20 max-w-6xl mx-auto text-center px-4 pb-24 pt-14">
         {/* Titre principal */}
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-8 mt-3 lg:mt-0 md:mt-0">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-8 mt-4 lg:mt-0 md:mt-0">
           L&apos;agence digitale
         </h1>
 
