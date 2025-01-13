@@ -8,7 +8,7 @@ export default function CmsPrice() {
   const cmsPrice = [
     {
       title: "Essentielle",
-      subtitle: "Idéal pour les sites vitrines & petites entreprises/Portfolio",
+      subtitle: "Idéal pour les sites vitrines & petites entreprises",
       price: 1200,
       features: [
         { text: "Audit approfondi", enabled: true },

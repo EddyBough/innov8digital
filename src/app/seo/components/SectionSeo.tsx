@@ -32,7 +32,7 @@ export default function SectionSeo() {
             description="Chez Innov8Digital, nous savons qu’un site web performant n’est qu’une partie de l’équation. Pour attirer, engager et convertir vos visiteurs, une stratégie digitale solide et bien pensée est indispensable. C’est pourquoi nous vous accompagnons dans l’élaboration et la mise en œuvre de solutions de SEO et marketing digital adaptées à vos objectifs."
             imageSrc="/img/googleSEO.png"
             imageAlt="Équipe Innov8Digital en réunion"
-            onButtonClick={() => console.log("Rendez-vous demandé")}
+            buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
           />
         </div>
       </div>
