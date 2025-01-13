@@ -62,7 +62,7 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
                 </div>
                 <CardTitle>{item.title}</CardTitle>
                 <div className="mt-auto pt-8 flex justify-between items-end">
-                  <p className=" text-s font-aeonik font-bold text-blue-800 max-w-[70%] flex items-center gap-2">
+                  <p className=" text-s  text-blue-800 max-w-[70%] flex items-center gap-2">
                     {item.cta}
                     <ArrowRight className="w-4 h-4" />
                   </p>
