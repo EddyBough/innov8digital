@@ -46,7 +46,7 @@ export default function SeoPrice() {
           >
             <PricingCard
               {...plan}
-              onButtonClick={() => console.log(`Clicked on ${plan.title} plan`)}
+              buttonHref="/https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
               className="h-full mb-8 max-w-sm mx-auto"
             />
           </div>
