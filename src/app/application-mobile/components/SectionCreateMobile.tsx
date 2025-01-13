@@ -1,14 +1,13 @@
 "use client";
-import React from "react";
 import Image from "next/image";
 import FeatureCard from "@/components/ui/FeatureCard";
 
-export default function SectionCreateCms() {
+export default function SectionCreateMobile() {
   return (
     <section>
       <Image
-        src={"/img/blur-sky.png"}
-        alt=""
+        src={"/img/blur-blue.png"}
+        alt="blur-bleu"
         width={400}
         height={1200}
         priority
@@ -19,19 +18,19 @@ export default function SectionCreateCms() {
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center mt-20">
           <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
-            Création de sites WordPress, Shopify et CMS
+            Création d’applications mobiles
           </h2>
           <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
-            L’alliance de la simplicité et de la performance
+            Transformez vos idées en expérience mobile unique
           </h3>
         </div>
 
         <div className="text-center mb-12">
           <FeatureCard
-            title="Création de site E-Commerce CMS"
-            description="Chez Innov8Digital, nous comprenons que chaque entreprise a des besoins spécifiques. C’est pourquoi nous proposons des solutions basées sur des CMS puissants et flexibles, comme WordPress, Shopify et bien d’autres, pour vous offrir un site professionnel, performant et facile à gérer."
-            imageSrc="/img/wordPress.png"
-            imageAlt="Équipe Innov8Digital en réunion"
+            title="Création d’applications mobiles sur mesures Apple/Android"
+            description="Dans un monde où le mobile est devenu incontournable, Innov8 Digital conçoit des applications mobiles sur mesure pour répondre aux besoins spécifiques de votre entreprise. Que ce soit pour iOS, Android ou les deux, nos solutions allient design élégant, performance et fonctionnalités adaptées à votre public cible."
+            imageSrc="/img/coaching-management.jpg"
+            imageAlt="Accompagnement sur mesure"
             buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
           />
         </div>

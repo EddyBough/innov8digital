@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Button } from "./button";
 
@@ -19,7 +20,7 @@ export type PricingCardProps = {
   featuresContainerClassName?: string;
   isMonthly?: boolean;
   showStartingFrom?: boolean;
-  onButtonClick?: () => void;
+  buttonHref?: string;
 };
 
 const PricingCard = ({
@@ -34,7 +35,7 @@ const PricingCard = ({
   featuresContainerClassName = "",
   isMonthly = false,
   showStartingFrom = true,
-  onButtonClick,
+  buttonHref,
 }: PricingCardProps) => {
   return (
     <div className={`w-80 md:w-72 ${className}`}>
@@ -105,12 +106,21 @@ const PricingCard = ({
         </div>
 
         <div className="mt-4">
-          <Button
-            onClick={onButtonClick}
-            className={`w-full rounded-lg bg-black px-3 py-2 text-base font-medium text-white hover:bg-gray-800 ${buttonClassName}`}
-          >
-            {buttonText}
-          </Button>
+          {buttonHref ? (
+            <Link href={buttonHref}>
+              <Button
+                className={`w-full rounded-lg bg-black px-3 py-2 text-base font-medium text-white hover:bg-gray-800 ${buttonClassName}`}
+              >
+                {buttonText}
+              </Button>
+            </Link>
+          ) : (
+            <Button
+              className={`w-full rounded-lg bg-black px-3 py-2 text-base font-medium text-white hover:bg-gray-800 ${buttonClassName}`}
+            >
+              {buttonText}
+            </Button>
+          )}
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import { Button } from "./button";
 
 export type FeatureCardProps = {
@@ -8,7 +9,7 @@ export type FeatureCardProps = {
   imageSrc: string;
   imageAlt: string;
   className?: string;
-  onButtonClick?: () => void;
+  buttonHref?: string; // URL pour le lien du bouton
 };
 
 const FeatureCard = ({
@@ -17,7 +18,7 @@ const FeatureCard = ({
   imageSrc,
   imageAlt,
   className = "",
-  onButtonClick,
+  buttonHref,
 }: FeatureCardProps) => {
   return (
     <div className={`w-full max-w-2xl  lg:max-w-7xl mx-auto ${className}`}>
@@ -49,12 +50,13 @@ const FeatureCard = ({
             </div>
 
             {/* Button */}
-            <Button
-              onClick={onButtonClick}
-              className="mt-4 rounded-lg bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-800 transition-colors"
-            >
-              Réservez un rendez-vous gratuit
-            </Button>
+            {buttonHref && (
+              <Link href={buttonHref} passHref>
+                <Button className="mt-4 rounded-lg bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-800 transition-colors">
+                  Réservez un rendez-vous gratuit
+                </Button>
+              </Link>
+            )}
           </div>
 
           {/* Image - Only shown in desktop */}

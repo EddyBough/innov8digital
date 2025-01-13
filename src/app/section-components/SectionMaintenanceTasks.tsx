@@ -83,7 +83,7 @@ export default function SectionMaintenanceTasks() {
             <PricingCard
               key={index}
               {...plan}
-              onButtonClick={() => console.log(`Clicked on ${plan.title} plan`)}
+              buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
               className="h-[43rem]"
             />
           ))}

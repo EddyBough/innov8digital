@@ -99,7 +99,7 @@ export default function EcommerceCRMSection() {
           <PricingCard
             key={index}
             {...plan}
-            onButtonClick={() => console.log(`Clicked on ${plan.title} plan`)}
+            buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
             className="h-[46rem]"
           />
         ))}

@@ -1,79 +1,73 @@
 "use client";
-import React from "react";
 import PricingCard, { Feature } from "@/components/ui/PricingCard";
 import Image from "next/image";
 import Carousel from "@/components/features/Carousel";
 
-export default function WebSitePrice() {
-  const pricingPlans = [
+export default function MobilePrice() {
+  const cmsPrice = [
     {
       title: "Essentielle",
-      subtitle: "Idéal pour les sites vitrines & petites entreprises/Portfolio",
-      price: 1990,
+      subtitle:
+        "Une solution simple pour lancer une application mobile fonctionnelle rapidement.",
+      price: 3900,
       features: [
-        { text: "Audit initial: Analyse des besoins", enabled: true },
-        { text: "Maquettage sur mesure", enabled: true },
-        { text: "Design responsive", enabled: true },
-        { text: "Contenu statique", enabled: true },
-        { text: "Optimisation SEO de base", enabled: true },
+        { text: "Audit approfondi", enabled: true },
+        { text: "Application hybride (iOS et Android)", enabled: true },
+        { text: "Design sur mesure", enabled: true },
+        {
+          text: "Intégration de fonctionnalités de base : Page d’accueil, formulaire de contact ou inscription, navigation simple ",
+          enabled: true,
+        },
+        { text: "Publication sur App Store et Google Play.", enabled: true },
       ] as Feature[],
     },
     {
       title: "Standard",
-      subtitle: "Conçu pour les entreprise à croissance rapide",
-      price: 2490,
+      subtitle:
+        "Une application mobile avec des fonctionnalités supplémentaires pour engager votre audience.",
+      price: 4900,
       features: [
-        { text: "Audit approfondi", enabled: true },
+        { text: "Fonctionnalité de l’offre Essentielle.", enabled: true },
         {
-          text: "Fonctionnalité de l’offre essentielle",
+          text: "Design amélioré avec personnalisation avancée du thème",
           enabled: true,
         },
         {
-          text: "Contenu dynamique",
+          text: "Design UX/UI personnalisé sur Figma.",
           enabled: true,
         },
         {
-          text: "Système d’authentification",
+          text: "Fonctionnalités interactives : notifications push, intégration d’API tierces, gestion de compte utilisateur.",
           enabled: true,
         },
         {
-          text: "SEO étude des mots-clés",
-          enabled: true,
-        },
-        {
-          text: "Intégration de système de paiement",
+          text: "Tests approfondis de compatibilité et performances.",
           enabled: true,
         },
       ] as Feature[],
     },
     {
       title: "Avancée",
-      subtitle: "Parfait pour les grandes entreprise ou boutique e-commerce",
-      price: 4990,
+      subtitle:
+        "Une solution complète et évolutive idéale pour les entreprises ayant des besoins spécifiques.",
+      price: 9900,
       features: [
-        { text: "Audit stratégique complet", enabled: true },
+        { text: "Fonctionnalité de l’offre Standard", enabled: true },
         {
-          text: "Fonctionnalité de l’offre standard",
+          text: "Développement d’applications natives (iOS avec Swift et Android avec Kotlin).",
           enabled: true,
         },
         {
-          text: "Boutique e-commerce",
+          text: "Fonctionnalités avancées : Géolocalisation, paiements sécurisés, systèmes de réservation ou gestion de contenu dynamique. ",
+          enabled: true,
+        },
+        { text: "Intégration blog & Newsletter", enabled: true },
+        {
+          text: "Intégration intelligence artificielle selon votre besoin.",
           enabled: true,
         },
         {
-          text: "Gestion multi-langues",
-          enabled: true,
-        },
-        {
-          text: "Intégration IA ou Chatbot",
-          enabled: true,
-        },
-        {
-          text: "Analyse concurrentielle approfondie",
-          enabled: true,
-        },
-        {
-          text: "Inclus l'offre transformation de projet et création MVP",
+          text: "Suivi des performances après le lancement.",
           enabled: true,
         },
       ] as Feature[],
@@ -84,24 +78,16 @@ export default function WebSitePrice() {
       showStartingFrom: false,
       price: "Sur devis",
       features: [
-        { text: "Devis à la demande", enabled: true },
         { text: "Analyse personnalisée", enabled: true },
-        { text: "Intégration IA", enabled: true },
         {
-          text: "Fonctionnalités spécifiques",
+          text: "Prestation spécifique à la demande",
           enabled: true,
         },
         { text: "Intégration complexe", enabled: true },
         { text: "Suivi et support dédiés", enabled: true },
-        { text: "Conseil sur le modèle économique", enabled: true },
-        {
-          text: "Coaching stratégique",
-          enabled: true,
-        },
       ] as Feature[],
     },
   ];
-
   return (
     <section>
       <Image
@@ -116,20 +102,20 @@ export default function WebSitePrice() {
 
       {/* Pricing section header */}
       <div className="text-center mt-12 md:mt-20">
-        <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
-          Développement de site web sur mesure
+        <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+          Développement d&apos;application mobile
         </h2>
       </div>
       {/* Pricing cards container */}
       <div className="mt-16 lg:mt-28 mb-24 lg:mb-36 flex flex-col lg:flex-row justify-center items-stretch gap-6 lg:gap-8">
-        {pricingPlans.map((plan, index) => (
+        {cmsPrice.map((plan, index) => (
           <div
             key={index}
             className="w-full lg:w-auto flex-shrink-0 lg:flex-shrink"
           >
             <PricingCard
               {...plan}
-              buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
+              buttonHref="/https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
               className="h-full mb-8 max-w-sm mx-auto"
             />
           </div>
