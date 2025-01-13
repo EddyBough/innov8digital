@@ -94,7 +94,7 @@ export default function CmsPrice() {
 
       {/* Pricing section header */}
       <div className="text-center mt-12 md:mt-20">
-        <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
           Développement de site web
         </h2>
       </div>
@@ -107,7 +107,7 @@ export default function CmsPrice() {
           >
             <PricingCard
               {...plan}
-              onButtonClick={() => console.log(`Clicked on ${plan.title} plan`)}
+              buttonHref="/https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
               className="h-full mb-8 max-w-sm mx-auto"
             />
           </div>

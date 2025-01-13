@@ -116,16 +116,16 @@ function DesktopNavbar({ className }: { className?: string }) {
           >
             <div className="text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
-                title="Web Development"
-                href="/web-dev"
+                title="Expertise"
+                href="/expertises"
                 src="/img/Test1.png"
                 description="Solutions web sur mesure"
               />
               <ProductItem
-                title="UI/UX Design"
-                href="/design"
+                title="Accompagnement"
+                href="/accompagnement"
                 src="/img/Test1.png"
-                description="Design d'interfaces modernes"
+                description="Accompagnement sur mesure"
               />
             </div>
           </MenuItem>
@@ -141,7 +141,9 @@ function DesktopNavbar({ className }: { className?: string }) {
               <HoveredLink href="/application-mobile">
                 Application mobile
               </HoveredLink>
-              <HoveredLink href="/support">Maintenance et support</HoveredLink>
+              <HoveredLink href="/maintenance">
+                Maintenance et support
+              </HoveredLink>
               <HoveredLink href="/seo">
                 Stratégie digitale SEO & Marketing
               </HoveredLink>
@@ -327,11 +329,11 @@ function MobileNavbar({
                     exit="closed"
                     className="pl-4 py-2 space-y-2 overflow-hidden"
                   >
-                    <SubMenuItem href="/web-dev" delay={0.1}>
-                      Web Development
+                    <SubMenuItem href="/expertises" delay={0.1}>
+                      Expertise
                     </SubMenuItem>
-                    <SubMenuItem href="/design" delay={0.2}>
-                      UI/UX Design
+                    <SubMenuItem href="/accompagnement" delay={0.2}>
+                      Accompagnement
                     </SubMenuItem>
                   </motion.div>
                 )}
@@ -390,7 +392,7 @@ function MobileNavbar({
                     <SubMenuItem href="/application-mobile" delay={0.3}>
                       Application mobile
                     </SubMenuItem>
-                    <SubMenuItem href="/support" delay={0.4}>
+                    <SubMenuItem href="/maintenance" delay={0.4}>
                       Maintenance et support
                     </SubMenuItem>
                     <SubMenuItem href="/seo" delay={0.4}>
