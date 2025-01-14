@@ -21,7 +21,7 @@ export default function SectionMaintenance() {
             Maintenance & Support technique
           </h2>
           <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
-            Boostez votre visibilité en ligne
+            Soyez rassuré, on s&apos;occupe de tout
           </h3>
         </div>
 

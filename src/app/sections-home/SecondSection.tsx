@@ -19,19 +19,19 @@ export const services = [
     title: "Création d'applications mobiles sur mesure",
     cta: "Découvrir",
     image: "/img/mobileicon.svg",
-    link: "#",
+    link: "/application-mobile",
   },
   {
     title: "Maintenance & support technique",
     cta: "Découvrir",
     image: "/img/maintenanceicon.svg",
-    link: "#",
+    link: "/maintenance",
   },
   {
     title: "Stratégie digitale SEO & marketing",
     cta: "Découvrir",
     image: "/img/seoicon.svg",
-    link: "#",
+    link: "/seo",
   },
 ];
 

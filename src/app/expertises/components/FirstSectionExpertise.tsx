@@ -13,25 +13,25 @@ export const services = [
     title: "Création de site E-Commerce CMS",
     cta: "Découvrir",
     image: "/img/ecommerceicon.svg",
-    link: "#",
+    link: "/creation-site-cms",
   },
   {
     title: "Création d'applications mobiles sur mesure",
     cta: "Découvrir",
     image: "/img/mobileicon.svg",
-    link: "#",
+    link: "/application-mobile",
   },
   {
     title: "Maintenance & support technique",
     cta: "Découvrir",
     image: "/img/maintenanceicon.svg",
-    link: "#",
+    link: "/maintenance",
   },
   {
     title: "Stratégie digitale SEO & marketing",
     cta: "Découvrir",
     image: "/img/seoicon.svg",
-    link: "#",
+    link: "/seo",
   },
 ];
 
