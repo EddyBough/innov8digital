@@ -35,7 +35,7 @@ export default function ValuesSection() {
             NOS VALEURS
           </h2>
           <h2 className="lg:text-6xl text-4xl font-bold text-center lg:mb-20 mb-10 text-black">
-            Parce que c&apos;est notre nindo
+            Parce que c&apos;est notre credo
           </h2>
         </div>
 

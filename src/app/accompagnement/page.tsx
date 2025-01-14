@@ -1,13 +1,13 @@
 import AccordionExample from "@/components/ui/accordion-example";
-import SectionCreateMobile from "./components/SectionCreateMobile";
-import SectionMethodologyMobile from "./components/SectionMethodologyMobile";
 import { faqExpertise } from "@/data/faq-expertise";
+import SectionCreateAccompagnement from "./components/SectionCreateAccompagnement";
+import SectionMethodologyAccompagnement from "./components/SectionMethodologyAccompagnement";
 
 export default function page() {
   return (
     <main className="overflow-x-hidden">
-      <SectionCreateMobile />
-      <SectionMethodologyMobile />
+      <SectionCreateAccompagnement />
+      <SectionMethodologyAccompagnement />
       <AccordionExample data={faqExpertise} />
     </main>
   );
