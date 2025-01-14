@@ -84,27 +84,31 @@ const Footer = () => {
             <h3 className="text-white font-bold text-lg mb-4">Lien rapide</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="/expertises"
+                  className="hover:text-white transition-colors"
+                >
                   Expertise{" "}
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="/realisations"
+                  className="hover:text-white transition-colors"
+                >
                   Réalisations
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  A propos
+                <a
+                  href="notre-histoire"
+                  className="hover:text-white transition-colors"
+                >
+                  Notre histoire
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="/blog" className="hover:text-white transition-colors">
                   Blog
                 </a>
               </li>
@@ -116,27 +120,39 @@ const Footer = () => {
             <h3 className="text-white font-bold text-lg mb-4">Nos Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="/creation-site-web"
+                  className="hover:text-white transition-colors"
+                >
                   Développement Web
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="/creation-site-cms"
+                  className="hover:text-white transition-colors"
+                >
                   Création de site E-commerce CMS{" "}
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="/application-mobile"
+                  className="hover:text-white transition-colors"
+                >
                   Création d&apos;applications mobiles{" "}
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="/maintenance"
+                  className="hover:text-white transition-colors"
+                >
                   Maintenance & support technique{" "}
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="seo" className="hover:text-white transition-colors">
                   Stratégie digitale SEO & marketing
                 </a>
               </li>
