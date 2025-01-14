@@ -152,7 +152,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="seo" className="hover:text-white transition-colors">
+                <a href="/seo" className="hover:text-white transition-colors">
                   Stratégie digitale SEO & marketing
                 </a>
               </li>
@@ -189,13 +189,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
-                href="#"
+                href="/cgv"
                 className="text-sm hover:text-white transition-colors"
               >
                 CGV
               </a>
               <a
-                href="#"
+                href="/mentions-legales"
                 className="text-sm hover:text-white transition-colors"
               >
                 Mentions légales
