@@ -90,7 +90,7 @@ export default function MaintenancePrice() {
           >
             <PricingCard
               {...plan}
-              buttonHref="/https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
+              buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
               className="h-full mb-8 max-w-sm mx-auto"
             />
           </div>

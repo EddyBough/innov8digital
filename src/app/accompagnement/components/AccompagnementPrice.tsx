@@ -44,7 +44,7 @@ export default function AccompagnementPrice() {
           >
             <PricingCard
               {...plan}
-              buttonHref="/https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
+              buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
               className="h-full mb-8 max-w-sm mx-auto"
             />
           </div>
@@ -53,10 +53,10 @@ export default function AccompagnementPrice() {
 
       {/* Portfolio section */}
       <div className="text-center mt-32 md:mt-60">
-        <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
           Nos réalisations
         </h2>
-        <h3 className="text-2xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-6 md:mb-10 lg:mb-20">
+        <h3 className="text-2xl lg:text-6xl  font-bold text-center mb-6 md:mb-10 lg:mb-20">
           A la pointe de l&apos;innovation digitale
         </h3>
         <div className="w-full overflow-hidden">

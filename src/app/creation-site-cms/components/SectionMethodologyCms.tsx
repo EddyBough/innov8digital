@@ -108,11 +108,7 @@ export default function SectionMethodologyCms() {
               dédiée.
             </p>
 
-            <Link
-              href="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="/maintenance">
               <Button className="bg-black rounded-lg text-white px-4 md:px-8 py-6 md:py-6 lg:py-7 text-sm md:text-lg hover:bg-black/90 transition-colors shadow-lg max-w-full w-auto overflow-hidden break-words md:whitespace-nowrap text-center">
                 Découvrir notre service maintenance
               </Button>
