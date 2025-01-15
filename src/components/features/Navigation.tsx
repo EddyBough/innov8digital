@@ -118,13 +118,13 @@ function DesktopNavbar({ className }: { className?: string }) {
               <ProductItem
                 title="Expertise"
                 href="/expertises"
-                src="/img/Test1.png"
+                src="/img/expertise.png"
                 description="Solutions web sur mesure"
               />
               <ProductItem
                 title="Accompagnement"
                 href="/accompagnement"
-                src="/img/Test1.png"
+                src="/img/accompagnement.png"
                 description="Accompagnement sur mesure"
               />
             </div>
