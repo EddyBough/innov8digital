@@ -239,13 +239,15 @@ function MobileNavbar({
     <div className="relative shadow-md saturate-100 backdrop-blur-[10px]">
       {/* Header Mobile */}
       <div className="flex items-center justify-between px-4 py-2">
-        <Image
-          src={"/img/Logo.svg"}
-          alt="Logo"
-          width={80}
-          height={40}
-          className="object-contain"
-        />
+        <Link href="/">
+          <Image
+            src={"/img/Logo.svg"}
+            alt="Logo"
+            width={80}
+            height={40}
+            className="object-contain"
+          />
+        </Link>
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
           className="p-2 focus:outline-none"
