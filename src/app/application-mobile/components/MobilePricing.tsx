@@ -12,7 +12,7 @@ export default function MobilePrice() {
       price: 3900,
       features: [
         { text: "Audit approfondi", enabled: true },
-        { text: "Application hybride (iOS et Android)", enabled: true },
+        { text: "Application hybride (iOS & Android)", enabled: true },
         { text: "Design sur mesure", enabled: true },
         {
           text: "Intégration de fonctionnalités de base : Page d’accueil, formulaire de contact ou inscription, navigation simple ",
