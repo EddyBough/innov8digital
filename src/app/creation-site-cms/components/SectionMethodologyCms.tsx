@@ -3,12 +3,12 @@ import React from "react";
 import Image from "next/image";
 import MaintenanceFeatureCard from "@/components/ui/MaintenanceFeatureCard";
 import {
-  Layout,
-  Paintbrush,
-  Code,
-  TestTube,
-  Settings,
-  Book,
+  ClipboardList,
+  Settings2,
+  Palette,
+  ShoppingCart,
+  Search,
+  Headset,
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -17,37 +17,37 @@ import CmsPrice from "./CmsPrice";
 export default function SectionMethodologyCms() {
   const methodologyCardsCms = [
     {
-      icon: <Layout size={48} />,
+      icon: <ClipboardList size={48} />,
       title: "Découverte et stratégie",
       description:
         "Analyse de vos besoins et élaboration d'un cahier des charges précis.Exemple : Quels sont vos objectifs principaux ? Conversion, engagement, branding ? Nous créons la solution qui y répond.",
     },
     {
-      icon: <Paintbrush size={48} />,
+      icon: <Settings2 size={48} />,
       title: "Installation et configuration du CMS",
       description:
         "Nous installons et configurons des solutions comme WordPress, Shopify, ou d’autres plateformes adaptées à votre projet.",
     },
     {
-      icon: <Code size={48} />,
+      icon: <Palette size={48} />,
       title: "Personnalisation du design",
       description:
         "Grâce à des thèmes modernes et professionnels, nous créons un site qui reflète votre image de marque.",
     },
     {
-      icon: <TestTube size={48} />,
+      icon: <ShoppingCart size={48} />,
       title: "Intégration de fonctionnalités",
       description:
         "Installation des boutiques en ligne avec Shopify ou WooCommerce. Gestion de contenu (blogs, actualités). Formulaires interactifs et galeries.",
     },
     {
-      icon: <Settings size={48} />,
+      icon: <Search size={48} />,
       title: "Optimisation SEO",
       description:
         "Nos sites sont conçus pour être visibles sur les moteurs de recherche grâce à des pratiques SEO adaptées.",
     },
     {
-      icon: <Book size={48} />,
+      icon: <Headset size={48} />,
       title: "Formation et support",
       description:
         "Une fois votre site livré, nous vous formons à son utilisation et restons disponibles pour toute question.",
@@ -70,7 +70,7 @@ export default function SectionMethodologyCms() {
           <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
             Votre projet sur mesure
           </h2>
-          <h3 className="text-3xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-8 lg:mb-20">
+          <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
             Notre méthodologie
           </h3>
         </div>
@@ -87,12 +87,12 @@ export default function SectionMethodologyCms() {
         </div>
 
         <div className="w-full text-center mt-32 md:mt-60">
-          <h3 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h2 className="text-xl sm:text-4xl  bg-title-gradient inline-block text-transparent bg-clip-text">
             Assurez la perrenité de votre site
-          </h3>
-          <h4 className="text-3xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-8 lg:mb-20">
+          </h2>
+          <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
             Maîtrisez votre avenir
-          </h4>
+          </h3>
         </div>
 
         <div className="flex justify-center m-auto my-20 md:my-40">

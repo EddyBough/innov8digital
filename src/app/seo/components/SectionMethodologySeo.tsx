@@ -1,27 +1,28 @@
 import React from "react";
 import Image from "next/image";
-import { TestTube, Settings } from "lucide-react";
+import { LineChart, Rocket, Target } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import PrestationCard from "@/components/ui/PrestationCard";
 import SeoPrice from "./SeoPrice";
+import MaintenanceFeatureCard from "@/components/ui/MaintenanceFeatureCard";
 
 export default function SectionMethodologySeo() {
   const methodologyCardsSeo = [
     {
-      icon: <TestTube size={48} />,
+      icon: <Target size={48} />,
       title: "Diagnostic et objectifs",
       description:
         "Nous analysons votre présence en ligne actuelle et définissons vos priorités pour développer une stratégie efficace.",
     },
     {
-      icon: <Settings size={48} />,
+      icon: <Rocket size={48} />,
       title: "Mise en œuvre",
       description:
         "Mise en place des actions SEO et campagnes marketing adaptées à votre public cible.",
     },
     {
-      icon: <Settings size={48} />,
+      icon: <LineChart size={48} />,
       title: "Suivi et optimisation",
       description:
         "Analyse des performances et ajustements réguliers pour garantir des résultats concrets et mesurables.",
@@ -72,7 +73,7 @@ export default function SectionMethodologySeo() {
           <h2 className="text-xl sm:text-4xl font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Stratégie Digitale, SEO & Marketing
           </h2>
-          <h3 className="text-3xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-8 lg:mb-20">
+          <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
             Prêt à propulser votre visibilité en ligne ?
           </h3>
         </div>
@@ -80,8 +81,9 @@ export default function SectionMethodologySeo() {
         <div className="flex flex-col items-center">
           <div className="w-full grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mb-6 lg:mb-12">
             {methodologyCardsSeo.slice(0, 3).map((card, index) => (
-              <PrestationCard
+              <MaintenanceFeatureCard
                 key={index}
+                icon={card.icon}
                 title={card.title}
                 description={card.description}
               />
@@ -102,7 +104,7 @@ export default function SectionMethodologySeo() {
           <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Nos services en SEO & Marketing
           </h2>
-          <h3 className="text-3xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-8 lg:mb-20">
+          <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
             Nos prestations
           </h3>
         </div>

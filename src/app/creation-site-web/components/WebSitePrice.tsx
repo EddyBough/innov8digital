@@ -141,7 +141,7 @@ export default function WebSitePrice() {
         <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
           Nos réalisations
         </h2>
-        <h3 className="text-2xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-6 md:mb-10 lg:mb-20">
+        <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
           A la pointe de l&apos;innovation digitale
         </h3>
         <div className="w-full overflow-hidden">

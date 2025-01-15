@@ -56,7 +56,7 @@ export default function SectionMethodology() {
           <h2 className="text-xl sm:text-4xl font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Votre projet sur mesure
           </h2>
-          <h3 className="text-3xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-8 lg:mb-20">
+          <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
             Notre méthodologie
           </h3>
         </div>
@@ -89,7 +89,7 @@ export default function SectionMethodology() {
           <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Assurez la perrenité de votre site
           </h2>
-          <h3 className="text-3xl lg:text-6xl my-3 md:my-5 font-bold text-center mb-8 lg:mb-20">
+          <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
             Maîtrisez votre avenir
           </h3>
         </div>
