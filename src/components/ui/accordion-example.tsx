@@ -26,7 +26,7 @@ export default function AccordionExample({ data, className }: AccordionProps) {
         <h3 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
           FAQ
         </h3>
-        <h4 className="text-3xl lg:text-6xl font-bold text-center mb-10 lg:mb-20">
+        <h4 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
           On répond à vos questions
         </h4>
       </div>

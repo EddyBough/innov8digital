@@ -4,7 +4,7 @@ import { Button } from "../../components/ui/button";
 
 export default function FirstSection() {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-white pb-2 sm:pb-0">
+    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden lg:pb-2 pb-20 sm:pb-0">
       <Image
         src="/img/MainBlurBlue.svg"
         alt="Blue-blue"
