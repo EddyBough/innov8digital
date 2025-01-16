@@ -17,12 +17,12 @@ const ServiceCard = ({
   const isEven = index % 2 === 1;
 
   return (
-    <div className="mb-24 font-aeonik">
+    <div className="mb-24">
       {/* Desktop layout */}
       <div className="hidden md:flex items-center justify-between gap-8">
         <div className="flex-1">
           {isEven ? (
-            <p className="text-gray-600 text-lg">{description}</p>
+            <p className="text-black text-lg">{description}</p>
           ) : (
             <Image
               src={numberImage}
@@ -56,7 +56,7 @@ const ServiceCard = ({
               className="object-contain ml-auto"
             />
           ) : (
-            <p className="text-gray-600 text-lg">{description}</p>
+            <p className="text-black text-lg">{description}</p>
           )}
         </div>
       </div>
@@ -83,7 +83,7 @@ const ServiceCard = ({
           </div>
         </div>
 
-        <p className="text-gray-600 text-lg text-center px-4">{description}</p>
+        <p className="text-black text-lg text-center px-4">{description}</p>
       </div>
     </div>
   );
@@ -95,19 +95,19 @@ export default function ThirdSection() {
       numberImage: "/img/01.svg",
       centerImage: "/img/audit.png",
       description:
-        "Une audit approfondi de votre site I Une audit seo pour ouvrir les portes à améliorer de votre site et booster vos résultats. Analyse du référencement, expérience utilisateur et stratégie digitale : nous valorisons les leviers d'amélioration pour atteindre vos objectifs et maximiser votre impact.",
+        "Grâce à notre expertise, nous réalisons un audit approfondi de votre projet pour comprendre vos besoins et vos objectifs. Nous analysons votre secteur d'activité, votre concurrence et votre cible pour vous proposer une solution digitale adaptée à votre entreprise et votre budget.",
     },
     {
       numberImage: "/img/02.svg",
       centerImage: "/img/maquette.png",
       description:
-        "Donnez-vie à vos idées grâce au design ! Rendez votre projet avant de réalisation grâce à des maquettes claires, fonctionnelles et optimisées. Chaque détail est pensé pour refléter votre vision et générer une expérience utilisateur optimale.",
+        "Nous créons des solutions sur mesure, adaptés à vos besoins et à votre image de marque. Nous vous proposons des maquettes graphiques pour vous donner un aperçu de votre futur site web. Nous vous accompagnons tout au long du processus de création de votre site web.",
     },
     {
       numberImage: "/img/03.svg",
       centerImage: "/img/ui.png",
       description:
-        "Une expérience utilisateur qui fait la différence ! Innovation, Rigueur ainsi qu'une recherche permanente de l'excellence et du détail. Nous concevons des interfaces intuitives et engageantes, pensées pour captiver vos utilisateurs. Un design efficace, c'est bien plus que du visuel : c'est fait de connaitre vos utlieurs en clients!",
+        "Ici, on donne vie à vos rêves. On intègre votre maquette pour une expérience utilisateur qui fait la différence. Nous créons des sites web ergonomiques, intuitifs, créés pour évoluer avec vous et pour offrir une expérience utilisateur optimale. Nous vous",
     },
     {
       numberImage: "/img/04.svg",
@@ -119,6 +119,14 @@ export default function ThirdSection() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="w-full text-center mt-20">
+        <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+          Vos applications sur mesure
+        </h2>
+        <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
+          Visibilité. Performance. Engagement.
+        </h3>
+      </div>
       {services.map((service, index) => (
         <ServiceCard key={index} {...service} index={index} />
       ))}

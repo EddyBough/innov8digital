@@ -68,10 +68,12 @@ export default function SecondSection() {
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center">
-          <h2 className="text-xl md:text-2xl font-bold mb-2 bg-title-gradient inline-block text-transparent bg-clip-text">
-            NOS SERVICES
+          <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+            Nos services
           </h2>
-          <h3 className="font-extrabold text-5xl mb-8">Nos prestations</h3>
+          <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
+            Visibilité. Performance. Engagement.
+          </h3>
         </div>
         <div className="flex justify-center w-full">
           <HoverEffect items={services} />

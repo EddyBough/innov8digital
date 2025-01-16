@@ -4,7 +4,7 @@ import React from "react";
 
 export default function FourSection() {
   return (
-    <section className="w-screen h-full font-aeonik relative overflow-hidden ">
+    <section className="w-screen h-full font-aeonik relative overflow-hidden py-6">
       <Image
         src={"/img/blur-purple.png"}
         alt=""
@@ -17,11 +17,11 @@ export default function FourSection() {
 
       <div className="max-w-7xl mx-auto px-4 py-28 mb-16">
         <div className="w-full text-center">
-          <h2 className="text-2xl sm:text-4xl md:text-2xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
-            NOS REALISATIONS
+          <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+            Nos réalisations
           </h2>
-          <h3 className="font-extrabold text-5xl mb-8">
-            A la pointe de l’innovation digitale
+          <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
+            A la pointe du digital
           </h3>
           <div className=" mb-0 mb md:mb-36">
             <Carousel />
