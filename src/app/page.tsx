@@ -1,6 +1,6 @@
-import FirstSection from "./sections-home/FirstSection";
-import FourSection from "./sections-home/FourSection";
+import { HeroSection } from "./sections-home/Hero-section";
 import SecondSection from "./sections-home/SecondSection";
+import FourSection from "./sections-home/FourSection";
 import ThirdSection from "./sections-home/ThirdSection";
 import ContactSection from "./sections-home/ContactSection";
 import SectionNeedSolution from "./creation-site-web/components/SectionNeedSolution";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className=" overflow-x-hidden">
       <main className=" ">
-        <FirstSection />
+        <HeroSection />
         <SecondSection />
         <ThirdSection />
         <FourSection />

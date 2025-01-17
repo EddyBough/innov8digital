@@ -5,19 +5,19 @@ export default function OurPresentationComponent() {
   const founders = [
     {
       name: "Eddy BOUGHANMI",
-      role: "Dev Lead et Fondateur",
+      role: "Dev Lead Fullstack et Fondateur d'INNOV8 Digital",
       image: "/img/Logo.svg",
       story:
-        "Passionné par le développement web et diplômé Bac+3/Bac+4 en Conception et Développement d'Applications j'ai travaillé pour de grandes entreprises avant de réaliser que je voulais créer quelque chose de différent. INNOV8 Digital est né de l'idée de rendre accessible à tous, des solutions qui ne l'étaient pas. Mon expertise en architecture logicielle et en développement full-stack ainsi que mon expertise en marketing digital m'a permis de concevoir des solutions innovantes pour nos clients.",
+        "Diplômé d'une licence et Bac+3/Bac+4 en Conception et Développement d'Applications j'ai travaillé pour de grandes entreprises avant de réaliser que je voulais créer quelque chose de différent. INNOV8 Digital est né de l'idée de rendre accessible à tous, des solutions qui ne l'étaient pas. Mon expertise en architecture logicielle et en développement full-stack ainsi que mon expertise en marketing digital m'a permis de concevoir des solutions innovantes pour nos clients.",
       linkedin: "https://www.linkedin.com/in/eddy-boughanmi/",
       github: "https://github.com/EddyBough?tab=repositories",
     },
     {
       name: "Dhoimir MGOMRI",
-      role: "Dev Lead & Co-fondateur",
+      role: "Dev Lead Front-end & Fondateur Innov8 Développement",
       image: "/img/Logo.svg",
       story:
-        "Diplômé Bac+3/Bac+4 en Conception et Développement d'Applications, et passionné par le design et le développement web front-end, j'ai toujours cherché à allier esthétique et performance. Avec une expertise approfondie en création d'interfaces modernes et en intégration web, je me suis spécialisé dans la conception d'expériences utilisateur uniques. INNOV8 DIGITAL est pour moi une opportunité d'offrir des solutions créatives et personnalisées pour nos clients.",
+        "Diplômé d'une licence et Bac+3/Bac+4 en Conception et Développement d'Applications, et passionné par le design et le développement web front-end, j'ai toujours cherché à allier esthétique et performance. Avec une expertise approfondie en création d'interfaces modernes et en intégration web, je me suis spécialisé dans la conception d'expériences utilisateur uniques. INNOV8 DIGITAL est pour moi une opportunité d'offrir des solutions créatives et personnalisées pour nos clients.",
       linkedin: "https://linkedin.com",
       github: "https://github.com",
     },
@@ -77,7 +77,9 @@ export default function OurPresentationComponent() {
                 <h3 className="text-2xl font-bold text-black mb-2">
                   {founder.name}
                 </h3>
-                <p className="text-black font-medium mb-6">{founder.role}</p>
+                <p className="text-black font-medium mb-6 text-center">
+                  {founder.role}
+                </p>
                 <p className="text-gray-700 text-center leading-relaxed mb-8">
                   {founder.story}
                 </p>

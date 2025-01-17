@@ -32,7 +32,7 @@ export default function SectionCreateWebSite() {
             description="Chez Innov8Digital, nous savons que chaque entreprise est unique. C'est pourquoi nos sites web sur mesure sont bien plus qu'une simple vitrine : ce sont des outils puissants, conçus spécifiquement pour répondre à vos besoins et refléter votre identité et évoluer, comme vous."
             imageSrc="/img/meating.png"
             imageAlt="Équipe Innov8Digital en réunion"
-            buttonHref="/https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
+            buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
           />
         </div>
       </div>

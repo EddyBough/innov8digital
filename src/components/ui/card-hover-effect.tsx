@@ -104,12 +104,7 @@ export const Card = ({ className, children }: CardProps) => {
 
 export const CardTitle = ({ className, children }: CardProps) => {
   return (
-    <h3
-      className={cn(
-        "text-2xl text-black font-extrabold tracking-wide mt-4",
-        className
-      )}
-    >
+    <h3 className={cn("text-2xl text-black tracking-wide mt-4", className)}>
       {children}
     </h3>
   );
