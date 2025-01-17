@@ -192,10 +192,13 @@ function DesktopNavbar({ className }: { className?: string }) {
           >
             Notre histoire
           </Link>
-
-          <Button className="bg-black hover:bg-gray-600 text-white px-6 py-2 rounded-full transition-all">
-            Parlons de votre projet
-          </Button>
+          <Link
+            href={"https://tidycal.com/boughanmieddy8/audit-de-votre-projet"}
+          >
+            <Button className="bg-black hover:bg-gray-600 text-white px-6 py-2 rounded-full transition-all">
+              Parlons de votre projet
+            </Button>
+          </Link>
         </div>
       </div>
     </Menu>
@@ -489,13 +492,19 @@ function MobileNavbar({
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <motion.button
-                className="w-full bg-black hover:bg-gray-600 text-white px-6 py-2 rounded-full transition-all"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+              <Link
+                href={
+                  "https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
+                }
               >
-                Parlons de votre projet
-              </motion.button>
+                <motion.button
+                  className="w-full bg-black hover:bg-gray-600 text-white px-6 py-2 rounded-full transition-all"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  Parlons de votre projet
+                </motion.button>
+              </Link>
             </motion.div>
           </motion.div>
         )}

@@ -8,11 +8,10 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center text-center px-4 overflow-hidden py-20 lg:py-20 md:py-0">
+    <section className="relative min-h-screen flex flex-col items-center text-center px-4 overflow-hidden py-20 lg:py-20 md:py-24">
       <div className="absolute inset-0 bg-[#fcfeff]" />
 
       <div className="relative z-10 w-full max-w-6xl mx-auto pt-20 lg:flex-col m-auto lg:items-center">
-        {/* Introduction SEO-friendly */}
         <div className="lg:flex flex-col items-center">
           <motion.h2
             className="text-xl lg:text-2xl bg-title-gradient inline-block text-transparent bg-clip-text pb-4"
@@ -71,7 +70,6 @@ export function HeroSection() {
           </motion.div>
         </div>
 
-        {/* Illustration visuelle */}
         <motion.div
           className="relative mt-16 lg:mt-0 lg:flex-1 lg:ml-8"
           initial={{ opacity: 0, y: 40 }}
