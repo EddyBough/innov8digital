@@ -34,11 +34,19 @@ h3 {
 }
 
 h1 {
-  font-family: "Gilroy-regular";
+  font-family: "Gilroy-Semibold", Arial, sans-serif;
+}
+
+span {
+  font-family: "Gilroy-SemiBold";
 }
 
 p {
   color: black;
+}
+
+button {
+  font-family: "Gilroy-SemiBold";
 }
 
 @layer base {

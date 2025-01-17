@@ -20,7 +20,7 @@ export default function SectionMethodologyCms() {
       icon: <ClipboardList size={48} />,
       title: "Découverte et stratégie",
       description:
-        "Analyse de vos besoins et élaboration d'un cahier des charges précis.Exemple : Quels sont vos objectifs principaux ? Conversion, engagement, branding ? Nous créons la solution qui y répond.",
+        "Analyse de vos besoins et élaboration d'un cahier des charges précis. Exemple : Quels sont vos objectifs principaux ? Conversion, engagement, branding ? Nous créons la solution qui y répond.",
     },
     {
       icon: <Settings2 size={48} />,
@@ -58,7 +58,7 @@ export default function SectionMethodologyCms() {
     <section className="relative overflow-hidden">
       <Image
         src={"/img/blur-orange.png"}
-        alt=""
+        alt="blur orange"
         width={400}
         height={1200}
         priority

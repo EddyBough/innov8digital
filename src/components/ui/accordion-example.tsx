@@ -41,7 +41,7 @@ export default function AccordionExample({ data, className }: AccordionProps) {
             value={item.value}
             className="lg:min-h-[100px] lg:py-6 py-4"
           >
-            <AccordionTrigger className="text-lg font-semibold">
+            <AccordionTrigger className="text-lg ">
               {item.question}
             </AccordionTrigger>
             <AccordionContent className="text-m">
