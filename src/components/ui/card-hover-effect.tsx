@@ -49,20 +49,20 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
             </AnimatePresence>
             <Card>
               <div className="flex flex-col h-full">
-                <div className="w-16 h-16 relative mb-6 bg-gray-100 rounded-lg flex items-center justify-center">
-                  <div className="w-12 h-12 relative">
+                <div className="w-32 h-32 mb-6 bg-gray-100 rounded-lg flex items-center justify-center">
+                  <div className="w-20 h-20 flex items-center justify-center">
                     <Image
                       src={item.image}
                       alt={`Icône pour ${item.title}`}
-                      width={48}
-                      height={48}
+                      width={80}
+                      height={80}
                       className="object-contain"
                     />
                   </div>
                 </div>
                 <CardTitle>{item.title}</CardTitle>
                 <div className="mt-auto pt-8 flex justify-between items-end">
-                  <p className=" text-s  text-blue-800 max-w-[70%] flex items-center gap-2">
+                  <p className="text-s text-blue-800 max-w-[70%] flex items-center gap-2">
                     {item.cta}
                     <ArrowRight className="w-4 h-4" />
                   </p>
