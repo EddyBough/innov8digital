@@ -101,13 +101,13 @@ export default function ThirdSection() {
       numberImage: "/img/02.svg",
       centerImage: "/img/maquette.png",
       description:
-        "Nous créons des solutions sur mesure, adaptés à vos besoins et à votre image de marque. Nous vous proposons des maquettes graphiques pour vous donner un aperçu de votre futur site web. Nous vous accompagnons tout au long du processus de création de votre site web.",
+        "Nous créons des solutions sur mesure, adaptés à vos besoins et à votre image de marque. Nous vous proposons des maquettes graphiques pour vous donner un aperçu de votre futur site web. Nous vous accompagnons tout au long du processus de création de votre site web ou application.",
     },
     {
       numberImage: "/img/03.svg",
       centerImage: "/img/ui.png",
       description:
-        "Ici, on donne vie à vos rêves. On intègre votre maquette pour une expérience utilisateur qui fait la différence. Nous créons des sites web ergonomiques, intuitifs, créés pour évoluer avec vous et pour offrir une expérience utilisateur optimale. Nous vous",
+        "Ici, on donne vie à vos rêves. On intègre votre maquette pour une expérience utilisateur qui fait la différence. Nous créons des sites web ergonomiques, intuitifs, créés pour évoluer avec vous et pour offrir une expérience utilisateur optimale.",
     },
     {
       numberImage: "/img/04.svg",
