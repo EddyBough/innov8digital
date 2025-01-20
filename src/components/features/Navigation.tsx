@@ -149,6 +149,22 @@ function DesktopNavbar({ className }: { className?: string }) {
               </HoveredLink>
             </div>
           </MenuItem>
+          <MenuItem setActive={setActive} active={active} item="Réalisation">
+            <div className="text-sm grid grid-cols-2 gap-8 p-2">
+              <ProductItem
+                title="GlycoWatch"
+                href="/realisations"
+                src="/img/newcapturedashboard.png"
+                description="Web-app qui vous permet de suivre votre diabète quotidiennement et gratuitement"
+              />
+              <ProductItem
+                title="Free Driving"
+                href="/realisations"
+                src="/img/freedrivingscreen.svg"
+                description="Web-app pour une auto-école qui vous permet de prendre des rendez-vous et suivre vos progrès"
+              />
+            </div>
+          </MenuItem>
         </div>
 
         {/* Logo central */}
@@ -169,23 +185,12 @@ function DesktopNavbar({ className }: { className?: string }) {
 
         {/* Section droite */}
         <div className="flex items-center gap-16">
-          <MenuItem setActive={setActive} active={active} item="Réalisation">
-            <div className="text-sm grid grid-cols-2 gap-8 p-2">
-              <ProductItem
-                title="GlycoWatch"
-                href="/realisations"
-                src="/img/newcapturedashboard.png"
-                description="Web-app qui vous permet de suivre votre diabète quotidiennement et gratuitement"
-              />
-              <ProductItem
-                title="Free Driving"
-                href="/realisations"
-                src="/img/freedrivingscreen.svg"
-                description="Web-app pour une auto-école qui vous permet de prendre des rendez-vous et suivre vos progrès"
-              />
-            </div>
-          </MenuItem>
-
+          <Link
+            href="/blog"
+            className="text-black hover:opacity-[0.9] dark:text-white cursor-pointer"
+          >
+            Blog
+          </Link>
           <Link
             href="/notre-histoire"
             className="text-black hover:opacity-[0.9] dark:text-white cursor-pointer"
@@ -465,13 +470,33 @@ function MobileNavbar({
 
             {/* A propos Section */}
             <Link
+              href="/blog"
+              className="block py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              <div>
+                <motion.button
+                  className="flex items-center justify-between w-full"
+                  onClick={() => {
+                    setActiveSubmenu((prev) =>
+                      prev === "À propos" ? null : "À propos"
+                    );
+                  }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <span className="font-medium">Blog</span>
+                </motion.button>
+                <AnimatePresence />
+              </div>
+            </Link>
+            <Link
               href="/notre-histoire"
               className="block py-2"
               onClick={() => setIsOpen(false)}
             >
               <div>
                 <motion.button
-                  className="flex items-center justify-between w-full py-2"
+                  className="flex items-center justify-between w-full"
                   onClick={() => {
                     setActiveSubmenu((prev) =>
                       prev === "À propos" ? null : "À propos"
