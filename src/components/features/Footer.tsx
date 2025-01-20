@@ -9,6 +9,7 @@ import {
   MapPin,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -44,38 +45,38 @@ const Footer = () => {
               même endroit, pour tout les budgets.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
-              <a
+              <Link
                 href="https://www.facebook.com/innov8digitalfr"
                 className="hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Facebook size={20} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://x.com/innov8digitalfr"
                 className="hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Twitter size={20} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com/innov8digitalfr/"
                 className="hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Instagram size={20} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/company/innov8digital-fr/"
                 className="hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Linkedin size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -84,33 +85,36 @@ const Footer = () => {
             <h3 className="text-white font-bold text-lg mb-4">Lien rapide</h3>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   href="/expertises"
                   className="hover:text-white transition-colors"
                 >
                   Expertise{" "}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/realisations"
                   className="hover:text-white transition-colors"
                 >
                   Réalisations
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="notre-histoire"
                   className="hover:text-white transition-colors"
                 >
                   Notre histoire
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog" className="hover:text-white transition-colors">
+                <Link
+                  href="/blog"
+                  className="hover:text-white transition-colors"
+                >
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -120,41 +124,44 @@ const Footer = () => {
             <h3 className="text-white font-bold text-lg mb-4">Nos Services</h3>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   href="/creation-site-web"
                   className="hover:text-white transition-colors"
                 >
                   Développement Web
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/creation-site-cms"
                   className="hover:text-white transition-colors"
                 >
                   Création de site E-commerce CMS{" "}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/application-mobile"
                   className="hover:text-white transition-colors"
                 >
                   Création d&apos;applications mobiles{" "}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/maintenance"
                   className="hover:text-white transition-colors"
                 >
                   Maintenance & support technique{" "}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/seo" className="hover:text-white transition-colors">
+                <Link
+                  href="/seo"
+                  className="hover:text-white transition-colors"
+                >
                   Stratégie digitale SEO & marketing
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -188,24 +195,24 @@ const Footer = () => {
               © {currentYear} INNOV8 DIGITAL. Tous droits réservés.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a
+              <Link
                 href="/cgv"
                 className="text-sm hover:text-white transition-colors"
               >
                 CGV
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/mentions-legales"
                 className="text-sm hover:text-white transition-colors"
               >
                 Mentions légales
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-sm hover:text-white transition-colors"
               >
                 Cookies
-              </a>
+              </Link>
             </div>
           </div>
         </div>
