@@ -27,24 +27,22 @@ export function BlogCard({
       <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
         <Card className="overflow-hidden bg-white/50 backdrop-blur-sm border border-gray-200">
           <div className="relative h-48 w-full">
-            <Image
-              src={image || "/placeholder.svg"}
-              alt={title}
-              fill
-              className="object-cover"
-            />
+            <Image src={image} alt={title} fill className="object-cover" />
           </div>
-          <div className="p-6">
-            <time dateTime={date} className="text-sm text-gray-500">
+
+          <div className="p-6 text-left space-y-4">
+            <time dateTime={date} className="text-sm text-gray-500 block">
               {date}
             </time>
-            <h3 className="mt-2 text-xl font-semibold text-gray-900">
+            <h3 className="text-xl font-semibold text-gray-900 leading-snug">
               {title}
             </h3>
-            <p className="mt-2 text-gray-600">{excerpt}</p>
+            <p className="text-gray-600 leading-relaxed">{excerpt}</p>
           </div>
-          <div className=" bg-blue-600 text-white px-3 py-1 inline-block rounded-full text-sm">
-            {category}
+          <div className="mt-4 ml-6">
+            <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+              {category}
+            </span>
           </div>
         </Card>
       </motion.div>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FeaturedPosts } from "./components/featured-posts";
 import type { Metadata } from "next";
 import SectionNeedSolution from "../creation-site-web/components/SectionNeedSolution";
+import ContactSection from "../sections-home/ContactSection";
 
 export const metadata: Metadata = {
   title: "Blog Innov8 Digital | Actualités & Insights sur le Développement Web",
@@ -48,6 +49,9 @@ export default function BlogPage() {
       </div>
       <div>
         <SectionNeedSolution />
+      </div>
+      <div>
+        <ContactSection />
       </div>
     </main>
   );
