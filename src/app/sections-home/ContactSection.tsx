@@ -19,7 +19,7 @@ export default function ContactSection() {
             quality={100}
           />
           <div className="flex flex-col items-center">
-            <p className="bg-title-gradient inline-block text-transparent bg-clip-text font-bold text-2xl md:text-3xl mb-2">
+            <p className="bg-title-gradient inline-block text-transparent bg-clip-text text-2xl md:text-3xl mb-2">
               Contact
             </p>
             <a
@@ -43,7 +43,7 @@ export default function ContactSection() {
             quality={100}
           />
           <div className="flex flex-col items-center">
-            <p className="bg-title-gradient inline-block text-transparent bg-clip-text font-bold text-2xl md:text-3xl mb-2">
+            <p className="bg-title-gradient inline-block text-transparent bg-clip-text text-2xl md:text-3xl mb-2">
               Email
             </p>
             <a

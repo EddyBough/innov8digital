@@ -25,7 +25,7 @@ const projects = [
         icon: "/img/postgresql-logo.svg",
       },
     ],
-    projectUrl: "https://glyco-watch.vercel.app/home",
+    projectUrl: "https://www.glycowatch.fr/home",
     screenshotUrl: "/img/newcapturedashboard.png",
   },
   {
@@ -70,7 +70,7 @@ export default function FirstSectionRealisation() {
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center mb-16">
-          <h1 className="text-xl sm:text-4xl  font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h1 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
             Nos projets
           </h1>
           <h2 className="lg:text-6xl text-4xl font-bold text-center lg:mb-20 mb-10 text-black">

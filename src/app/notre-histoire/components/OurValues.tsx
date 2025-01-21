@@ -31,8 +31,8 @@ export default function ValuesSection() {
     <section className="w-screen relative overflow-hidden mt-24">
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center mb-16">
-          <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
-            NOS VALEURS
+          <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+            Nos valeurs
           </h2>
           <h2 className="lg:text-6xl text-4xl font-bold text-center lg:mb-20 mb-10 text-black">
             Parce que c&apos;est notre credo
