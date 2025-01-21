@@ -25,7 +25,7 @@ export default function InvestAgency2025() {
             20 Janvier 2025
           </time>
           <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
-            Innovation
+            Développement
           </span>
         </div>
         <h1

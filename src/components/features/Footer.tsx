@@ -19,7 +19,7 @@ const Footer = () => {
       {/* Arc with Logo */}
       <div className="absolute left-1/2 -top-8 transform -translate-x-1/2">
         <div className="relative">
-          <div className="w-36 h-20 bg-white rounded-b-full"></div>
+          <div className="w-36 h-20 bg-[#fcfeff] rounded-b-full"></div>
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <Image
               src={"/img/Logo.svg"}
