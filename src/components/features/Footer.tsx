@@ -178,11 +178,21 @@ const Footer = () => {
               </li>
               <li className="flex items-center justify-center md:justify-start space-x-3">
                 <Phone size={18} />
-                <span>06.26.29.16.76</span>
+                <a
+                  href="tel:+33626291676"
+                  className="hover:text-blue-400 transition-colors"
+                >
+                  06.26.29.16.76
+                </a>
               </li>
               <li className="flex items-center justify-center md:justify-start space-x-3">
                 <Mail size={18} />
-                <span>contact@innov8digital.fr</span>
+                <a
+                  href="mailto:contact@innov8digital.fr"
+                  className="hover:text-blue-400 transition-colors"
+                >
+                  contact@innov8digital.fr
+                </a>
               </li>
             </ul>
           </div>
@@ -208,7 +218,7 @@ const Footer = () => {
                 Mentions légales
               </Link>
               <Link
-                href="#"
+                href="/cookies"
                 className="text-sm hover:text-white transition-colors"
               >
                 Cookies
