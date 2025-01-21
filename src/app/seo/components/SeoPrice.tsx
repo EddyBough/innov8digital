@@ -33,7 +33,7 @@ export default function SeoPrice() {
 
       {/* Pricing section header */}
       <div className="text-center mt-12 md:mt-20">
-        <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
           Développement de site web
         </h2>
       </div>

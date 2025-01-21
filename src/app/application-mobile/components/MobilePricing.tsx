@@ -54,7 +54,7 @@ export default function MobilePrice() {
       features: [
         { text: "Fonctionnalité de l’offre Standard", enabled: true },
         {
-          text: "Développement d’applications natives (iOS avec Swift et Android avec Kotlin).",
+          text: "Développement d’applications natives (iOS avec Swift et Android avec React Native).",
           enabled: true,
         },
         {
@@ -124,7 +124,7 @@ export default function MobilePrice() {
 
       {/* Portfolio section */}
       <div className="text-center mt-32 md:mt-60">
-        <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
           Nos réalisations
         </h2>
         <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
