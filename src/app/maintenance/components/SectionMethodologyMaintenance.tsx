@@ -106,7 +106,7 @@ export default function SectionMethodologyMaintenance() {
         </div>
 
         <div className="w-full text-center mt-32 md:mt-60">
-          <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
             Nos services de maintenance et support
           </h2>
           <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">

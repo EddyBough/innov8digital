@@ -18,7 +18,7 @@ export default function SectionSeo() {
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center mt-20">
-          <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
             Stratégie Digitale, SEO & Marketing
           </h2>
           <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function LegalNotice() {
   return (
-    <section className="relative w-full px-6 py-12 mt-10 lg:px-20 lg:py-24">
+    <section className="relative w-full px-6 py-12 lg:mt-5 mt-8 lg:px-20 lg:py-24">
       {/* Effet de blur */}
       <Image
         src={"/img/blur-blue.png"}
