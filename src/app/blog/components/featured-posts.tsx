@@ -8,8 +8,8 @@ const posts = [
     excerpt:
       "ChatGPT, Claude, DeepMind etc... Ils sont en train de créer un nouveau monde, voici comment en tirer le maximum pour vos business.",
     image: "/img/aiapps.jpg",
-    date: "20 Janvier 2024",
-    category: "SEO",
+    date: "20 Janvier 2025",
+    category: "Innovation",
     slug: "evolution-ia-2025",
   },
   {
@@ -17,7 +17,7 @@ const posts = [
     excerpt:
       "Travailler avec une agence digitale composée de développeurs diplômés apporte une garantie de qualité, de performance et d'innovation. On vous dit pourquoi cela fait toute la différence. ",
     image: "/img/man-thinking.jpg",
-    date: "19 Janvier 2024",
+    date: "20 Janvier 2025",
     category: "Développement",
     slug: "investir-agence-digitale-2025",
   },
