@@ -49,12 +49,12 @@ const PricingCard = ({
               </h3>
             )}
           </div>
-          {showStartingFrom && (
-            <p className="my-2 m-auto text-center">A partir de</p>
-          )}
         </div>
 
-        <div className="mb-4">
+        <div className="mb-4 h-44 flex flex-col items-center justify-end pb-8">
+          {" "}
+          {/* Hauteur fixe ajoutée ici */}
+          {showStartingFrom && <p className="mb-2 text-center">A partir de</p>}
           <div className="flex flex-col items-center text-black">
             <div className="flex items-start">
               <div className="text-5xl font-medium">{price}</div>
