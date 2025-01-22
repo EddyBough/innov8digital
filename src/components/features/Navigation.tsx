@@ -244,7 +244,11 @@ function MobileNavbar({
   );
 
   return (
-    <div className="relative shadow-md saturate-100 backdrop-blur-[10px]">
+    <div
+      className={`relative shadow-md ${
+        isOpen ? "bg-white" : "saturate-100 backdrop-blur-[10px]"
+      }`}
+    >
       {/* Header Mobile */}
       <div className="flex items-center justify-between px-4 py-2">
         <Link href="/">
@@ -338,6 +342,7 @@ function MobileNavbar({
                     animate="open"
                     exit="closed"
                     className="pl-4 py-2 space-y-2 overflow-hidden"
+                    onClick={() => setIsOpen(false)}
                   >
                     <SubMenuItem href="/expertises" delay={0.1}>
                       Expertise
@@ -455,6 +460,7 @@ function MobileNavbar({
                     initial="closed"
                     animate="open"
                     exit="closed"
+                    onClick={() => setIsOpen(false)}
                     className="pl-4 py-2 space-y-2 overflow-hidden"
                   >
                     <SubMenuItem href="/realisations" delay={0.1}>
