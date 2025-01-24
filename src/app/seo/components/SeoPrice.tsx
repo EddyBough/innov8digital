@@ -6,14 +6,20 @@ import PricingCard, { Feature } from "@/components/ui/PricingCard";
 export default function SeoPrice() {
   const pricingPlans = [
     {
-      title: "Stratégie digitale complete",
+      title: "SEO & Marketing Digital complet",
+      subtitle: "Votre accompagnement de A à Z pour un succès digital",
       showStartingFrom: false,
       price: "Sur devis",
       features: [
         { text: "Audit & Analyse ", enabled: true },
         { text: "Optimisation SEO ", enabled: true },
+        { text: "Mise en place d'outil de mesure ", enabled: true },
+        { text: "Suivi des actions mise en place", enabled: true },
+        { text: "Création de contenu", enabled: true },
+        { text: "Optimisation SEO ", enabled: true },
+        { text: " Création et gestion des réseaux sociaux", enabled: true },
         {
-          text: "Marketing de Contenu: Création et diffusion de contenus engageants : articles, newsletters, publications sociales pour renforcer votre image et captiver votre audience.",
+          text: "Création et diffusion de contenus engageants : articles, newsletters etc...",
           enabled: true,
         },
       ] as Feature[],
@@ -23,7 +29,7 @@ export default function SeoPrice() {
     <section>
       <Image
         src={"/img/blur-pink.png"}
-        alt=""
+        alt="effet de flou pink"
         width={400}
         height={1200}
         priority
@@ -34,8 +40,11 @@ export default function SeoPrice() {
       {/* Pricing section header */}
       <div className="text-center mt-12 md:mt-20">
         <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
-          Développement de site web
+          SEO & Marketing Digital
         </h2>
+        <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
+          On fabrique votre succès digital
+        </h3>
       </div>
       {/* Pricing cards container */}
       <div className="mt-16 lg:mt-28 mb-24 lg:mb-36 flex flex-col lg:flex-row justify-center items-stretch gap-6 lg:gap-8">
