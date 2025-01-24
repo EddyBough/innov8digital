@@ -6,7 +6,6 @@ import Footer from "../components/features/Footer";
 import localFont from "next/font/local";
 import CookieBanner from "@/components/CookieBanner";
 import Script from "next/script";
-import AnnouncementBanner from "@/components/AnnouncementBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -124,7 +123,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${aeonik.variable} antialiased`}
       >
-        <AnnouncementBanner />
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
