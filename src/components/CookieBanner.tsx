@@ -65,12 +65,13 @@ const CookieBanner = () => {
       <button
         onClick={handleAccept}
         style={{
-          background: "#00C851",
+          background: "#000",
           color: "#fff",
           border: "none",
           padding: "10px 15px",
           margin: "5px",
           borderRadius: "5px",
+          minWidth: "120px",
         }}
       >
         Accepter
@@ -84,6 +85,7 @@ const CookieBanner = () => {
           padding: "10px 15px",
           margin: "5px",
           borderRadius: "5px",
+          minWidth: "120px",
         }}
       >
         Refuser
