@@ -13,6 +13,17 @@ export function HeroSection() {
 
       <div className="relative z-10 w-full max-w-6xl mx-auto pt-20 lg:flex-col m-auto lg:items-center">
         <div className="lg:flex flex-col items-center">
+          <motion.div
+            className="bg-gradient-to-r from-orange-400 to-red-400 text-white px-4 py-2 rounded-full inline-block mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            <span className="font-semibold">
+              Promo de lancement : Jusqu&apos;à -30% jusqu&apos;au 28 février
+              2025 !
+            </span>
+          </motion.div>
           <motion.h2
             className="text-xl lg:text-2xl bg-title-gradient inline-block text-transparent bg-clip-text pb-4"
             initial={{ opacity: 0, y: 20 }}
