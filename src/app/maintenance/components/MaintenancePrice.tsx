@@ -5,7 +5,8 @@ import PricingCard, { Feature } from "@/components/ui/PricingCard";
 export default function MaintenancePrice() {
   const pricingPlans = [
     {
-      title: "Stratégie digitale complete",
+      title: "Maintenance complète Web & Mobile",
+      subtitle: "Idéal pour s'assurer une tranquillité au quotidien",
       price: 99,
       isMonthly: true,
       features: [
@@ -33,7 +34,9 @@ export default function MaintenancePrice() {
       ] as Feature[],
     },
     {
-      title: "Stratégie digitale complete",
+      title: "Maintenance complète CMS & E-commerce",
+      subtitle:
+        "Idéal pour le maintien de votre site e-commerce WordPress ou Shopify",
       price: 99,
       isMonthly: true,
       features: [
@@ -78,7 +81,7 @@ export default function MaintenancePrice() {
           Maintenance de votre site web & application
         </h2>
         <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
-          Maintenance
+          Votre tranquillité à petit prix
         </h3>
       </div>
       {/* Pricing cards container */}

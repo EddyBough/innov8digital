@@ -79,7 +79,7 @@ export default function SectionMethodologyMaintenance() {
             Maintenance & Support technique
           </h2>
           <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
-            Pourquoi la maintenance est indispensable ?
+            Pourquoi la maintenance est indispensable
           </h3>
         </div>
 
@@ -110,7 +110,7 @@ export default function SectionMethodologyMaintenance() {
             Nos services de maintenance et support
           </h2>
           <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
-            Nos prestations
+            Votre sérénité au quotidien
           </h3>
         </div>
 
