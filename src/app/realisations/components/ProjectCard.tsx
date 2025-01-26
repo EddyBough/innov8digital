@@ -66,14 +66,14 @@ const ProjectCard = ({
       </div>
 
       {/* Right side - Screenshot */}
-      <div className="flex-1 bg-[#04B2BC] p-6 lg:p-12 rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none flex items-center">
-        <div className="relative rounded-xl overflow-hidden shadow-2xl">
+      <div className="flex-1 bg-[#04B2BC] p-6 lg:p-12 rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none flex items-center justify-center">
+        <div className="relative w-full max-w-md rounded-xl overflow-hidden shadow-2xl">
           <Image
             src={screenshotUrl}
             alt={`Capture d'écran du projet ${title}`}
-            className="w-full h-auto"
-            width={400}
-            height={400}
+            className="w-full h-auto object-center"
+            width={800}
+            height={800}
             priority
             quality={100}
           />

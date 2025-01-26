@@ -65,7 +65,7 @@ export default function CmsPrice() {
       ] as Feature[],
     },
     {
-      title: "Personalisée",
+      title: "Personnalisée",
       subtitle: "Parfait pour les grandes entreprise ou boutique e-commerce",
       showStartingFrom: false,
       price: "Sur devis",

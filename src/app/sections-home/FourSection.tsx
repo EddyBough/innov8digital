@@ -7,7 +7,7 @@ export default function FourSection() {
     <section className="w-screen h-full font-aeonik relative overflow-hidden pb-16">
       <Image
         src={"/img/blur-purple.png"}
-        alt=""
+        alt="flou violet"
         width={400}
         height={1200}
         priority
@@ -23,7 +23,7 @@ export default function FourSection() {
           <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
             A la pointe du digital
           </h3>
-          <div className=" mb-0 mb md:mb-36">
+          <div className="mb-0 md:mb-36 lg:mb-0">
             <Carousel />
           </div>
         </div>
