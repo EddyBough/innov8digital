@@ -17,23 +17,23 @@ const Carousel = () => {
       description:
         "Glycowatch est une application PWA créée pour les diabétiques. Ils peuvent créer leur compte et suivre le taux de glycémie chaque jour. L'application permet également d'extraire les données sous forme de PDF afin de les montrer à leur médecin.",
       src: "/img/GlycoWatch.png",
-      projectLink: "/projects/glycowatch",
+      projectLink: "/realisations",
     },
     {
       category: "Application Web",
-      title: "Free Driving",
+      title: "Free Driving (bientôt)",
       description:
         "FreeDriving est une application web conçue pour simplifier la gestion des rendez-vous dans une auto-école. Elle offre un tableau de bord interactif, des notifications automatiques pour les élèves et les moniteurs, et une gestion fluide des plannings pour éviter les conflits.",
       src: "/img/free-driving.png",
-      projectLink: "/projects/free-driving",
+      projectLink: "/realisations",
     },
     {
       category: "Application Web",
-      title: "Hair Time",
+      title: "Hair Time (bientôt)",
       description:
         "Hair Time est une application web dédiée aux salons de coiffure. Elle permet aux salons de créer un profil, de gérer leurs rendez-vous et de visualiser les créneaux disponibles. L'objectif est d'optimiser les réservations et d'améliorer l'expérience client.",
       src: "/img/Hair-time.png",
-      projectLink: "/projects/hair-time",
+      projectLink: "/realisations",
     },
   ];
 
