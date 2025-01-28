@@ -2,6 +2,7 @@
 import Image from "next/image";
 import TechnologyCard from "@/components/ui/TechnologyCard";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const TechnologySection = () => {
   const technologies = [
@@ -73,10 +74,15 @@ const TechnologySection = () => {
                 />
               ))}
             </div>
-
-            <Button className="bg-black text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors font-aeonik">
-              Découvrir nos services
-            </Button>
+            <Link
+              href="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-black w-full text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors font-aeonik">
+                Réservez un audit gratuit
+              </Button>
+            </Link>
           </div>
 
           {/* Right Section - Technology Cards */}
