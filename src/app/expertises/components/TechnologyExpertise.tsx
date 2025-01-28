@@ -59,7 +59,7 @@ const TechnologySection = () => {
               d&apos;une étude approfondie qui permet à nos développeurs de
               sélectionner les outils les plus adaptés à sa réalisation. Cette
               méthodologie garantit à nos clients un développement sur mesure
-              pour une solution qui répond parfaitement à tous leurs besoins
+              pour des solutions qui répondent parfaitement à tous leurs besoins
               techniques et fonctionnels. Nous sommes également experts dans
               d&apos;autres technologies, tout dépend de vos besoins.
             </p>
