@@ -258,6 +258,7 @@ function MobileNavbar({
             width={80}
             height={40}
             className="object-contain"
+            onClick={() => setIsOpen(false)}
           />
         </Link>
         <motion.button
