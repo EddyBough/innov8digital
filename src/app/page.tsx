@@ -11,7 +11,7 @@ import { AnalyticsShowcase } from "./sections-home/Analytics-showcase";
 export default function Home() {
   return (
     <div className=" overflow-x-hidden">
-      <main className=" ">
+      <main>
         <HeroSection />
         <SecondSection />
         <AnalyticsShowcase />
