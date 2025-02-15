@@ -59,9 +59,9 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Grâce à notre expertise et notre accompagnement, nous transformons
-              vos idées en projets numériques sur mesure, pour un impact
-              durable, une croissance accélérée et mesurable.
+              Des sites web et applications conçus par de vrais développeurs,
+              qui convertissent et automatisent votre business. L’IA et
+              l’automatisation travaillent pour vous.
             </motion.p>
           </motion.div>
 
