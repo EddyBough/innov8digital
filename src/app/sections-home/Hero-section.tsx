@@ -20,8 +20,8 @@ export function HeroSection() {
             transition={{ delay: 0.2 }}
           >
             <span className="font-semibold">
-              Promo de lancement : Jusqu&apos;à -30% jusqu&apos;au 28 février
-              2025 !
+              Promo de lancement : Jusqu&apos;à -30% jusqu&apos;au 31 Mars 2025
+              !
             </span>
           </motion.div>
           <motion.h2
