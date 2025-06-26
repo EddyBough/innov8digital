@@ -39,7 +39,7 @@ export default function SectionWebRedesign() {
       />
       <div className="max-w-7xl mx-auto px-4 ">
         <div className="w-full text-center">
-          <h2 className="text-xl sm:text-4xl font-aeonik font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h2 className="text-xl sm:text-4xl font-bold bg-title-gradient inline-block text-transparent bg-clip-text">
             Refonte web
           </h2>
           <h3 className="lg:text-6xl text-2xl font-bold text-center lg:mb-20 mb-10">

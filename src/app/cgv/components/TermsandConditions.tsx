@@ -18,7 +18,7 @@ export default function TermsAndConditions() {
       />
 
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl lg:text-6xl font-aeonik my-3 md:my-5 text-center mb-8 lg:mb-20">
+        <h1 className="text-3xl lg:text-6xl my-3 md:my-5 text-center mb-8 lg:mb-20">
           Conditions Générales de Vente
         </h1>
 

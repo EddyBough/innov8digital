@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -10,7 +11,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        aeonik: ["var(--font-aeoniktrial)"],
+        Urbanist: ["var(--font-urbanist)"],
       },
       backgroundImage: {
         "title-gradient":
@@ -84,5 +85,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [animate],
 } satisfies Config;

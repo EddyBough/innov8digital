@@ -6,7 +6,7 @@ export default function ContactSection() {
   const phone = "06 26 29 16 76";
 
   return (
-    <section className=" font-aeonik px-4 py-8">
+    <section className="px-4 py-8">
       <div className="flex flex-col md:flex-row md:space-x-16 lg:space-x-60 justify-center items-center gap-8 md:gap-0">
         <div className="flex flex-col items-center mb-16 md:mb-36">
           <Image

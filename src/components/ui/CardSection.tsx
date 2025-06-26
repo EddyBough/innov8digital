@@ -5,13 +5,13 @@ import { HeartHandshake, Infinity, MessageCircle } from "lucide-react";
 
 const CardSection = () => {
   return (
-    <div className="w-full py-20 px-4 font-aeonik">
+    <div className="w-full py-20 px-4 font-">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <article className="h-full">
           <GlassCard
             icon={<HeartHandshake size={48} />}
             title={
-              <div className="text-lg font-bold font-aeonik">
+              <div className="text-lg font-bold font-">
                 Une attention unique
               </div>
             }
@@ -22,7 +22,7 @@ const CardSection = () => {
           <GlassCard
             icon={<Infinity size={48} />}
             title={
-              <div className="text-lg font-bold font-aeonik">
+              <div className="text-lg font-bold font-">
                 Un partenariat durable
               </div>
             }

@@ -15,7 +15,7 @@ const TechnologyCard = ({ name, image }: TechnologyCardProps) => {
           height={80}
           className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] object-contain"
         />
-        <h4 className="absolute bottom-1 left-4 text-lg text-black font-aeonik">
+        <h4 className="absolute bottom-1 left-4 text-lg text-black font-">
           {name}
         </h4>
       </div>

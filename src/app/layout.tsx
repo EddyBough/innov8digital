@@ -17,25 +17,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const aeonik = localFont({
+const urbanist = localFont({
   src: [
     {
-      path: "./fonts/Aeoniktrial-light.otf",
+      path: "./fonts/Urbanist-Light.ttf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "./fonts/Aeoniktrial-regular.otf",
+      path: "./fonts/Urbanist-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./fonts/Aeoniktrial-bold.otf",
+      path: "./fonts/Urbanist-Bold.ttf",
       weight: "700",
       style: "normal",
     },
   ],
-  variable: "--font-aeoniktrial",
+  variable: "--font-urbanist",
 });
 
 export const metadata: Metadata = {
@@ -121,7 +121,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${aeonik.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${urbanist.variable} antialiased`}
       >
         {/* Google Tag Manager (noscript) */}
         <noscript>

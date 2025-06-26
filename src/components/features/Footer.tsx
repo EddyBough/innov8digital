@@ -15,7 +15,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#202834] text-gray-300 font-aeonik relative">
+    <footer className="bg-[#202834] text-gray-300 relative">
       {/* Arc with Logo */}
       <div className="absolute left-1/2 -top-8 transform -translate-x-1/2">
         <div className="relative">
