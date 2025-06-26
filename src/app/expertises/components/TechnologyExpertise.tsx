@@ -52,7 +52,7 @@ const TechnologySection = () => {
                 Nos services
               </h2>
             </div>
-            <p className="text-lg text-black mb-8 lg:text-start text-center font-aeonik">
+            <p className="text-lg text-black mb-8 lg:text-start text-center font-">
               Notre agence Innov8 Digital s&apos;appuie sur des technologies
               modernes pour créer des sites et applications performants et à la
               pointe de l&apos;innovation. Chaque projet fait l&apos;objet
@@ -79,7 +79,7 @@ const TechnologySection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="bg-black w-full text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors font-aeonik">
+              <Button className="bg-black w-full text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors font-">
                 Réservez un audit gratuit
               </Button>
             </Link>

@@ -78,7 +78,7 @@ export function Navigation() {
 
   return (
     <div
-      className={`fixed font-aeonik w-full z-50 transition-transform duration-300 ${
+      className={`fixed w-full z-50 transition-transform duration-300 ${
         scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
       }`}
     >
@@ -88,7 +88,7 @@ export function Navigation() {
       </div>
 
       {/* Version Mobile */}
-      <div className="lg:hidden w-full font-aeonik">
+      <div className="lg:hidden w-full">
         <MobileNavbar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
       </div>
     </div>

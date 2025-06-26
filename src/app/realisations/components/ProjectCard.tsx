@@ -59,7 +59,7 @@ const ProjectCard = ({
           </div>
         </div>
         <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-          <Button className="bg-black text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors font-aeonik">
+          <Button className="bg-black text-white px-6 py-6 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-gray-800 transition-colors font-">
             Découvrir le projet
           </Button>
         </a>

@@ -24,7 +24,7 @@ export default function OurPresentationComponent() {
   ];
 
   return (
-    <section className="w-screen relative overflow-hidden mt-24 lg:pb-52 md:pb-52 pb-16 font-aeonik">
+    <section className="w-screen relative overflow-hidden mt-24 lg:pb-52 md:pb-52 pb-16 font-">
       {/* Blur droit */}
       <Image
         src={"/img/blur-blue.png"}

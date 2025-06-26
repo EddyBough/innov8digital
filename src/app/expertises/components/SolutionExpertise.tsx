@@ -16,7 +16,7 @@ const SolutionExpertise = () => {
           </h3>
         </div>
         <div className="flex justify-center w-full ">
-          <div className="w-full py-20 px-4 font-aeonik">
+          <div className="w-full py-20 px-4 font-">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
               <GlassCard
                 icon={<Cloud size={48} />}
