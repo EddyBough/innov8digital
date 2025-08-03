@@ -9,7 +9,8 @@ export default function CmsPrice() {
     {
       title: "Essentielle",
       subtitle: "Idéal pour les sites vitrines & petites entreprises",
-      price: 1200,
+      price: "Sur devis",
+      badge: "populaire" as const,
       features: [
         { text: "Audit approfondi", enabled: true },
         { text: "Installation CMS (Wordpress, Shopify)", enabled: true },
@@ -21,7 +22,8 @@ export default function CmsPrice() {
     {
       title: "Standard",
       subtitle: "Conçu pour les entreprise à croissance rapide",
-      price: 1500,
+      price: "Sur devis",
+      badge: "recommandé" as const,
       features: [
         { text: "Fonctionnalité de l’offre Essentielle.", enabled: true },
         {
@@ -45,7 +47,7 @@ export default function CmsPrice() {
     {
       title: "Avancée",
       subtitle: "Parfait pour les grandes entreprise ou boutique e-commerce",
-      price: 3500,
+      price: "Sur devis",
       features: [
         { text: "Fonctionnalité de l’offre Standard", enabled: true },
         {
@@ -67,7 +69,7 @@ export default function CmsPrice() {
     {
       title: "Personnalisée",
       subtitle: "Parfait pour les grandes entreprise ou boutique e-commerce",
-      showStartingFrom: false,
+
       price: "Sur devis",
       features: [
         { text: "Analyse personnalisée", enabled: true },

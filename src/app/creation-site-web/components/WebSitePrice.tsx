@@ -1,15 +1,19 @@
 "use client";
 import React from "react";
-import PricingCard, { Feature } from "@/components/ui/PricingCard";
+import PricingCard, {
+  Feature,
+  PricingCardProps,
+} from "@/components/ui/PricingCard";
 import Image from "next/image";
 import Carousel from "@/components/features/Carousel";
 
 export default function WebSitePrice() {
-  const pricingPlans = [
+  const pricingPlans: PricingCardProps[] = [
     {
       title: "Essentielle",
       subtitle: "Idéal pour les sites vitrines & petites entreprises/Portfolio",
-      price: 1990,
+      price: "Sur devis",
+      badge: "populaire" as const,
       features: [
         { text: "Audit initial: Analyse des besoins", enabled: true },
         { text: "Maquettage sur mesure", enabled: true },
@@ -21,7 +25,8 @@ export default function WebSitePrice() {
     {
       title: "Standard",
       subtitle: "Conçu pour les entreprise à croissance rapide",
-      price: 2490,
+      price: "Sur devis",
+      badge: "recommandé" as const,
       features: [
         { text: "Audit approfondi", enabled: true },
         {
@@ -49,7 +54,7 @@ export default function WebSitePrice() {
     {
       title: "Avancée",
       subtitle: "Parfait pour les grandes entreprise ou boutique e-commerce",
-      price: 4990,
+      price: "Sur devis",
       features: [
         { text: "Audit stratégique complet", enabled: true },
         {
@@ -81,7 +86,6 @@ export default function WebSitePrice() {
     {
       title: "Personnalisée",
       subtitle: "Parfait pour les grandes entreprise ou boutique e-commerce",
-      showStartingFrom: false,
       price: "Sur devis",
       features: [
         { text: "Devis à la demande", enabled: true },

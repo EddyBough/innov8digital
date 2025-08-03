@@ -8,7 +8,7 @@ export default function SectionDigitalBoost() {
     {
       title: "Stratégie digitale complète",
       price: "Sur devis",
-      showStartingFrom: false,
+
       features: [
         { text: "Audit & Analyse ", enabled: true },
         {

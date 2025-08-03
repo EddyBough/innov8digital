@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 import { PhoneMockup } from "@/components/ui/PhoneMockup";
@@ -16,6 +17,15 @@ const clientLogos = [
 ];
 
 export function HeroSection() {
+  const [email, setEmail] = useState("");
+
+  const handleGetQuote = () => {
+    window.open(
+      "https://tidycal.com/boughanmieddy8/audit-de-votre-projet",
+      "_blank"
+    );
+  };
+
   return (
     <>
       {/* Hero Section */}
@@ -37,7 +47,7 @@ export function HeroSection() {
             {/* Blur Purple */}
             <Image
               src="/img/blur-purple.png"
-              alt=""
+              alt="blur purple"
               width={900}
               height={900}
               className="absolute right-[5%] top-[10%] opacity-60 xl:blur-[120px] blur-[240px] object-contain"
@@ -74,14 +84,19 @@ export function HeroSection() {
             >
               <div className="relative flex-1 w-full">
                 <input
-                  type="text"
-                  placeholder="Décrivez votre projet en quelques mots..."
+                  type="email"
+                  placeholder="Votre email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-6 sm:px-8 py-4 sm:py-5 text-base sm:text-lg lg:text-xl bg-white border-2 border-gray-200 rounded-full focus:outline-none focus:border-blue-500 shadow-xl placeholder-gray-400"
-                  aria-label="Décrivez votre projet digital"
+                  aria-label="Votre email"
                 />
               </div>
-              <Button className="bg-gray-900 text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg lg:text-xl hover:bg-gray-800 shadow-xl flex items-center gap-2 sm:gap-3 whitespace-nowrap">
-                Obtenir un devis gratuit
+              <Button
+                onClick={handleGetQuote}
+                className="bg-gray-900 text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg lg:text-xl hover:bg-gray-800 shadow-xl flex items-center gap-2 sm:gap-3 whitespace-nowrap"
+              >
+                Je demande mon audit gratuit
                 <svg
                   className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6"
                   fill="none"
@@ -156,11 +171,11 @@ export function HeroSection() {
               id="stats-title"
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-4 sm:mb-6"
             >
-              L&apos;agence qui transforme vos idées en réalité
+              L&apos;agence qui transforme votre business en machine
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-4">
               Spécialistes de la création web, des automatisations et de
-              l&apos;intelligence artificielle
+              l&apos;intelligence artificielle orientée business
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-12 text-gray-400 text-sm sm:text-base">
               <span>Startups</span>

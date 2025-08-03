@@ -8,7 +8,7 @@ export default function SeoPrice() {
     {
       title: "SEO & Marketing Digital complet",
       subtitle: "Votre accompagnement de A à Z pour un succès digital",
-      showStartingFrom: false,
+
       price: "Sur devis",
       features: [
         { text: "Audit & Analyse ", enabled: true },

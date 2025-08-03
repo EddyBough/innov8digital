@@ -8,7 +8,7 @@ export default function SectionWebRedesign() {
   const pricingPlans = [
     {
       title: "Refonte basique",
-      price: 1100,
+      price: "Sur devis",
 
       features: [
         {
@@ -19,7 +19,7 @@ export default function SectionWebRedesign() {
     },
     {
       title: "Refonte complète",
-      price: 3800,
+      price: "Sur devis",
       features: [
         {
           text: "Refonte complète visuelle UI/UX",
