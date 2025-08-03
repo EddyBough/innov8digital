@@ -19,8 +19,8 @@ export type PricingCardProps = {
   className?: string;
   featuresContainerClassName?: string;
   isMonthly?: boolean;
-  showStartingFrom?: boolean;
   buttonHref?: string;
+  badge?: "populaire" | "recommandé";
 };
 
 const PricingCard = ({
@@ -34,12 +34,34 @@ const PricingCard = ({
   className = "",
   featuresContainerClassName = "",
   isMonthly = false,
-  showStartingFrom = true,
   buttonHref,
+  badge,
 }: PricingCardProps) => {
+  // Styles conditionnels basés sur le badge
+  const getBorderStyle = () => {
+    if (badge === "populaire") return "border-2 border-blue-500";
+    if (badge === "recommandé") return "border-2 border-green-500";
+    return "";
+  };
+
+  const getBadgeStyle = () => {
+    if (badge === "populaire")
+      return "bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full absolute -top-3 -right-2 z-10";
+    if (badge === "recommandé")
+      return "bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full absolute -top-3 -right-2 z-10";
+    return "";
+  };
+
   return (
-    <div className={`w-80 md:w-72 ${className}`}>
-      <div className="rounded-[36px] shadow-xl bg-white px-5 py-8 h-full flex flex-col">
+    <div className={`w-80 md:w-72 relative ${className}`}>
+      {badge && (
+        <div className={getBadgeStyle()}>
+          {badge === "populaire" ? "POPULAIRE" : "RECOMMANDÉ"}
+        </div>
+      )}
+      <div
+        className={`rounded-[36px] shadow-xl bg-white px-5 py-8 h-full flex flex-col ${getBorderStyle()}`}
+      >
         <div className="mb-4">
           <h3 className="text-center text-2xl font-bold text-black">{title}</h3>
           <div className="h-16 flex items-center justify-center">
@@ -51,10 +73,9 @@ const PricingCard = ({
           </div>
         </div>
 
-        <div className="mb-4 h-44 flex flex-col items-center justify-end pb-8">
+        <div className="mb-4 h-20 flex flex-col items-center justify-center">
           {" "}
           {/* Hauteur fixe ajoutée ici */}
-          {showStartingFrom && <p className="mb-2 text-center">A partir de</p>}
           <div className="flex flex-col items-center text-black">
             <div className="flex items-start">
               <div className="text-5xl font-medium">{price}</div>
@@ -69,7 +90,6 @@ const PricingCard = ({
                 </div>
               )}
             </div>
-            <p className="mt-2 text-sm text-gray-600">prix indicatif</p>
           </div>
         </div>
 

@@ -8,7 +8,8 @@ export default function EcommerceCRMSection() {
       title: "Essentielle",
       subtitle:
         "Parfait pour les petites entreprises ou artisans souhaitant une présence en ligne rapide et efficace.",
-      price: 1000,
+      price: "Sur devis",
+      badge: "populaire" as const,
 
       features: [
         { text: "Audit approfondi", enabled: true },
@@ -22,7 +23,8 @@ export default function EcommerceCRMSection() {
       title: "Standard",
       subtitle:
         "Une offre complète pour les entreprises en quête d'un site professionnel et fonctionnel.",
-      price: 1500,
+      price: "Sur devis",
+      badge: "recommandé" as const,
 
       features: [
         { text: "Fonctionnalité de l'offre Essentielle.", enabled: true },
@@ -51,7 +53,7 @@ export default function EcommerceCRMSection() {
     {
       title: "Avancée",
       subtitle: "Parfait pour les grandes entreprise ou boutique e-commerce",
-      price: 3500,
+      price: "Sur devis",
 
       features: [
         { text: "Fonctionnalité de l'offre Standard", enabled: true },

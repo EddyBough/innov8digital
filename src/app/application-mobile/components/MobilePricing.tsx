@@ -9,7 +9,8 @@ export default function MobilePrice() {
       title: "Essentielle",
       subtitle:
         "Une solution simple pour lancer une application mobile fonctionnelle rapidement.",
-      price: 3900,
+      price: "Sur devis",
+      badge: "populaire" as const,
       features: [
         { text: "Audit approfondi", enabled: true },
         { text: "Application hybride (iOS & Android)", enabled: true },
@@ -25,7 +26,8 @@ export default function MobilePrice() {
       title: "Standard",
       subtitle:
         "Une application mobile avec des fonctionnalités supplémentaires pour engager votre audience.",
-      price: 4900,
+      price: "Sur devis",
+      badge: "recommandé" as const,
       features: [
         { text: "Fonctionnalité de l’offre Essentielle.", enabled: true },
         {
@@ -50,7 +52,7 @@ export default function MobilePrice() {
       title: "Avancée",
       subtitle:
         "Une solution complète et évolutive idéale pour les entreprises ayant des besoins spécifiques.",
-      price: 9900,
+      price: "Sur devis",
       features: [
         { text: "Fonctionnalité de l’offre Standard", enabled: true },
         {
@@ -75,7 +77,7 @@ export default function MobilePrice() {
     {
       title: "Personnalisée",
       subtitle: "Parfait pour les grandes entreprise ou boutique e-commerce",
-      showStartingFrom: false,
+
       price: "Sur devis",
       features: [
         { text: "Analyse personnalisée", enabled: true },

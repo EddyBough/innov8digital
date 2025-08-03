@@ -8,8 +8,8 @@ export default function SectionMaintenanceTasks() {
   const pricingPlans = [
     {
       title: "Maintenance web & mobile sur mesure",
-      price: 99,
-      isMonthly: true,
+      price: "Sur devis",
+      isMonthly: false,
 
       features: [
         {
@@ -40,8 +40,8 @@ export default function SectionMaintenanceTasks() {
     },
     {
       title: "Maintenance e-commerce",
-      price: 99,
-      isMonthly: true,
+      price: "Sur devis",
+      isMonthly: false,
       features: [
         {
           text: "Mises à jour régulières (CMS, plugins, thèmes).",

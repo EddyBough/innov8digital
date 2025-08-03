@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "240+", label: "Projets web & apps livrés" },
+  { value: "24+", label: "Projets web & apps mobiles livrées" },
   {
     value: "85%",
-    label: "Temps gagné grâce aux automatisations",
+    label: "Temps gagné par nos clients grâce à l'automatisation",
     icon: (
       <svg
-        className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600"
+        className="w-5 h-5 sm:w-6 sm:h-6 text-blue-900"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -38,7 +38,7 @@ export function StatsGrid() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.4 + index * 0.1 }}
         >
-          <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-blue-600 mb-3 sm:mb-4 flex items-center justify-center gap-2 sm:gap-3">
+          <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-blue-800 mb-3 sm:mb-4 flex items-center justify-center gap-2 sm:gap-3">
             {stat.value}
             {stat.icon}
           </div>

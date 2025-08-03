@@ -8,7 +8,7 @@ export default function AccompagnementPrice() {
     {
       title: "Complet",
       subtitle: "Accompagnement de projet - De l’idée à la réalité",
-      price: 2900,
+      price: "Sur devis",
       features: [
         { text: "Analyse de marché et étude concurentielle", enabled: true },
         { text: "Création de votre MVP fonctionnel", enabled: true },

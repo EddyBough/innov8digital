@@ -7,8 +7,8 @@ export default function MaintenancePrice() {
     {
       title: "Maintenance complète Web & Mobile",
       subtitle: "Idéal pour s'assurer une tranquillité au quotidien",
-      price: 99,
-      isMonthly: true,
+      price: "Sur devis",
+      isMonthly: false,
       features: [
         {
           text: "Mises à jour régulières des frameworks et bibliothèques utilisées",
@@ -37,8 +37,8 @@ export default function MaintenancePrice() {
       title: "Maintenance complète CMS & E-commerce",
       subtitle:
         "Idéal pour le maintien de votre site e-commerce WordPress ou Shopify",
-      price: 99,
-      isMonthly: true,
+      price: "Sur devis",
+      isMonthly: false,
       features: [
         {
           text: "Mises à jour régulières (CMS, plugins, thèmes).",
