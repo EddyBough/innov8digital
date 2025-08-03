@@ -41,7 +41,7 @@ const PricingCard = ({
     <div className={`w-80 md:w-72 ${className}`}>
       <div className="rounded-[36px] shadow-xl bg-white px-5 py-8 h-full flex flex-col">
         <div className="mb-4">
-          <h1 className="text-center text-2xl font-bold text-black">{title}</h1>
+          <h3 className="text-center text-2xl font-bold text-black">{title}</h3>
           <div className="h-16 flex items-center justify-center">
             {subtitle && (
               <h3 className="mt-2 text-center text-sm font-normal text-gray-800">

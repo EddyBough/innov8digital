@@ -43,9 +43,9 @@ export default async function BlogPost({
       />
 
       <div className="w-full text-center py-16 mt-16">
-        <h1 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h2 className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium mb-4 sm:mb-6">
           Blog Innov8 Digital
-        </h1>
+        </h2>
         <h2 className="lg:text-6xl text-4xl font-bold mt-4">
           Actualités & Insights
         </h2>

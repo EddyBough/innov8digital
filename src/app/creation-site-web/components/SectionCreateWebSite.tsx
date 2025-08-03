@@ -18,12 +18,12 @@ export default function SectionCreateWebSite() {
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="w-full text-center mt-20">
-          <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h2 className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium mb-4 sm:mb-6">
             Création de site web
           </h2>
-          <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
+          <h1 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
             Transformez vos idées en solutions digitales uniques{" "}
-          </h3>
+          </h1>
         </div>
 
         <div className="text-center mb-12">

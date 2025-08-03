@@ -48,7 +48,7 @@ const TechnologySection = () => {
           {/* Left Section - Text Content */}
           <div className="flex-1 flex flex-col justify-center order-2 md:order-1">
             <div className="w-full text-center">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl mb-16 bg-title-gradient inline-block text-transparent bg-clip-text">
+              <h2 className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium mb-4 sm:mb-6">
                 Nos services
               </h2>
             </div>
