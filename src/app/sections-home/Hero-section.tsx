@@ -1,94 +1,178 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import { FloatingElements } from "./Floating-elements";
-import { PhoneShowcase } from "./Phone-showcase";
-import Link from "next/link";
+import { AnimatedText } from "@/components/ui/AnimatedText";
+import { PhoneMockup } from "@/components/ui/PhoneMockup";
+import { StatsGrid } from "@/components/ui/StatsGrid";
+import Image from "next/image";
+
+const clientLogos = [
+  "AIM SERVICES",
+  "GLYCOWATCH",
+  "MKL DEVOPS",
+  "MP SOLUTIONS",
+  "ASAC",
+  "STELLAR PROPRETE",
+];
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center text-center px-4 overflow-hidden py-20 lg:py-20 md:py-24">
-      <div className="absolute inset-0 bg-[#fcfeff]" />
-      <div className="relative z-10 w-full max-w-6xl mx-auto pt-20 lg:flex-col m-auto lg:items-center">
-        <div className="lg:flex flex-col items-center">
-          <motion.h2
-            className="text-xl lg:text-2xl bg-title-gradient inline-block text-transparent bg-clip-text pb-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
-            <span className="sr-only">
-              Innov8 Digital - Agence Web à Marseille
-            </span>
-            AGENCE WEB INNOV8 DIGITAL
-          </motion.h2>
+    <>
+      {/* Hero Section */}
+      <main className="relative min-h-screen bg-[#fcfeff] pt-28 lg:pt-36 pb-24 lg:pb-40">
+        {/* Background Blurs */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Background Blurs */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            {/* Blur Blue */}
+            <Image
+              src="/img/blur-blue.png"
+              alt=""
+              width={900}
+              height={900}
+              className="absolute left-[30%] top-[5%] opacity-80 xl:blur-[80px] blur-[240px] object-contain"
+              priority
+            />
 
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            <motion.h1
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-            >
-              Nous donnons vie <br /> à vos{" "}
-              <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
-                rêves digitaux
-              </span>
-            </motion.h1>
-
-            <motion.p
-              className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-            >
-              Des sites web et applications conçus par de vrais développeurs,
-              qui convertissent et automatisent votre business. L’IA et
-              l’automatisation travaillent pour vous.
-            </motion.p>
-          </motion.div>
-
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center max-w-xl mx-auto lg:mx-0"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-          >
-            <div className="relative w-full sm:w-96">
-              <Link href="/expertises">
-                <Button className=" text-white whitespace-nowrap bg-black mt-6">
-                  Découvrir nos services
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
+            {/* Blur Purple */}
+            <Image
+              src="/img/blur-purple.png"
+              alt=""
+              width={900}
+              height={900}
+              className="absolute right-[5%] top-[10%] opacity-60 xl:blur-[120px] blur-[240px] object-contain"
+              priority
+            />
+          </div>
         </div>
 
-        <motion.div
-          className="relative mt-16 lg:mt-0 lg:flex-1 lg:ml-8"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8 }}
-        >
-          <div className="relative aspect-[9/16] w-full max-w-[300px] mx-auto">
-            <FloatingElements />
-
-            <motion.div
-              className="relative z-10 w-full h-full"
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 1, type: "spring", stiffness: 100 }}
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-24 pb-12 sm:pb-16 lg:pb-20">
+          <div className="text-center max-w-4xl sm:max-w-5xl mx-auto">
+            {/* Small Text */}
+            <AnimatedText
+              className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium mb-4 sm:mb-6"
+              delay={0}
             >
-              <PhoneShowcase />
-            </motion.div>
+              AGENCE INNOV8 DIGITAL
+            </AnimatedText>
+
+            {/* Main Headline */}
+            <AnimatedText className="" delay={0.2} y={30}>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-8 sm:mb-12 leading-tight">
+                Nous créons votre{" "}
+                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                  écosystème digital complet
+                </span>
+              </h1>
+            </AnimatedText>
+
+            {/* CTA Section */}
+            <AnimatedText
+              className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6 sm:mb-8 max-w-2xl mx-auto"
+              delay={0.4}
+              y={30}
+            >
+              <div className="relative flex-1 w-full">
+                <input
+                  type="text"
+                  placeholder="Décrivez votre projet en quelques mots..."
+                  className="w-full px-6 sm:px-8 py-4 sm:py-5 text-base sm:text-lg lg:text-xl bg-white border-2 border-gray-200 rounded-full focus:outline-none focus:border-blue-500 shadow-xl placeholder-gray-400"
+                  aria-label="Décrivez votre projet digital"
+                />
+              </div>
+              <Button className="bg-gray-900 text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg lg:text-xl hover:bg-gray-800 shadow-xl flex items-center gap-2 sm:gap-3 whitespace-nowrap">
+                Obtenir un devis gratuit
+                <svg
+                  className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Button>
+            </AnimatedText>
+
+            <AnimatedText
+              className="text-gray-500 text-sm sm:text-base"
+              delay={0.6}
+            >
+              Consultation gratuite • Réponse sous 24h • Devis détaillé
+            </AnimatedText>
           </div>
-        </motion.div>
-      </div>
-    </section>
+        </div>
+
+        {/* App Showcase Section */}
+        <section
+          className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 sm:mb-20"
+          aria-labelledby="showcase-title"
+        >
+          {/* Client Logos - Au-dessus du rectangle */}
+          <AnimatedText
+            className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12"
+            delay={0.8}
+            y={30}
+          >
+            {clientLogos.map((logo, index) => (
+              <span
+                key={index}
+                className="text-gray-600 font-semibold text-sm sm:text-base lg:text-lg hover:text-gray-900 transition-colors duration-300"
+              >
+                {logo}
+              </span>
+            ))}
+          </AnimatedText>
+
+          {/* Rectangle noir avec Phone Mockup */}
+          <AnimatedText
+            className="bg-gray-900 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 relative"
+            delay={1}
+            y={50}
+          >
+            {/* Phone Mockup - Peut maintenant dépasser */}
+            <div className="relative -mx-4 sm:-mx-8 lg:-mx-12">
+              <PhoneMockup />
+            </div>
+          </AnimatedText>
+        </section>
+
+        {/* Statistics Section */}
+        <section
+          className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
+          aria-labelledby="stats-title"
+        >
+          <AnimatedText
+            className="text-center mb-12 sm:mb-16"
+            delay={1.2}
+            y={30}
+          >
+            <h2
+              id="stats-title"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-4 sm:mb-6"
+            >
+              L&apos;agence qui transforme vos idées en réalité
+            </h2>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-4">
+              Spécialistes de la création web, des automatisations et de
+              l&apos;intelligence artificielle
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-12 text-gray-400 text-sm sm:text-base">
+              <span>Startups</span>
+              <span>PME</span>
+              <span>Grands comptes</span>
+            </div>
+          </AnimatedText>
+
+          {/* Stats Grid */}
+          <StatsGrid />
+        </section>
+      </main>
+    </>
   );
 }

@@ -102,7 +102,7 @@ export default function MobilePrice() {
 
       {/* Pricing section header */}
       <div className="text-center mt-12 md:mt-20">
-        <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h2 className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium mb-4 sm:mb-6">
           Développement d&apos;application mobile
         </h2>
       </div>
@@ -124,7 +124,7 @@ export default function MobilePrice() {
 
       {/* Portfolio section */}
       <div className="text-center mt-32 md:mt-60">
-        <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h2 className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium mb-4 sm:mb-6">
           Nos réalisations
         </h2>
         <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">

@@ -60,7 +60,7 @@ export function AnalyticsShowcase() {
       />
 
       <div className="w-full text-center mt-20">
-        <h2 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h2 className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium mb-4 sm:mb-6">
           Analyse de vos solutions
         </h2>
         <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">

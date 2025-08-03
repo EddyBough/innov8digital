@@ -23,7 +23,7 @@ export default function AccordionExample({ data, className }: AccordionProps) {
   return (
     <div className={`w-full max-w-3xl mx-auto ${className || ""}`}>
       <div className="w-full text-center mt-16 md:mt-16 px-4">
-        <h3 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+        <h3 className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium mb-4 sm:mb-6">
           FAQ
         </h3>
         <h4 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">

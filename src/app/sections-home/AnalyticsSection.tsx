@@ -1,9 +1,9 @@
 export function AnalyticsSection() {
   return (
     <section className="py-12 px-4 max-w-6xl mx-auto">
-      <h1 className="text-3xl font-bold mb-8 text-center">
+      <h2 className="text-3xl font-bold mb-8 text-center">
         Analytics Showcase
-      </h1>
+      </h2>
 
       {/* Downloads Section */}
       <div className="mb-12 p-6 border rounded-lg shadow-sm">

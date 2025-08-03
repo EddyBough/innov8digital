@@ -33,12 +33,12 @@ export default function BlogPage() {
 
       <div className="max-w-7xl mx-auto px-4 py-16 mt-16">
         <header className="text-center mb-16">
-          <h1 className="text-xl sm:text-4xl bg-title-gradient inline-block text-transparent bg-clip-text">
+          <h2 className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium mb-4 sm:mb-6">
             Notre Blog
-          </h1>
-          <h2 className="lg:text-6xl text-4xl font-bold mt-4">
-            Actualités & Insights
           </h2>
+          <h1 className="lg:text-6xl text-4xl font-bold mt-4">
+            Actualités & Insights
+          </h1>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
             Découvrez nos derniers articles sur le développement web, le
             marketing digital et les tendances technologiques.
