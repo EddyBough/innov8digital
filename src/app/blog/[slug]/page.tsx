@@ -8,6 +8,8 @@ const articlesMap: Record<
 > = {
   "evolution-ia-2025": () => import("../components/evolution-ia"),
   "investir-agence-digitale-2025": () => import("../components/invest-agency"),
+  "automatisation-entreprise-2025": () =>
+    import("../components/automatisation-entreprise-2025"),
 };
 
 export default async function BlogPost({

@@ -69,9 +69,9 @@ export function HeroSection() {
             {/* Main Headline */}
             <AnimatedText className="" delay={0.2} y={30}>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-8 sm:mb-12 leading-tight">
-                Nous créons votre{" "}
+                Gagnez +30h/semaine et plus de clients grâce à un{" "}
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                  écosystème digital complet
+                  écosystème digital automatisé
                 </span>
               </h1>
             </AnimatedText>
@@ -171,11 +171,12 @@ export function HeroSection() {
               id="stats-title"
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-4 sm:mb-6"
             >
-              L&apos;agence qui transforme votre business en machine
+              L&apos;agence qui transforme votre business en machine, concentrez
+              vous sur votre business.
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-4">
-              Spécialistes de la création web, des automatisations et de
-              l&apos;intelligence artificielle orientée business
+              Sites web, apps mobiles et automatisations IA sur-mesure pour PME,
+              startups et indépendants.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-12 text-gray-400 text-sm sm:text-base">
               <span>Startups</span>
