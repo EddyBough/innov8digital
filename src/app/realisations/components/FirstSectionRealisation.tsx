@@ -53,6 +53,23 @@ const projects = [
     projectUrl: "/",
     screenshotUrl: "/img/freedrivingscreen.svg",
   },
+  {
+    title: "AIM Services",
+    description:
+      "AIM Services est un site web créé pour une entreprise IRVE de pose de borne de recharge pour véhicules électriques. Doté d'un formulaire intelligent, il permet de gérer les demandes de pose de borne de recharge avec un workflow automatisé. Toutes les demandes arrivent avec les images sur la boîte mail du client, le client a juste à réaliser le devis directement.",
+    technologies: [
+      {
+        name: "Next.js",
+        icon: "/img/nextjs-icon.png",
+      },
+      {
+        name: "TypeScript",
+        icon: "/img/typescript-logo.svg",
+      },
+    ],
+    projectUrl: "https://aim-services.fr/",
+    screenshotUrl: "/img/aim-services-landing.png",
+  },
 ];
 
 export default function FirstSectionRealisation() {

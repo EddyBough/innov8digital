@@ -9,7 +9,7 @@ const posts = [
     excerpt:
       "Découvrez comment les systèmes RAG, les protocoles MCP et l'IA conversationnelle révolutionnent l'automatisation des processus métier en 2025.",
     image: "/img/aiapps.jpg",
-    date: "20 Janvier 2025",
+    date: "4 Août 2025",
     category: "Automatisation",
     slug: "automatisation-entreprise-2025",
   },

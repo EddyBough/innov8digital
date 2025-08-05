@@ -20,6 +20,14 @@ const Carousel = () => {
       projectLink: "/realisations",
     },
     {
+      category: "Site web et mobile",
+      title: "AIM Services",
+      description:
+        "AIM Services est un site web créé pour une entreprise IRVE de pose de borne de recharge pour véhicules électriques. Doté d'un formulaire intelligent, il permet de gérer les demandes de pose de borne de recharge avec un workflow automatisé.",
+      src: "/img/logo-aim.png",
+      projectLink: "/realisations",
+    },
+    {
       category: "Application Web",
       title: "Free Driving (bientôt)",
       description:
