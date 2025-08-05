@@ -45,6 +45,16 @@ p {
   color: black;
 }
 
+/* Masquer la scrollbar pour le carrousel mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 button {
   font-family: "Gilroy-SemiBold";
 }

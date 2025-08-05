@@ -18,14 +18,32 @@ interface HoverEffectProps {
 export const HoverEffect = ({ items, className }: HoverEffectProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+  const isMobileCarousel = className?.includes("mobile-carousel-item");
+  const isDesktopLayout = className?.includes("desktop-layout");
+
   return (
-    <div className={cn("container mx-auto px-4", className)}>
-      <div className="flex flex-wrap -mx-4 place-content-center">
+    <div
+      className={cn(
+        isDesktopLayout ? "container mx-auto px-4" : "",
+        isMobileCarousel ? "w-full" : "",
+        className
+      )}
+    >
+      <div
+        className={cn(
+          isDesktopLayout ? "flex flex-wrap -mx-4 place-content-center" : "",
+          isMobileCarousel ? "w-full" : ""
+        )}
+      >
         {items.map((item, idx) => (
           <Link
             href={item.link}
             key={item.link}
-            className="relative group block p-6 w-full max-w-[400px] min-h-[500px]"
+            className={cn(
+              "relative group block",
+              isDesktopLayout ? "p-6 w-full max-w-[400px] min-h-[500px]" : "",
+              isMobileCarousel ? "w-full h-[480px] p-4" : ""
+            )}
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
             aria-label={`En savoir plus sur ${item.title}`}
@@ -47,21 +65,42 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
                 />
               )}
             </AnimatePresence>
-            <Card>
+            <Card className={isMobileCarousel ? "mobile-card" : ""}>
               <div className="flex flex-col h-full">
-                <div className="w-32 h-32 mb-6 bg-gray-100 rounded-lg flex items-center justify-center">
-                  <div className="w-20 h-20 flex items-center justify-center">
+                <div
+                  className={cn(
+                    "mb-6 bg-gray-100 rounded-lg flex items-center justify-center",
+                    isMobileCarousel ? "w-28 h-28" : "w-32 h-32"
+                  )}
+                >
+                  <div
+                    className={cn(
+                      "flex items-center justify-center",
+                      isMobileCarousel ? "w-16 h-16" : "w-20 h-20"
+                    )}
+                  >
                     <Image
                       src={item.image}
                       alt={`Icône pour ${item.title}`}
-                      width={80}
-                      height={80}
-                      className="object-contain"
+                      width={isMobileCarousel ? 64 : 80}
+                      height={isMobileCarousel ? 64 : 80}
+                      className={cn(
+                        item.image.includes(".jpg")
+                          ? "object-cover rounded-lg"
+                          : "object-contain"
+                      )}
                     />
                   </div>
                 </div>
-                <CardTitle>{item.title}</CardTitle>
-                <div className="mt-auto pt-8 flex justify-between items-end">
+                <CardTitle className={isMobileCarousel ? "text-xl" : ""}>
+                  {item.title}
+                </CardTitle>
+                <div
+                  className={cn(
+                    "mt-auto flex justify-between items-end",
+                    isMobileCarousel ? "pt-6" : "pt-8"
+                  )}
+                >
                   <p className="text-s text-blue-800 max-w-[70%] flex items-center gap-2">
                     {item.cta}
                     <ArrowRight className="w-4 h-4" />

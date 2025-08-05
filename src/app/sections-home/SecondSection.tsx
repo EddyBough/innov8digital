@@ -22,6 +22,12 @@ export const services = [
     link: "/application-mobile",
   },
   {
+    title: "Automatisation & Intelligence artificielle",
+    cta: "Découvrir",
+    image: "/img/make-color.svg",
+    link: "/automatisation",
+  },
+  {
     title: "Maintenance & support technique",
     cta: "Découvrir",
     image: "/img/maintenanceicon.svg",
@@ -44,7 +50,7 @@ export default function SecondSection() {
         width={400}
         height={1200}
         priority
-        className="absolute md:h-auto mt-96 md:mt-0 h-[65rem] w-[35rem] lg:w-[40rem] left-0 top-0 -z-10 object-cover"
+        className="absolute md:h-[38rem] lg:h-auto xl:h-auto md:w-[10rem] md:mt-0 h-[45rem] w-[35rem] lg:w-[40rem] left-0 top-0 -z-10"
         quality={100}
       />
       <Image
@@ -53,16 +59,7 @@ export default function SecondSection() {
         width={400}
         height={1200}
         priority
-        className="absolute mt-[65rem] md:mt-[55rem] lg:mt-[15rem] h-[55rem] w-[25rem] md:w-[30rem] right-0 top-0 -z-10 object-cover"
-        quality={100}
-      />
-      <Image
-        src={"/img/GreenBlur.png"}
-        alt="Icône-blur"
-        width={400}
-        height={1200}
-        priority
-        className="absolute mt-[95rem] md:mt-[95rem] h-[55rem] w-[25rem] left-0 top-0 -z-10 object-cover  lg:hidden"
+        className="absolute mt-[65rem] md:mt-[55rem] lg:mt-[15rem] h-[55rem] w-[25rem] md:w-[30rem] right-0 top-0 -z-10 object-cover hidden lg:block"
         quality={100}
       />
 
@@ -75,8 +72,77 @@ export default function SecondSection() {
             Visibilité. Performance. Engagement.
           </h3>
         </div>
-        <div className="flex justify-center w-full">
-          <HoverEffect items={services} />
+        {/* Desktop Layout */}
+        <div className="hidden lg:flex justify-center w-full">
+          <HoverEffect items={services} className="desktop-layout" />
+        </div>
+
+        {/* Mobile & Tablet Carousel */}
+        <div className="lg:hidden w-full">
+          <div
+            id="services-carousel"
+            className="flex gap-6 overflow-x-auto scroll-smooth px-4 pb-4 scrollbar-hide snap-x snap-mandatory"
+          >
+            {services.map((service) => (
+              <div
+                key={service.link}
+                className="flex-shrink-0 w-80 snap-center"
+              >
+                <HoverEffect
+                  items={[service]}
+                  className="mobile-carousel-item"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Navigation Buttons */}
+          <div className="flex gap-3 mt-6 px-4">
+            <button
+              onClick={() => {
+                const carousel = document.getElementById("services-carousel");
+                if (carousel) carousel.scrollLeft -= 320;
+              }}
+              className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200"
+              aria-label="Défiler vers la gauche"
+            >
+              <svg
+                className="w-5 h-5 text-gray-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              onClick={() => {
+                const carousel = document.getElementById("services-carousel");
+                if (carousel) carousel.scrollLeft += 320;
+              }}
+              className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200"
+              aria-label="Défiler vers la droite"
+            >
+              <svg
+                className="w-5 h-5 text-gray-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>

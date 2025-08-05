@@ -88,7 +88,7 @@ export function HeroSection() {
                   placeholder="Votre email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 sm:px-8 py-4 sm:py-5 text-base sm:text-lg lg:text-xl bg-white border-2 border-gray-200 rounded-full focus:outline-none focus:border-blue-500 shadow-xl placeholder-gray-400"
+                  className="w-full px-6 sm:px-8 py-4 sm:py-5 text-base sm:text-lg lg:text-xl bg-white border-2 border-gray-200 rounded-full focus:outline-none focus:border-blue-500 shadow-xl placeholder-gray-400 text-center"
                   aria-label="Votre email"
                 />
               </div>
@@ -118,7 +118,8 @@ export function HeroSection() {
               className="text-gray-500 text-sm sm:text-base"
               delay={0.6}
             >
-              Consultation gratuite • Réponse sous 24h • Devis détaillé
+              Consultation gratuite • Réponse sous 24h • Devis détaillé • 0
+              spams garantis
             </AnimatedText>
           </div>
         </div>
