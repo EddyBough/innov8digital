@@ -141,6 +141,9 @@ function DesktopNavbar({ className }: { className?: string }) {
               <HoveredLink href="/application-mobile">
                 Application mobile
               </HoveredLink>
+              <HoveredLink href="/automatisation">
+                Automatisation & IA
+              </HoveredLink>
               <HoveredLink href="/maintenance">
                 Maintenance et support
               </HoveredLink>
@@ -408,10 +411,13 @@ function MobileNavbar({
                     <SubMenuItem href="/application-mobile" delay={0.3}>
                       Application mobile
                     </SubMenuItem>
-                    <SubMenuItem href="/maintenance" delay={0.4}>
+                    <SubMenuItem href="/automatisation" delay={0.4}>
+                      Automatisation & IA
+                    </SubMenuItem>
+                    <SubMenuItem href="/maintenance" delay={0.5}>
                       Maintenance et support
                     </SubMenuItem>
-                    <SubMenuItem href="/seo" delay={0.4}>
+                    <SubMenuItem href="/seo" delay={0.6}>
                       Stratégie digitale SEO & Marketing
                     </SubMenuItem>
                   </motion.div>
