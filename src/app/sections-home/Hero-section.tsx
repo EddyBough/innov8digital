@@ -19,7 +19,21 @@ const clientLogos = [
 export function HeroSection() {
   const [email, setEmail] = useState("");
 
-  const handleGetQuote = () => {
+  const handleGetQuote = async () => {
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, source: "hero-section" }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to subscribe to newsletter");
+      }
+    } catch (error) {
+      console.error("Error subscribing to newsletter:", error);
+    }
+
     window.open(
       "https://tidycal.com/boughanmieddy8/audit-de-votre-projet",
       "_blank"
