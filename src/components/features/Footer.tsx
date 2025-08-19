@@ -94,6 +94,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  href="/accompagnement"
+                  className="hover:text-white transition-colors"
+                >
+                  Accompagnement{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/realisations"
                   className="hover:text-white transition-colors"
                 >
@@ -128,15 +136,15 @@ const Footer = () => {
                   href="/creation-site-web"
                   className="hover:text-white transition-colors"
                 >
-                  Développement Web
+                  Création de site web sur mesure{" "}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/creation-site-cms"
+                  href="/automatisation"
                   className="hover:text-white transition-colors"
                 >
-                  Création de site E-commerce CMS{" "}
+                  Automatisation & Intelligence artificielle{" "}
                 </Link>
               </li>
               <li>
@@ -145,6 +153,14 @@ const Footer = () => {
                   className="hover:text-white transition-colors"
                 >
                   Création d&apos;applications mobiles{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/creation-site-cms"
+                  className="hover:text-white transition-colors"
+                >
+                  Création de site E-commerce CMS{" "}
                 </Link>
               </li>
               <li>
