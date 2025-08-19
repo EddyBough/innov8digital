@@ -10,10 +10,10 @@ export const services = [
     link: "/creation-site-web",
   },
   {
-    title: "Création de site E-Commerce CMS",
+    title: "Automatisation & Intelligence artificielle",
     cta: "Découvrir",
-    image: "/img/ecommerceicon.svg",
-    link: "/creation-site-cms",
+    image: "/img/make-color.svg",
+    link: "/automatisation",
   },
   {
     title: "Création d'applications mobiles sur mesure",
@@ -22,10 +22,10 @@ export const services = [
     link: "/application-mobile",
   },
   {
-    title: "Automatisation & Intelligence artificielle",
+    title: "Création de site E-Commerce CMS",
     cta: "Découvrir",
-    image: "/img/make-color.svg",
-    link: "/automatisation",
+    image: "/img/ecommerceicon.svg",
+    link: "/creation-site-cms",
   },
   {
     title: "Maintenance & support technique",
