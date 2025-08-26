@@ -132,8 +132,8 @@ export function HeroSection() {
               className="text-gray-500 text-sm sm:text-base"
               delay={0.6}
             >
-              Consultation gratuite • Réponse sous 24h • Devis détaillé • 0
-              spams garantis
+              Consultation 1 heure gratuite • devis sous 24h + Inscription à
+              notre newsletter pro • 0 spams garantis
             </AnimatedText>
           </div>
         </div>
@@ -186,12 +186,11 @@ export function HeroSection() {
               id="stats-title"
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-4 sm:mb-6"
             >
-              L&apos;agence qui transforme votre business en machine, concentrez
-              vous sur votre business.
+              Fini les contraintes, libérez votre temps pour votre business.
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-4">
-              Sites web, apps mobiles et automatisations IA sur-mesure pour PME,
-              startups et indépendants.
+              Sites web, apps mobiles intelligents et automatisations IA
+              sur-mesure pour PME, startups et indépendants.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 lg:gap-12 text-gray-400 text-sm sm:text-base">
               <span>Startups</span>
