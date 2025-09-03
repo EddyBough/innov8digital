@@ -7,12 +7,12 @@ export default function SectionCreateMobile() {
     <section>
       <Image
         src={"/img/blur-blue.png"}
-        alt="blur-bleu"
+        alt=""
         width={400}
         height={1200}
-        priority
+        loading="lazy"
         className="absolute md:h-auto mt-96 md:mt-0 h-[55rem] w-[35rem] right-0 top-0 -z-10 object-cover"
-        quality={100}
+        quality={75}
       />
 
       <div className="max-w-7xl mx-auto px-4 py-16">

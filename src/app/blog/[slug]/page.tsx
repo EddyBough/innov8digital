@@ -37,11 +37,12 @@ export default async function BlogPost({
     <main className="min-h-screen relative overflow-hidden">
       <Image
         src="/img/blur-blue.png"
-        alt="effet de flou bleu"
+        alt=""
         width={400}
         height={1200}
-        priority
+        loading="lazy"
         className="absolute md:h-auto mt-96 md:mt-0 h-[55rem] w-[35rem] right-0 top-0 -z-10 object-cover"
+        quality={75}
       />
 
       <div className="w-full text-center py-16 mt-16">

@@ -24,9 +24,9 @@ export default function AccompagnementPrice() {
         alt=""
         width={400}
         height={1200}
-        priority
+        loading="lazy"
         className="absolute md:h-auto md:mt-0 h-[55rem] w-full md:w-[35rem] right-0 bottom-0 -z-10 object-cover"
-        quality={100}
+        quality={75}
       />
 
       {/* Pricing section header */}
