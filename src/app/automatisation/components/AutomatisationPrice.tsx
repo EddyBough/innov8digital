@@ -72,7 +72,7 @@ export default function AutomatisationPrice() {
   return (
     <section>
       <Image
-        src={"/img/blur-bluePurple.png"}
+        src={"/img/blur-bluePurple.webp"}
         alt=""
         width={400}
         height={1200}

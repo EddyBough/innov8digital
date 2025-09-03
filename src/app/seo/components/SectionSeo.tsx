@@ -7,7 +7,7 @@ export default function SectionSeo() {
   return (
     <section>
       <Image
-        src={"/img/blur-orangeSEO.png"}
+        src={"/img/blur-orangeSEO.webp"}
         alt=""
         width={400}
         height={1200}

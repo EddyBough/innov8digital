@@ -45,7 +45,7 @@ export default function SecondSection() {
   return (
     <section className="w-screen relative overflow-hidden">
       <Image
-        src={"/img/blur-orange.png"}
+        src={"/img/blur-orange.webp"}
         alt=""
         width={400}
         height={1200}

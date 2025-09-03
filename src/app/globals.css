@@ -12,17 +12,6 @@ body {
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Gilroy-Bold";
-  src: url("/fonts/gilroy-bold.ttf") format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy-regular";
-  src: url("/fonts/gilroy-regular.ttf") format("truetype");
-  font-display: swap;
-}
-
 h2 {
   font-family: "Gilroy-SemiBold";
 }
@@ -32,7 +21,7 @@ h3 {
 }
 
 h1 {
-  font-family: "Gilroy-Semibold", Arial, sans-serif;
+  font-family: "Gilroy-SemiBold", Arial, sans-serif;
 }
 
 span {

@@ -57,7 +57,7 @@ export default function SectionMethodologyCms() {
   return (
     <section className="relative overflow-hidden">
       <Image
-        src={"/img/blur-orange.png"}
+        src={"/img/blur-orange.webp"}
         alt="blur orange"
         width={400}
         height={1200}

@@ -37,7 +37,7 @@ export default function OurPresentationComponent() {
       />
       {/* Blur gauche */}
       <Image
-        src={"/img/blur-orange.png"}
+        src={"/img/blur-orange.webp"}
         alt="blur-left"
         width={400}
         height={1200}
