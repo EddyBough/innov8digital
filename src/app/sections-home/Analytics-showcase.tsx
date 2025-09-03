@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Area, AreaChart, Bar, BarChart, ResponsiveContainer } from "recharts";
 import { Card } from "@/components/ui/Card";
 import { GaugeChart } from "./Gaugechart";
+import { PureAreaChart } from "@/components/charts/PureAreaChart";
+import { PureBarChart } from "@/components/charts/PureBarChart";
 import Image from "next/image";
 
 const downloadData = Array.from({ length: 20 }, (_, i) => ({
@@ -50,7 +51,7 @@ export function AnalyticsShowcase() {
       aria-labelledby="analytics-showcase-title"
     >
       <Image
-        src={"/img/blur-orange-rouge.png"}
+        src={"/img/blur-orange-rouge.webp"}
         alt=""
         width={400}
         height={1200}
@@ -84,25 +85,7 @@ export function AnalyticsShowcase() {
             <span className="text-4xl font-bold">{count.toLocaleString()}</span>
             <span className="text-green-500 text-sm">+12.3%</span>
           </div>
-          <div className="absolute inset-0 z-0">
-            <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={downloadData}>
-                <defs>
-                  <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.1} />
-                    <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
-                  </linearGradient>
-                </defs>
-                <Area
-                  type="monotone"
-                  dataKey="value"
-                  stroke="#3b82f6"
-                  fillOpacity={1}
-                  fill="url(#colorUv)"
-                />
-              </AreaChart>
-            </ResponsiveContainer>
-          </div>
+          <PureAreaChart data={downloadData} />
         </Card>
         <div>
           <h3 className="text-3xl font-bold mb-4">
@@ -139,13 +122,9 @@ export function AnalyticsShowcase() {
             6 derniers mois
           </h3>
           <div className="text-green-500 text-sm mb-4">+24.1%</div>
-          <ResponsiveContainer width="100%" height={200}>
-            <BarChart data={barData}>
-              <Bar dataKey="first" fill="#3b82f6" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="second" fill="#93c5fd" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="third" fill="#dbeafe" radius={[4, 4, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
+          <div className="h-[200px]">
+            <PureBarChart data={barData} />
+          </div>
         </Card>
       </article>
 

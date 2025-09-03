@@ -6,7 +6,7 @@ import ContactSection from "./sections-home/ContactSection";
 import SectionNeedSolution from "./creation-site-web/components/SectionNeedSolution";
 import AccordionExample from "@/components/ui/accordion-example";
 import { faqHome } from "@/data/faq-home";
-import { AnalyticsShowcase } from "./sections-home/Analytics-showcase";
+import LazyAnalytics from "@/components/LazyAnalytics";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <SecondSection />
-        <AnalyticsShowcase />
+        <LazyAnalytics />
         <ThirdSection />
         <FourSection />
         <SectionNeedSolution />

@@ -10,7 +10,7 @@ export default function InvestAgency2025() {
       <header>
         <div className="relative h-[400px] w-full mb-8 rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/img/man-thinking.jpg"
+            src="/img/man-thinking.webp"
             alt="Un homme réfléchissant à investir dans une agence digitale"
             fill
             className="object-cover"

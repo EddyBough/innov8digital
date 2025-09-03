@@ -50,7 +50,7 @@ export function HeroSection() {
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
             {/* Blur Blue */}
             <Image
-              src="/img/blur-blue.png"
+              src="/img/blur-blue.webp"
               alt=""
               width={900}
               height={900}
@@ -60,7 +60,7 @@ export function HeroSection() {
 
             {/* Blur Purple */}
             <Image
-              src="/img/blur-purple.png"
+              src="/img/blur-purple.webp"
               alt=""
               width={900}
               height={900}
