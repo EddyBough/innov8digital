@@ -36,12 +36,12 @@ const TechnologySection = () => {
     <section className="w-full lg:h-[1000px]  relative overflow-hidden mt-24 lg:pb-0 md:pb-[17rem] pb-[9rem]">
       <Image
         src={"/img/blur-blue.png"}
-        alt="blur-blue"
+        alt=""
         width={400}
         height={1200}
-        priority
+        loading="lazy"
         className="absolute md:h-auto lg:mt-[-5rem] mt-9  md:mt-0 h-[53rem] w-[32rem] right-0 top-0 -z-10 object-cover"
-        quality={100}
+        quality={75}
       />
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-12 md:gap-16">

@@ -7,12 +7,12 @@ export default function FourSection() {
     <section className="w-screen h-full relative overflow-hidden pb-16">
       <Image
         src={"/img/blur-purple.png"}
-        alt="flou violet"
+        alt=""
         width={400}
         height={1200}
-        priority
+        loading="lazy"
         className="absolute md:h-auto mt-96 md:mt-0 h-[55rem] w-[35rem] right-0 top-0 -z-10 object-cover"
-        quality={100}
+        quality={75}
       />
 
       <div className="max-w-7xl mx-auto px-4 py-28 mb-16">

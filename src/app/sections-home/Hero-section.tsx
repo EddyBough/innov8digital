@@ -61,11 +61,11 @@ export function HeroSection() {
             {/* Blur Purple */}
             <Image
               src="/img/blur-purple.png"
-              alt="blur purple"
+              alt=""
               width={900}
               height={900}
               className="absolute right-[5%] top-[10%] opacity-60 xl:blur-[120px] blur-[240px] object-contain"
-              priority
+              loading="lazy"
             />
           </div>
         </div>

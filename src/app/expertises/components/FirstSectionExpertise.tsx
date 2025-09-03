@@ -50,27 +50,27 @@ export default function FirstSectionExpertise() {
         alt=""
         width={400}
         height={1200}
-        priority
+        loading="lazy"
         className="absolute md:hidden mt-8 md:mt-[-6rem] h-[55rem] w-[35rem] right-0 top-0 -z-10 object-cover"
-        quality={100}
+        quality={75}
       />
       <Image
         src={"/img/blur-orange.png"}
-        alt="Icône-blur"
+        alt=""
         width={400}
         height={1200}
-        priority
+        loading="lazy"
         className="absolute md:h-auto mt-[65rem] md:mt-[45rem] lg:mt-0 h-[65rem] w-[35rem] lg:w-[40rem] left-0 top-0 -z-10 object-cover"
-        quality={100}
+        quality={75}
       />
       <Image
         src={"/img/blur-blue.png"}
-        alt="blur-right"
+        alt=""
         width={400}
         height={1200}
-        priority
+        loading="lazy"
         className="absolute mt-[115rem] md:mt-[85rem] lg:mt-[15rem] h-[55rem] w-[25rem] md:w-[30rem] right-0 top-0 -z-10 object-cover"
-        quality={100}
+        quality={75}
       />
 
       <div className="max-w-7xl mx-auto px-4 py-16">
