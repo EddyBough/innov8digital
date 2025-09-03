@@ -24,19 +24,19 @@ export function AnalyticsShowcase() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCount((prev) => {
-        if (prev < 101900) return prev + 1000;
+        if (prev < 101900) return prev + 2000;
         clearInterval(timer);
         return 101900;
       });
-    }, 50);
+    }, 100);
 
     const subTimer = setInterval(() => {
       setSubscriptions((prev) => {
-        if (prev < 67900) return prev + 1000;
+        if (prev < 67900) return prev + 2000;
         clearInterval(subTimer);
         return 67900;
       });
-    }, 50);
+    }, 100);
 
     return () => {
       clearInterval(timer);
@@ -51,12 +51,12 @@ export function AnalyticsShowcase() {
     >
       <Image
         src={"/img/blur-orange-rouge.png"}
-        alt="Effet de flou rouge orange en arrière-plan"
+        alt=""
         width={400}
         height={1200}
-        priority
+        loading="lazy"
         className="absolute top-[30rem] h-[55rem] w-[55rem] md:h-auto mt-96 md:mt-96 md:left-44 md:top-20 md:w-[80rem] lg:left-[30rem] lg:top-3 lg:w-[85rem] -z-10 object-cover"
-        quality={100}
+        quality={75}
       />
 
       <div className="w-full text-center mt-20">

@@ -97,7 +97,7 @@ export function PhoneMockup() {
         width={800}
         height={800}
         className="relative z-10 w-auto h-auto xl:ml-48 md:ml-44 lg:ml-64 ml-4"
-        priority
+        loading="lazy"
       />
     </div>
   );

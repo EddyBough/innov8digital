@@ -8,21 +8,19 @@ body {
 
 @font-face {
   font-family: "Gilroy-SemiBold";
-  src: url("../app/fonts/gilroy-semi-bold.ttf") format("woff2");
+  src: url("../app/fonts/gilroy-semi-bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Gilroy-Bold";
-  src: url("../app/fonts/gilroy-bold.ttf") format("woff2");
+  src: url("../app/fonts/gilroy-bold.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy-regular";
-  src: url("../app/fonts/gilroy-regular.ttf") format("woff2");
-}
-
-@font-face {
-  font-family: "Gilroy-ultralight";
-  src: url("../app//fonts/gilroy-ultralight.ttf") format("woff2");
+  src: url("../app/fonts/gilroy-regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 h2 {
