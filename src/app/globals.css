@@ -8,18 +8,18 @@ body {
 
 @font-face {
   font-family: "Gilroy-SemiBold";
-  src: url("../app/fonts/gilroy-semi-bold.ttf") format("truetype");
+  src: url("/fonts/gilroy-semi-bold.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Gilroy-Bold";
-  src: url("../app/fonts/gilroy-bold.ttf") format("truetype");
+  src: url("/fonts/gilroy-bold.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy-regular";
-  src: url("../app/fonts/gilroy-regular.ttf") format("truetype");
+  src: url("/fonts/gilroy-regular.ttf") format("truetype");
   font-display: swap;
 }
 

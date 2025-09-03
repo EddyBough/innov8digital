@@ -92,7 +92,7 @@ export function PhoneMockup() {
 
       {/* Hand holding phone - Libre positionnement */}
       <Image
-        src="/img/hand3.png"
+        src="/img/hand3.webp"
         alt="Main tenant un téléphone avec logo Innov8"
         width={800}
         height={800}
