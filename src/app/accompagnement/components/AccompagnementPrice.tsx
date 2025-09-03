@@ -20,7 +20,7 @@ export default function AccompagnementPrice() {
   return (
     <section>
       <Image
-        src={"/img/blur-bluePurple.png"}
+        src={"/img/blur-bluePurple.webp"}
         alt=""
         width={400}
         height={1200}

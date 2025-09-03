@@ -23,13 +23,17 @@ export function AnalyticsShowcase() {
   const [subscriptions, setSubscriptions] = useState(0); // eslint-disable-line @typescript-eslint/no-unused-vars
 
   useEffect(() => {
+    // Optimisation mobile : intervalles plus lents pour réduire la charge CPU
+    const isMobile = window.innerWidth < 768;
+    const interval = isMobile ? 150 : 100;
+
     const timer = setInterval(() => {
       setCount((prev) => {
         if (prev < 101900) return prev + 2000;
         clearInterval(timer);
         return 101900;
       });
-    }, 100);
+    }, interval);
 
     const subTimer = setInterval(() => {
       setSubscriptions((prev) => {
@@ -37,7 +41,7 @@ export function AnalyticsShowcase() {
         clearInterval(subTimer);
         return 67900;
       });
-    }, 100);
+    }, interval);
 
     return () => {
       clearInterval(timer);

@@ -52,20 +52,34 @@ const useScrollDirection = () => {
   const [prevOffset, setPrevOffset] = useState(0);
 
   useEffect(() => {
+    let ticking = false;
+
     const toggleScrollDirection = () => {
       const scrollY = window.pageYOffset;
+
+      // Seuil minimum pour éviter les micro-mouvements
+      if (Math.abs(scrollY - prevOffset) < 10) return;
+
       if (scrollY > prevOffset) {
         setScrollDirection("down");
       } else if (scrollY < prevOffset) {
         setScrollDirection("up");
       }
       setPrevOffset(scrollY);
+      ticking = false;
     };
 
-    window.addEventListener("scroll", toggleScrollDirection);
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(toggleScrollDirection);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener("scroll", toggleScrollDirection);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [prevOffset]);
 

@@ -31,7 +31,7 @@ export default function SectionWebRedesign() {
   return (
     <section className="w-screen relative overflow-hidden ">
       <Image
-        src={"/img/blur-orange.png"}
+        src={"/img/blur-orange.webp"}
         alt="web redesign"
         width={1920}
         height={1080}

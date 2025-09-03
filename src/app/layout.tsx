@@ -108,13 +108,6 @@ export default function RootLayout({
           type="font/ttf"
           crossOrigin="anonymous"
         />
-        <link
-          rel="preload"
-          href="/fonts/gilroy-regular.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
 
         {/* Critical Image Preload */}
         <link
