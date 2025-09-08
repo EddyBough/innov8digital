@@ -94,8 +94,8 @@ export function PhoneMockup() {
       <Image
         src="/img/hand3.webp"
         alt="Main tenant un téléphone avec logo Innov8"
-        width={800}
-        height={800}
+        width={1536}
+        height={1024}
         className="relative z-10 w-auto h-auto xl:ml-48 md:ml-44 lg:ml-64 ml-4"
         loading="lazy"
       />
