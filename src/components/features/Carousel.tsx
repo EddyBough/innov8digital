@@ -16,7 +16,7 @@ const Carousel = () => {
       title: "Glycowatch",
       description:
         "Glycowatch est une application PWA créée pour les diabétiques. Ils peuvent créer leur compte et suivre le taux de glycémie chaque jour. L'application permet également d'extraire les données sous forme de PDF afin de les montrer à leur médecin.",
-      src: "/img/GlycoWatch.png",
+      src: "/img/GlycoWatch.webp",
       projectLink: "/realisations",
     },
     {
@@ -24,7 +24,7 @@ const Carousel = () => {
       title: "AIM Services",
       description:
         "AIM Services est un site web créé pour une entreprise IRVE de pose de borne de recharge pour véhicules électriques. Doté d'un formulaire intelligent, il permet de gérer les demandes de pose de borne de recharge avec un workflow automatisé.",
-      src: "/img/logo-aim.png",
+      src: "/img/logo-aim.webp",
       projectLink: "/realisations",
     },
     {
@@ -32,7 +32,7 @@ const Carousel = () => {
       title: "Free Driving (bientôt)",
       description:
         "FreeDriving est une application web conçue pour simplifier la gestion des rendez-vous dans une auto-école. Elle offre un tableau de bord interactif, des notifications automatiques pour les élèves et les moniteurs, et une gestion fluide des plannings pour éviter les conflits.",
-      src: "/img/free-driving.png",
+      src: "/img/free-driving.webp",
       projectLink: "/realisations",
     },
     {
@@ -40,7 +40,7 @@ const Carousel = () => {
       title: "Hair Time (bientôt)",
       description:
         "Hair Time est une application web dédiée aux salons de coiffure. Elle permet aux salons de créer un profil, de gérer leurs rendez-vous et de visualiser les créneaux disponibles. L'objectif est d'optimiser les réservations et d'améliorer l'expérience client.",
-      src: "/img/Hair-time.png",
+      src: "/img/Hair-time.webp",
       projectLink: "/realisations",
     },
   ];

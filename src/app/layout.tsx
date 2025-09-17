@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/img/og-image.png",
+        url: "/img/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Innov8Digital - Agence Web Digitale",

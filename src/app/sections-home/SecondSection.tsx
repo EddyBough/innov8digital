@@ -54,7 +54,7 @@ export default function SecondSection() {
         quality={75}
       />
       <Image
-        src={"/img/blur-blue.png"}
+        src={"/img/blur-blue.webp"}
         alt=""
         width={400}
         height={1200}

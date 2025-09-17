@@ -10,7 +10,7 @@ export default function EvolutionIA2025() {
       <header>
         <div className="relative h-[400px] w-full mb-8 rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/img/aiapps.jpg"
+            src="/img/aiapps.webp"
             alt="Illustration montrant l'évolution de l'intelligence artificielle"
             fill
             className="object-cover"

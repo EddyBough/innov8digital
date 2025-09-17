@@ -8,7 +8,7 @@ export default function SectionNeedSolution() {
     <section className="relative py-72 md:py-[500px] lg:py-[450px]">
       <div className="absolute inset-0 flex justify-center items-center">
         <Image
-          src={"/img/blur-SkyBlue.png"}
+          src={"/img/blur-SkyBlue.webp"}
           alt=""
           width={1200}
           height={1300}

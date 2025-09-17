@@ -10,7 +10,7 @@ export default function AutomatisationEntreprise2025() {
       <header>
         <div className="relative h-[400px] w-full mb-8 rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/img/aiapps.jpg"
+            src="/img/aiapps.webp"
             alt="Automatisation des processus d'entreprise avec l'IA"
             fill
             className="object-cover"

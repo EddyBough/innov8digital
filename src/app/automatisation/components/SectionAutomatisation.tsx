@@ -30,7 +30,7 @@ export default function SectionAutomatisation() {
           <FeatureCard
             title="Solutions d'automatisation intelligentes"
             description="Transformez votre entreprise grâce à nos solutions d'automatisation sur mesure. Nous créons des systèmes RAG pour exploiter vos données, des assistants MCP pour optimiser vos processus, et des chatbots intelligents pour améliorer votre relation client. Réduisez vos coûts, gagnez du temps et libérez le potentiel de vos équipes."
-            imageSrc="/img/aiapps.jpg"
+            imageSrc="/img/aiapps.webp"
             imageAlt="Solutions d'automatisation IA"
             buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
           />
