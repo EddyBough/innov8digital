@@ -6,7 +6,7 @@ export default function SectionCreateAccompagnement() {
   return (
     <section>
       <Image
-        src={"/img/blur-pink.png"}
+        src={"/img/blur-pink.webp"}
         alt=""
         width={400}
         height={1200}
@@ -29,7 +29,7 @@ export default function SectionCreateAccompagnement() {
           <FeatureCard
             title="Accompagnement de projet"
             description="Vous avez une idée de projet, mais vous ne savez pas par où commencer ? Chez Innov8 Digital, nous vous accompagnons dans la réalisation de votre projet à chaque étape. De la réalisation initiale à la mise en oeuvre d'un MVP (Produit Minimum Viable). Grâce à notre expertise en stratégie digitale, développement technique et marketing, nous faisons de votre vision une réalité."
-            imageSrc="/img/coaching-management.jpg"
+            imageSrc="/img/coaching-management.webp"
             imageAlt="Accompagnement sur mesure"
             buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
           />

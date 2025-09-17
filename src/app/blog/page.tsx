@@ -15,7 +15,7 @@ export default function BlogPage() {
     <main className="min-h-screen relative overflow-hidden">
       {/* Blur Effects */}
       <Image
-        src="/img/blur-purple.png"
+        src="/img/blur-purple.webp"
         alt="effet de flou violet"
         width={400}
         height={200}

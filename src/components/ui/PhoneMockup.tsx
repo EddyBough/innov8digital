@@ -12,7 +12,7 @@ const floatingIcons = [
   },
   {
     id: 2,
-    src: "/img/nextjs-icon.png",
+    src: "/img/nextjs-icon.webp",
     alt: "Next.js",
     position:
       "-bottom-2 -right-8 sm:-bottom-6 sm:-right-14 lg:-bottom-8 lg:-right-20",
@@ -20,7 +20,7 @@ const floatingIcons = [
   },
   {
     id: 3,
-    src: "/img/nodejs.png",
+    src: "/img/nodejs.webp",
     alt: "Node.js",
     position: "top-8 -right-2 sm:top-12 sm:-right-4 lg:top-16 lg:-right-6",
     size: "w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16",
@@ -42,7 +42,7 @@ const floatingIcons = [
   },
   {
     id: 6,
-    src: "/img/prisma_logo_icon.png",
+    src: "/img/prisma_logo_icon.webp",
     alt: "Prisma",
     position:
       "bottom-8 left-12 sm:bottom-12 sm:left-20 lg:bottom-16 lg:left-28",

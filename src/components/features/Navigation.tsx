@@ -132,13 +132,13 @@ function DesktopNavbar({ className }: { className?: string }) {
               <ProductItem
                 title="Expertise"
                 href="/expertises"
-                src="/img/expertise.png"
+                src="/img/expertise.webp"
                 description="Solutions web sur mesure"
               />
               <ProductItem
                 title="Accompagnement"
                 href="/accompagnement"
-                src="/img/accompagnement.png"
+                src="/img/accompagnement.webp"
                 description="Accompagnement sur mesure"
               />
             </div>
@@ -171,7 +171,7 @@ function DesktopNavbar({ className }: { className?: string }) {
               <ProductItem
                 title="GlycoWatch"
                 href="/realisations"
-                src="/img/newcapturedashboard.png"
+                src="/img/newcapturedashboard.webp"
                 description="Web-app qui vous permet de suivre votre diabète quotidiennement et gratuitement"
               />
               <ProductItem

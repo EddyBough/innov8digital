@@ -41,13 +41,13 @@ build: install ## Build the application
 prisma: ## Generate prisma client
 	$(X_MANAGER) prisma generate
 
-prisma-seed: ## Generate prisma client
+prisma-seed: ## Seed prisma database
 	$(PACKAGE_MANAGER) run prisma:seed
 
 prisma-migrate: ## Migrate prisma
 	$(X_MANAGER) prisma migrate dev --preview-feature
 
-prisma-studio: ## Migrate prisma
+prisma-studio: ## Open prisma studio
 	$(X_MANAGER) prisma studio
 
 prisma-reset: ## Reset prisma
@@ -70,7 +70,7 @@ git-clean-branches: ## Clean merged branches
 git-rebase-main:
 	git pull origin main --rebase
 
-git-pull-porcelain: ## Met à jour le code depuis le dépôt git avec rebase
+git-pull-porcelain: ## Update code with rebase
 	@if [ "$(shell git status --porcelain | wc -l)" -gt 0 ]; then git stash && git pull --rebase && git stash pop; else git pull --rebase; fi
 
 msg ?= $(shell git branch --show-current | sed -E 's/^([0-9]+)-([^-]+)-(.+)/\2: \#\1 \3/' | sed "s/-/ /g")
@@ -78,8 +78,15 @@ auto-commit: ## Auto commit
 	@if [ "$(shell git status --porcelain | wc -l)" -gt 0 ]; then git add .; git commit -m "$(msg)" || true; fi
 
 push: check auto-commit ## Ajoute, commit et pousse les modifications vers le dépôt git
-	git pull origin $(shell git branch --show-current) --rebase
-	git push origin "$(shell git branch --show-current)"
+	@BRANCH=$$(git branch --show-current); \
+	if git rev-parse --abbrev-ref --symbolic-full-name @{u} >/dev/null 2>&1; then \
+		echo "🔄 Upstream déjà configuré → pull --rebase + push"; \
+		git pull --rebase; \
+		git push; \
+	else \
+		echo "⚠️  Pas d’upstream → on pousse sur origin/$$BRANCH et on configure l’upstream"; \
+		git push -u origin $$BRANCH; \
+	fi
 
 ## —— Docker ———————————————————————————————————
 docker-up: ## Start docker

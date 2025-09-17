@@ -46,7 +46,7 @@ export default function FirstSectionExpertise() {
   return (
     <section className="w-screen relative overflow-hidden mt-24">
       <Image
-        src={"/img/blur-purple.png"}
+        src={"/img/blur-purple.webp"}
         alt=""
         width={400}
         height={1200}
@@ -64,7 +64,7 @@ export default function FirstSectionExpertise() {
         quality={75}
       />
       <Image
-        src={"/img/blur-blue.png"}
+        src={"/img/blur-blue.webp"}
         alt=""
         width={400}
         height={1200}

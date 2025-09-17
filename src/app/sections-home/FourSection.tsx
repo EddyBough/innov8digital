@@ -6,7 +6,7 @@ export default function FourSection() {
   return (
     <section className="w-screen h-full relative overflow-hidden pb-16">
       <Image
-        src={"/img/blur-purple.png"}
+        src={"/img/blur-purple.webp"}
         alt=""
         width={400}
         height={1200}
