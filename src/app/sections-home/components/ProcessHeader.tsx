@@ -23,7 +23,7 @@ export default function ProcessHeader({
       <h2 className="text-3xl sm:text-4xl xl:text-5xl 2xl:text-6xl font-black text-gray-900 mb-4 sm:mb-6 leading-tight">
         Développez votre app
         <br />
-        en cinq étapes
+        en 5 étapes
       </h2>
       <p className="text-base sm:text-lg xl:text-xl text-gray-600 leading-relaxed mb-8">
         Vous ne serez jamais seul. On vous accompagne à chaque étape pour créer
