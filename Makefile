@@ -78,12 +78,14 @@ auto-commit: ## Auto commit
 	@if [ "$(shell git status --porcelain | wc -l)" -gt 0 ]; then git add .; git commit -m "$(msg)" || true; fi
 
 push: check auto-commit ## Ajoute, commit et pousse les modifications vers le dépôt git
-	@if git rev-parse --abbrev-ref --symbolic-full-name @{u} >/dev/null 2>&1; then \
+	@BRANCH=$$(git branch --show-current); \
+	if git rev-parse --abbrev-ref --symbolic-full-name @{u} >/dev/null 2>&1; then \
+		echo "🔄 Upstream déjà configuré → pull --rebase + push"; \
 		git pull --rebase; \
 		git push; \
 	else \
-		echo "⚠️  No upstream yet → setting upstream on origin..."; \
-		git push -u origin HEAD; \
+		echo "⚠️  Pas d’upstream → on pousse sur origin/$$BRANCH et on configure l’upstream"; \
+		git push -u origin $$BRANCH; \
 	fi
 
 ## —— Docker ———————————————————————————————————
