@@ -7,7 +7,7 @@ export default function SectionCreateWebSite() {
   return (
     <section>
       <Image
-        src={"/img/blur-purple.png"}
+        src={"/img/blur-purple.webp"}
         alt=""
         width={400}
         height={1200}

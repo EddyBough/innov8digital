@@ -36,7 +36,7 @@ export default async function BlogPost({
   return (
     <main className="min-h-screen relative overflow-hidden">
       <Image
-        src="/img/blur-blue.png"
+        src="/img/blur-blue.webp"
         alt=""
         width={400}
         height={1200}

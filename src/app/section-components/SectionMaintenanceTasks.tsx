@@ -90,7 +90,7 @@ export default function SectionMaintenanceTasks() {
         </div>
       </div>
       <Image
-        src={"/img/blur-blue.png"}
+        src={"/img/blur-blue.webp"}
         alt="web redesign"
         width={1920}
         height={1080}

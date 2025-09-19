@@ -8,7 +8,7 @@ export default function LegalNotice() {
     <section className="relative w-full px-6 py-12 lg:mt-5 mt-8 lg:px-20 lg:py-24">
       {/* Effet de blur */}
       <Image
-        src={"/img/blur-blue.png"}
+        src={"/img/blur-blue.webp"}
         alt="blur-blue"
         width={400}
         height={1200}

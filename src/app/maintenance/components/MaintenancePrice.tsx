@@ -66,7 +66,7 @@ export default function MaintenancePrice() {
   return (
     <section>
       <Image
-        src={"/img/blur-pink.png"}
+        src={"/img/blur-pink.webp"}
         alt=""
         width={400}
         height={1200}

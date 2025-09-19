@@ -7,7 +7,7 @@ export default function SectionAutomatisation() {
   return (
     <section>
       <Image
-        src={"/img/blur-blue.png"}
+        src={"/img/blur-blue.webp"}
         alt=""
         width={400}
         height={1200}

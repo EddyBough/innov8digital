@@ -10,11 +10,11 @@ const projects = [
     technologies: [
       {
         name: "Next.js",
-        icon: "/img/nextjs-icon.png",
+        icon: "/img/nextjs-icon.webp",
       },
       {
         name: "Next.js",
-        icon: "/img/prisma_logo_icon.png",
+        icon: "/img/prisma_logo_icon.webp",
       },
       {
         name: "TypeScript",
@@ -26,7 +26,7 @@ const projects = [
       },
     ],
     projectUrl: "https://www.glycowatch.fr/home",
-    screenshotUrl: "/img/newcapturedashboard.png",
+    screenshotUrl: "/img/newcapturedashboard.webp",
   },
   {
     title: "Free Driving (bientôt)",
@@ -60,7 +60,7 @@ const projects = [
     technologies: [
       {
         name: "Next.js",
-        icon: "/img/nextjs-icon.png",
+        icon: "/img/nextjs-icon.webp",
       },
       {
         name: "TypeScript",
@@ -68,7 +68,7 @@ const projects = [
       },
     ],
     projectUrl: "https://aim-services.fr/",
-    screenshotUrl: "/img/aim-services-landing.png",
+    screenshotUrl: "/img/aim-services-landing.webp",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function FirstSectionRealisation() {
   return (
     <section className="w-screen relative overflow-hidden mt-24">
       <Image
-        src={"/img/blur-blue.png"}
+        src={"/img/blur-blue.webp"}
         alt="blur-purple"
         width={400}
         height={1200}
