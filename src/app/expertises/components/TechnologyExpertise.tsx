@@ -12,7 +12,7 @@ const TechnologySection = () => {
     },
     {
       name: "Next.js",
-      image: "/img/nextjs-icon.png",
+      image: "/img/nextjs-icon.webp",
     },
     {
       name: "TypeScript",
@@ -24,7 +24,7 @@ const TechnologySection = () => {
     },
     {
       name: "Node.js",
-      image: "/img/nodejs.png",
+      image: "/img/nodejs.webp",
     },
     {
       name: "Symfony",
@@ -35,7 +35,7 @@ const TechnologySection = () => {
   return (
     <section className="w-full lg:h-[1000px]  relative overflow-hidden mt-24 lg:pb-0 md:pb-[17rem] pb-[9rem]">
       <Image
-        src={"/img/blur-blue.png"}
+        src={"/img/blur-blue.webp"}
         alt=""
         width={400}
         height={1200}

@@ -30,7 +30,7 @@ export default function SectionCreateCms() {
           <FeatureCard
             title="Création de site E-Commerce CMS"
             description="Chez Innov8Digital, nous comprenons que chaque entreprise a des besoins spécifiques. C’est pourquoi nous proposons des solutions basées sur des CMS puissants et flexibles, comme WordPress, Shopify et bien d’autres, pour vous offrir un site professionnel, performant et facile à gérer."
-            imageSrc="/img/wordPress.png"
+            imageSrc="/img/wordPress.webp"
             imageAlt="Équipe Innov8Digital en réunion"
             buttonHref="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
           />

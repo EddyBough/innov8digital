@@ -28,7 +28,7 @@ export default function SeoPrice() {
   return (
     <section>
       <Image
-        src={"/img/blur-pink.png"}
+        src={"/img/blur-pink.webp"}
         alt="effet de flou pink"
         width={400}
         height={1200}

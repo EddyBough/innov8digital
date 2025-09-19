@@ -27,7 +27,7 @@ export default function OurPresentationComponent() {
     <section className="w-screen relative overflow-hidden mt-24 lg:pb-52 md:pb-52 pb-16 font-">
       {/* Blur droit */}
       <Image
-        src={"/img/blur-blue.png"}
+        src={"/img/blur-blue.webp"}
         alt="blur-right"
         width={400}
         height={1200}

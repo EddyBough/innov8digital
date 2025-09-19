@@ -8,7 +8,7 @@ export default function TermsAndConditions() {
     <section className="relative w-full px-6 py-12 lg:px-20 lg:py-24 lg:mt-5 mt-8">
       {/* Effet de blur */}
       <Image
-        src={"/img/blur-purple.png"}
+        src={"/img/blur-purple.webp"}
         alt=""
         width={400}
         height={1200}

@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { Card } from "@/components/ui/Card";
 import { GaugeChart } from "./Gaugechart";
 import { PureAreaChart } from "@/components/charts/PureAreaChart";
@@ -19,35 +18,8 @@ const barData = Array.from({ length: 6 }, () => ({
 }));
 
 export function AnalyticsShowcase() {
-  const [count, setCount] = useState(0);
-  const [subscriptions, setSubscriptions] = useState(0); // eslint-disable-line @typescript-eslint/no-unused-vars
-
-  useEffect(() => {
-    // Optimisation mobile : intervalles plus lents pour réduire la charge CPU
-    const isMobile = window.innerWidth < 768;
-    const interval = isMobile ? 150 : 100;
-
-    const timer = setInterval(() => {
-      setCount((prev) => {
-        if (prev < 101900) return prev + 2000;
-        clearInterval(timer);
-        return 101900;
-      });
-    }, interval);
-
-    const subTimer = setInterval(() => {
-      setSubscriptions((prev) => {
-        if (prev < 67900) return prev + 2000;
-        clearInterval(subTimer);
-        return 67900;
-      });
-    }, interval);
-
-    return () => {
-      clearInterval(timer);
-      clearInterval(subTimer);
-    };
-  }, []);
+  // Valeurs statiques pour optimiser les performances
+  const totalVisits = 101900;
 
   return (
     <section
@@ -66,10 +38,10 @@ export function AnalyticsShowcase() {
 
       <div className="w-full text-center mt-20">
         <h2 className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium mb-4 sm:mb-6">
-          Analyse de vos solutions
+          Tableaux de bord & Analytics
         </h2>
         <h3 className="lg:text-6xl text-3xl font-bold text-center lg:mb-20 mb-10">
-          Boostez votre entreprise grâce aux data
+          Intégrez des tableaux de bord dans vos solutions
         </h3>
       </div>
 
@@ -83,23 +55,26 @@ export function AnalyticsShowcase() {
           aria-labelledby="total-visits-title"
         >
           <h3 id="total-visits-title" className="text-sm font-medium mb-2">
-            Total Visites
+            Visiteurs uniques / mois
           </h3>
           <div className="flex items-baseline gap-2">
-            <span className="text-4xl font-bold">{count.toLocaleString()}</span>
+            <span className="text-4xl font-bold">
+              {totalVisits.toLocaleString()}
+            </span>
             <span className="text-green-500 text-sm">+12.3%</span>
           </div>
           <PureAreaChart data={downloadData} />
         </Card>
         <div>
           <h3 className="text-3xl font-bold mb-4">
-            Suivez la croissance de votre entreprise en ligne
+            Développement de dashboards personnalisés
           </h3>
           <p className="text-black mb-4">
-            Obtenez une vue d’ensemble claire de l’impact de vos campagnes
-            marketing et des performances de votre solution digitale. Nos
-            analyses vous permettent de prendre des décisions éclairées et
-            stratégiques.
+            Comment mesurer votre croissance si vous ne pouvez pas la mesurer ?
+            <br />
+            Nous intégrons des interfaces de suivi dans vos applications web et
+            mobiles. Visualisez vos données métier en temps réel avec des
+            graphiques interactifs et des KPIs adaptés.
           </p>
         </div>
       </article>
@@ -111,11 +86,13 @@ export function AnalyticsShowcase() {
       >
         <div>
           <h3 id="user-experience-title" className="text-3xl font-bold mb-4">
-            Optimisation de l&apos;expérience utilisateur
+            Interfaces utilisateur optimisées pour la conversion
           </h3>
           <p className="text-black mb-4">
-            Offrez une expérience inégalée à vos utilisateurs pour les fidéliser
-            et augmenter vos conversions.
+            Nous concevons des parcours utilisateur fluides et des interfaces
+            intuitives. Chaque élément est pensé pour guider vos utilisateurs
+            vers l&apos;action souhaitée, que ce soit un achat, une inscription
+            ou une prise de contact.
           </p>
         </div>
         <Card
@@ -123,7 +100,7 @@ export function AnalyticsShowcase() {
           aria-labelledby="last-6-months-title"
         >
           <h3 id="last-6-months-title" className="text-sm font-medium mb-2">
-            6 derniers mois
+            Performance UX
           </h3>
           <div className="text-green-500 text-sm mb-4">+24.1%</div>
           <div className="h-[200px]">
@@ -142,11 +119,13 @@ export function AnalyticsShowcase() {
         </Card>
         <div>
           <h3 id="conversion-title" className="text-3xl font-bold mb-4">
-            Conversion & Fidélisation
+            Solutions e-commerce et systèmes de paiement
           </h3>
           <p className="text-black mb-4">
-            Maximisez vos résultats avec des insights et stratégies basées sur
-            les données et des tests qui produisent des résultats mesurables.
+            Développement d&apos;applications e-commerce complètes avec
+            intégration de passerelles de paiement sécurisées. Nous créons des
+            solutions sur-mesure adaptées à votre modèle économique et à vos
+            besoins spécifiques.
           </p>
         </div>
       </article>

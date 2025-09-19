@@ -6,7 +6,7 @@ export default function SecondSectionExpertise() {
   return (
     <section className="w-screen relative overflow-hidden lg:pb-60 pt-9">
       <Image
-        src={"/img/blur-yellow.png"}
+        src={"/img/blur-yellow.webp"}
         alt=""
         width={400}
         height={1200}

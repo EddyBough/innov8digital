@@ -56,7 +56,7 @@ prisma-reset: ## Reset prisma
 
 ## —— Linters ———————————————————————————————————
 lint: ## Run all linters
-	$(X_MANAGER) biome check --write 
+	$(X_MANAGER) biome check --write
 	$(X_MANAGER) prisma validate
 	$(PACKAGE_MANAGER) prisma format
 
@@ -73,11 +73,30 @@ git-rebase-main:
 git-pull-porcelain: ## Update code with rebase
 	@if [ "$(shell git status --porcelain | wc -l)" -gt 0 ]; then git stash && git pull --rebase && git stash pop; else git pull --rebase; fi
 
-msg ?= $(shell git branch --show-current | sed -E 's/^([0-9]+)-([^-]+)-(.+)/\2: \#\1 \3/' | sed "s/-/ /g")
+# —— Auto message intelligent ——
+# Si branch follow pattern issue-<ID>-<slug>, produit:
+# "chore: issue <ID> <slug avec espaces> (fixes #<ID>)"
+# Sinon: "chore: update"
+# —— Auto message intelligent ——
+# Si branch follow pattern issue-<ID>-<slug>, produit:
+# "chore: issue <ID> <slug avec espaces> (fixes #<ID>)"
+# Sinon: "chore: update"
+msg ?= $(shell \
+	BRANCH=$$(git branch --show-current); \
+	if echo $$BRANCH | grep -Eiq '^issue-[0-9]+'; then \
+		ID=$$(echo $$BRANCH | sed -E 's/^issue-([0-9]+)-.*/\1/'); \
+		SLUG=$$(echo $$BRANCH | sed -E 's/^issue-[0-9]+-(.*)/\1/; s/-/ /g'); \
+		echo "chore: issue $$ID $$SLUG (fixes \#$$ID)"; \
+	else \
+		echo "chore: update"; \
+	fi \
+)
+
+
 auto-commit: ## Auto commit
 	@if [ "$(shell git status --porcelain | wc -l)" -gt 0 ]; then git add .; git commit -m "$(msg)" || true; fi
 
-push: check auto-commit ## Ajoute, commit et pousse les modifications vers le dépôt git
+push: check auto-commit ## add, commit and push modifications vers le dépôt git
 	@BRANCH=$$(git branch --show-current); \
 	if git rev-parse --abbrev-ref --symbolic-full-name @{u} >/dev/null 2>&1; then \
 		echo "🔄 Upstream déjà configuré → pull --rebase + push"; \
@@ -106,3 +125,4 @@ docker-logs:
 
 docker-ps:
 	@docker compose ps -a
+

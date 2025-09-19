@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function AutomatisationEntreprise2025() {
@@ -290,7 +291,7 @@ export default function AutomatisationEntreprise2025() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8 text-center">
+        <div className="bg-white text-black p-8 rounded-lg mb-8 text-center border border-gray-100 shadow-lg">
           <h3 className="text-2xl font-bold mb-4">
             Prêt à transformer votre entreprise ?
           </h3>
@@ -298,14 +299,16 @@ export default function AutomatisationEntreprise2025() {
             Découvrez comment l&apos;automatisation intelligente peut
             révolutionner vos processus métier.
           </p>
-          <a
-            href="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
-            className="inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Demander un audit gratuit
-          </a>
+          <Button asChild>
+            <a
+              href="https://tidycal.com/boughanmieddy8/audit-de-votre-projet"
+              className="inline-block bg-black text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Demander un audit gratuit
+            </a>
+          </Button>
         </div>
 
         <h2 className="text-3xl font-bold mt-12 mb-6 text-gray-900">
