@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "24+", label: "Projets web & apps mobiles livrées" },
+  { value: "20+", label: "Projets web & apps mobiles livrées" },
   {
     value: "85%",
     label: "Temps gagné par nos clients grâce à l'automatisation",
     icon: (
       <svg
-        className="w-5 h-5 sm:w-6 sm:h-6 text-blue-900"
+        className="w-5 h-5 sm:w-6 sm:h-6 text-blue-950"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
