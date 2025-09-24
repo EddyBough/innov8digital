@@ -27,7 +27,7 @@ export default function ProcessHeader({
       </h2>
       <p className="text-base sm:text-lg xl:text-xl text-gray-600 leading-relaxed mb-8">
         Vous ne serez jamais seul. On vous accompagne à chaque étape pour créer
-        la solution digitale qui vous permettra de scaler.
+        la solution ultime qui vous permettra de scaler.
       </p>
 
       {/* CTA Button - Desktop only */}

@@ -38,7 +38,7 @@ export function StatsGrid() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.4 + index * 0.1 }}
         >
-          <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-blue-800 mb-3 sm:mb-4 flex items-center justify-center gap-2 sm:gap-3">
+          <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-black mb-3 sm:mb-4 flex items-center justify-center gap-2 sm:gap-3">
             {stat.value}
             {stat.icon}
           </div>

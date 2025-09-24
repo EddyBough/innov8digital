@@ -55,7 +55,7 @@ export function HeroSection() {
               alt=""
               width={900}
               height={900}
-              className="absolute left-[30%] top-[5%] opacity-80 xl:blur-[80px] blur-[240px] object-contain"
+              className="absolute left-[30%] top-[5%] opacity-80 blur-[60px] sm:blur-[80px] lg:blur-[80px] xl:blur-[80px] object-contain"
               priority
             />
 
@@ -65,7 +65,7 @@ export function HeroSection() {
               alt=""
               width={900}
               height={900}
-              className="absolute right-[5%] top-[10%] opacity-60 xl:blur-[120px] blur-[240px] object-contain"
+              className="absolute right-[5%] top-[10%] opacity-60 blur-[80px] sm:blur-[100px] lg:blur-[120px] xl:blur-[120px] object-contain"
               loading="lazy"
             />
           </div>
@@ -84,8 +84,8 @@ export function HeroSection() {
             {/* Main Headline */}
             <AnimatedText className="" delay={0.2} y={30}>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-6 sm:mb-8 leading-tight">
-                Applications, sites web intelligents & intégration IA sur mesure
-                pour{" "}
+                Applications, solutions web intelligentes connectées à l&apos;IA
+                et sur mesure pour{" "}
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
                   votre entreprise
                 </span>
@@ -193,8 +193,7 @@ export function HeroSection() {
               className="text-gray-500 text-sm sm:text-base"
               delay={0.6}
             >
-              Consultation 1 heure gratuite • Inscription à notre newsletter pro
-              • 0 spams garantis
+              Inscription à notre newsletter conseil • 0 spams garantis
             </AnimatedText>
           </div>
         </div>

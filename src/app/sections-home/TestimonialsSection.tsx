@@ -21,7 +21,7 @@ export function TestimonialsSection() {
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto xl:mt-[-50px] mt-[-20px]">
           Découvrez quelques retours de nos clients sur leurs projets digitaux
-          réalisés avec Innov8 Digital.
+          réalisés avec INNOV8 Digital.
         </p>
       </div>
 
